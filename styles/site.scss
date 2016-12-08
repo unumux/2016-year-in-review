@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 *,
@@ -14,4 +15,17 @@ html {
 
 :last-child {
     margin-bottom: 0;
+}
+
+body {
+    font-family: "source sans pro", "helvetica", "arial", "sans-serif";
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
 }
