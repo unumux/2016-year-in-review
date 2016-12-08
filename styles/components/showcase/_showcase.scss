@@ -1,0 +1,15 @@
+@mixin base() {
+
+}
+
+.showcase {
+    @include base;
+
+    &__heading {
+
+    }
+
+    &__panel {
+        
+    }
+}
