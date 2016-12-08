@@ -1,8 +1,17 @@
-* {
+html {
     box-sizing: border-box;
 }
 
-body {
-    background: #dedede;
-    color: #111;
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+:first-child {
+    margin-top: 0;
+}
+
+:last-child {
+    margin-bottom: 0;
 }
