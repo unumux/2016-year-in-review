@@ -4,8 +4,31 @@
 
 .showcase {
     @include base;
+    position: relative;
+    padding: 5px;
+    margin: 2em;
+    background-color: #fff;
+    text-align: center;
+
 
     &__heading {
+        font-variant: small-caps;
+        color: #333;
+        
+        &:after {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: #fff;
+            border-width: 30px;
+            margin-left: -30px;
+        }
+
 
     }
 
