@@ -1,7 +1,6 @@
 sudo: false
 dist: trusty
 env:
-  - CXX=g++-4.8
   global:
     - ENCRYPTION_LABEL: "e75cc21342ac"
 language: node_js
