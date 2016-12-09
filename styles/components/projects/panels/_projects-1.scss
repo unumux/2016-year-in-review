@@ -1,0 +1,11 @@
+@mixin base {
+    padding: 2rem;
+}
+
+.projects-1 {
+    @include base;
+
+    & h1 {
+        text-align: left;
+    }
+}

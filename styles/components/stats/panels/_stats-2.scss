@@ -1,5 +1,5 @@
 @mixin base {
-
+    padding: 2rem;
 }
 
 .stats-2 {
@@ -19,14 +19,14 @@
 
     &::before, &::after {
         content: '';
-        border: 20px solid #aaa;
+        border: 1.3rem solid #aaa;
         border-radius: 50%;
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0;
-        border-color: #0f0 #fff #fff #0f0;
+        border-color: #a4cc44 #fff #fff #a4cc44;
         transform: rotate(-45deg);
         transition: transform 1s;
     }

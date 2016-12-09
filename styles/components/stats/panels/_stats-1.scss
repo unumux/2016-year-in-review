@@ -1,18 +1,21 @@
 @mixin base() {
-
+    padding: 2rem;
+    padding-bottom: 10rem;
 }
 
 .stats-1 {
+    @include base;
+
     & ul {
         list-style-type: none;
         padding: 0;
         
         & li {
             padding: 2rem;
-        }
 
-        @media screen and (min-width: 768px) {
-            display: flex;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+            }
         }
     }
 
