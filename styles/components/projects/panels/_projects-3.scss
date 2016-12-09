@@ -1,7 +1,20 @@
 @mixin base {
     padding: 2rem;
+	background-image: radial-gradient(circle at 52% 0, #7c99b1, #405362), linear-gradient(#3f5362, #3f5362);
 }
 
 .projects-3 {
     @include base;
+
+    & h1 {
+        text-align: left;
+    }
+
+    & p {
+        max-width: 120rem;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
 }

@@ -1,8 +1,10 @@
 @mixin base {
     padding: 2rem;
+    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
+
 }
 
-.projects-1 {
+.projects-4 {
     @include base;
 
     & h1 {

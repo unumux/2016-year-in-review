@@ -24,9 +24,19 @@
         font-weight: 600;
     }
 
+    &__label {
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
     &__description {
         padding: 10rem 0;
-        max-width: 50rem;
+        max-width: 70rem;
         margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            font-size: 3rem;
+        }
     }
 }

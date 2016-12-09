@@ -38,8 +38,7 @@
     }
 
     &__panel {
-        // padding: 2rem;
-        max-width: 120rem;
+        // max-width: 120rem; // now gets applied to every piece of content within a section, because of background-colors
         margin: 0 auto;
         min-height: 50vh;
 
@@ -47,8 +46,6 @@
             font-variant: small-caps;
         }
     }
-
-    // &__panel:nth-child(2)
 
     & h1 {
         font-weight: 600;
