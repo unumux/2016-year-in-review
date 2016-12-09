@@ -3,5 +3,27 @@
 }
 
 .stats-1 {
-    
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        
+        & li {
+            padding: 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
+    }
+
+    &__value {
+        font-size: 9rem;
+        font-weight: 600;
+    }
+
+    &__description {
+        padding: 10rem 0;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
 }

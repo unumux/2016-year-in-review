@@ -1,5 +1,5 @@
 @mixin base {
-
+    background-image: linear-gradient(to bottom, #265b80, #1f3340);
 }
 
 .stats {
@@ -7,3 +7,4 @@
 }
 
 @import 'panels/stats-1';
+@import 'panels/stats-2';

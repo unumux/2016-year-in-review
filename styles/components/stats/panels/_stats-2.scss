@@ -1,0 +1,42 @@
+@mixin base {
+
+}
+
+.stats-2 {
+    @include base;
+}
+
+.circle {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 200px;
+    font-size: 50px;
+    position: relative;
+
+    &::before, &::after {
+        content: '';
+        border: 20px solid #aaa;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-color: #0f0 #fff #fff #0f0;
+        transform: rotate(-45deg);
+        transition: transform 1s;
+    }
+
+    &::after {
+        border-color: white transparent transparent white;
+        transform: rotate(-45deg);
+    }
+
+    &::before {
+        transform: rotate(63deg);
+    }
+}
