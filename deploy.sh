@@ -36,12 +36,14 @@ doCompile
 
 # Now let's go have some fun with the cloned repo
 cd out
-git config --global user.name "Travis CI"
-git config --global user.email "$COMMIT_AUTHOR_EMAIL"
+echo "About to configure email as: $COMMIT_AUTHOR_EMAIL"
+git config user.name "Travis CI"
+git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 
 # Commit the "changes", i.e. the new version.
 # The delta will show diffs between new and old versions.
+echo "About to add and commit"
 git add .
 git commit -m "Deploy to GitHub Pages: ${SHA}"
 
