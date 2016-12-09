@@ -38,7 +38,7 @@ doCompile
 cd out
 echo "About to configure email as: $COMMIT_AUTHOR_EMAIL"
 git config user.name "Travis CI"
-git config user.email "$COMMIT_AUTHOR_EMAIL"
+git config user.email "chuckhendo@gmail.com"
 
 
 # Commit the "changes", i.e. the new version.
