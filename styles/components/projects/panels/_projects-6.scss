@@ -1,7 +1,24 @@
 @mixin base {
+    padding: 2rem;
+    background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
 
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
 }
 
 .projects-6 {
     @include base;
+
+    & h1 {
+        text-align: left;
+    }
+
+    & p {
+        max-width: 120rem;
+
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
 }
