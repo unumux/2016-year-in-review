@@ -1,18 +1,21 @@
 @mixin base() {
-
+    padding: 2rem;
+    padding-bottom: 10rem;
 }
 
 .stats-1 {
+    @include base;
+
     & ul {
         list-style-type: none;
         padding: 0;
         
         & li {
             padding: 2rem;
-        }
 
-        @media screen and (min-width: 768px) {
-            display: flex;
+            @media screen and (min-width: 768px) {
+                display: inline-block;
+            }
         }
     }
 
@@ -21,9 +24,19 @@
         font-weight: 600;
     }
 
+    &__label {
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+
     &__description {
         padding: 10rem 0;
-        max-width: 50rem;
+        max-width: 70rem;
         margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            font-size: 3rem;
+        }
     }
 }

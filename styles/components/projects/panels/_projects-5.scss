@@ -1,12 +1,14 @@
 @mixin base {
     padding: 2rem;
+    background-image: radial-gradient(circle at 50% 2%, rgba(255, 255, 255, 0.5), #cfcab9), linear-gradient(#e0ddce, #e0ddce);
+    color: #333;
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
     }
 }
 
-.projects-1 {
+.projects-5 {
     @include base;
 
     & h1 {

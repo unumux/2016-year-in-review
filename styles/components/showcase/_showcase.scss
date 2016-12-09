@@ -38,19 +38,18 @@
     }
 
     &__panel {
-        padding: 2rem;
-        max-width: 120rem;
+        // max-width: 120rem; // now gets applied to every piece of content within a section, because of background-colors
         margin: 0 auto;
         min-height: 50vh;
 
         & h1 {
-            margin-bottom: 3rem;
             font-variant: small-caps;
         }
     }
 
     & h1 {
         font-weight: 600;
+        font-size: 4.8rem;
 
         @media screen and (min-width: 768px) {
             font-size: 6rem;
