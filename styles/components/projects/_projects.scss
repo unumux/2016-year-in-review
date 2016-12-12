@@ -1,5 +1,6 @@
 @mixin base {
-    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
+    background-image: radial-gradient(circle at 50% 0, rgba(184, 227, 180, 0.5), rgba(103, 131, 100, 0.5)), linear-gradient(#688465, #688465);
+
 }
 
 .projects {
@@ -9,6 +10,8 @@
         text-align: left;
     }
 
+    @import 'panels/projects-a';
+    @import 'panels/projects-b';
     @import 'panels/projects-1';
     @import 'panels/projects-2';
     @import 'panels/projects-3';

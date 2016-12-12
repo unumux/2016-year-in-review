@@ -1,5 +1,12 @@
 @mixin base {
     padding: 2rem;
+    padding-bottom: 10rem;
+    min-height: 100vh;
+    background-color: #1f3340;
+
+    @media screen and (min-width: 1330px) {
+        min-height: 50vh;
+    }
 }
 
 .stats-2 {
