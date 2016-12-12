@@ -1,0 +1,43 @@
+@mixin base {
+
+
+}
+
+.comparison-1 {
+    @include base;
+
+    & h1 {
+        font-size: 6rem;
+    }
+
+    & p {
+        font-size: 2rem;
+    }
+
+    li {
+        font-size: 2.4rem;
+        font-weight: normal;
+        list-style-type: none;
+    }
+
+    &__label {
+
+    }
+
+    &__value {
+        font-size: 12.9rem;
+        font-weight: normal;
+    }
+
+    &__content {
+        color: #8c8c8c;
+    }
+}
+
+.yellow {
+    color: $yellow;
+}
+
+.blue {
+    color: $ocean;
+}

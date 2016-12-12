@@ -9,10 +9,16 @@
         font-size: 2.8rem;
         max-width: 81rem;
         margin: 0 auto;
+        margin-bottom: 2rem;
 
         @media screen and (min-width: 768px) {
             font-size: 3.6rem;
+            margin-bottom: 2rem;
         }
+    }
+
+    &__image {
+        width: 3.5rem;
     }
 
     &__description {

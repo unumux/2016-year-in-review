@@ -1,0 +1,117 @@
+@mixin base {
+
+}
+
+.email-1 {
+    @include base;
+
+        &__image {
+            width: 18rem;
+            margin-bottom: 5rem;
+        }
+
+        &__circle {
+            margin: 4rem auto;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            text-align: center;
+            color: #fff;
+            line-height: 210px;
+            font-size: 50px;
+            font-weight: 600;
+            border: 1rem solid $ocean;
+            position: relative;
+
+            @media screen and (min-width: 1000px) {
+                display: inline-block;
+                margin: 0 4rem;
+            }
+
+            &-value {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                font-size: 15rem;
+                margin: 0;
+                padding: 0;
+            }
+
+            &-label {
+                position: absolute;
+                top: 55px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                font-size: 4rem;
+                margin: 0;
+                padding: 0;
+                font-weight: 400;
+            }
+
+            &-percent {
+                position: absolute;
+                top: 40px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                font-size: 4rem;
+                margin: 0;
+                padding: 0;
+                font-weight: 400;
+            }
+
+        }
+
+            .email-1__circle--percent-1 {
+                margin: 4rem auto;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                text-align: center;
+                color: #fff;
+                line-height: 250px;
+                font-weight: 600;
+                position: relative;
+
+                @media screen and (min-width: 1000px) {
+                    display: inline-block;
+                    margin: 0 4rem;
+                }
+
+                &::before, &::after {
+                    content: '';
+                    border: 1.5rem solid #aaa;
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    border-color: $ocean #fff #fff $ocean;
+                    transform: rotate(-45deg);
+                    transition: transform 1s;
+                }
+
+                &::after {
+                    border-color: white transparent transparent white;
+                    transform: rotate(-45deg);
+                }
+
+                &::before {
+                    transform: rotate(135deg);
+                }
+            }
+
+            .email-1__circle--percent-1 {
+                background-repeat: no-repeat;
+                background-position: 50% 30%;
+            }
+
+        &__small {
+            font-size: 3rem;
+            font-weight: 400;
+        }
+}
