@@ -1,0 +1,11 @@
+@mixin base {
+
+}
+
+.email-1 {
+    @include base;
+
+    &__image {
+        width: 22rem;
+    }
+}
