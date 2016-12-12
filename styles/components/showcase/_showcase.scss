@@ -53,4 +53,19 @@
             font-size: 6rem;
         }
     }
+
+    &__image { // on home page 
+        height: 16rem;
+        width: auto;
+        padding: 2rem;
+
+        @media screen and (min-width: 768px) {
+            height: 30rem;
+            width: auto;
+        }
+
+        @media screen and (min-width: 1320px) {
+            height: 32.9rem;
+        }
+    }
 }

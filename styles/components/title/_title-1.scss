@@ -4,15 +4,27 @@
 
 
 .title-1 {
+    @include base;
+
     & h1 {
         font-family: "source sans pro";
         letter-spacing: 26.4px;
-        font-size: 4.4rem;
+        font-size: 3.5rem;
+        font-weight: 400;
+
+        @media screen and (min-width: 768px) {
+            font-size: 4.4rem;
+        }
     }
 
     & p {
         font-variant: small-caps;
-        font-size: 4.4rem;
+        font-size: 3.5rem;
         letter-spacing: 26.4px;
+        font-weight: 400;
+
+        @media screen and (min-width: 768px) {
+            font-size: 4.4rem;
+        }
     }
 }
