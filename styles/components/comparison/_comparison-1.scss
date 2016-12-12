@@ -1,9 +1,20 @@
 @mixin base {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
 
 
 }
 
-.comparison-1 {
+.comparison-1,
+.comparison-3 {
     @include base;
 
     & h1 {
@@ -14,14 +25,10 @@
         font-size: 2rem;
     }
 
-    li {
+    & li {
         font-size: 2.4rem;
         font-weight: normal;
         list-style-type: none;
-    }
-
-    &__label {
-
     }
 
     &__value {
@@ -31,6 +38,57 @@
 
     &__content {
         color: #8c8c8c;
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+}
+
+.comparison-2 {
+        @include base;
+
+    li {
+            font-size: 2.4rem;
+            font-weight: normal;
+            list-style-type: none;
+            color: #8c8c8c;
+            margin-top: -3rem;
+        }
+    }
+
+.comparison-3 {
+    margin-bottom: 31rem;
+}
+
+.comparison-4 {
+
+    position: relative;
+    
+
+    &__rectangle {
+        width: 180px;
+        height: 119px;
+        background-color: $yellow;
+        margin: 0 auto;
+        position: absolute;
+        top: -16rem;
+        bottom: 0;
+        left: 0rem;
+        right: 18rem;
+    }
+
+    &__rectangle-1 {
+        width: 150px;
+        height: 539px;
+        background-color:$ocean;
+        margin: 0 auto;
+        position: absolute;
+        top: -58rem;
+        bottom: 0;
+        left: 22rem;
+        right: 0;
     }
 }
 
