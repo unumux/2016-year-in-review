@@ -1,0 +1,19 @@
+@mixin base {
+    background-color: #1f4f7f;
+    min-height: 100vh;
+
+    @media screen and (min-width: 1330px) {
+        min-height: 50vh;
+    }
+}
+
+.title {
+    @include base;
+
+    @import 'title-1';
+}
+
+
+
+
+    

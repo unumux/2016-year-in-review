@@ -1,0 +1,14 @@
+@mixin base {
+
+    padding: 34.6rem;
+
+}
+
+.engage-1 {
+
+    & h1 {
+        font-size: 12.9rem;
+        line-height: 9.4rem;
+        font-weight: 600;
+    }
+}
