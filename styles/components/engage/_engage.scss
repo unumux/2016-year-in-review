@@ -1,6 +1,8 @@
 @mixin base {
-    background-image: radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(#005488, #005488);
+    background-image: linear-gradient(#005488, #005488);
     min-height: 100vh;
+    display: flex;
+    align-items: center;
 
     @media screen and (min-width: 1330px) {
         min-height: 50vh;
