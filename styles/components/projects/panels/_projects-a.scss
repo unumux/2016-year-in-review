@@ -1,24 +1,24 @@
-@mixin base() {
+@mixin base {
     padding: 2rem;
-    min-height: 50vh;
+    min-height: 100vh;
 
     @media screen and (min-width: 1330px) {
         min-height: 50vh;
-        padding-bottom: 10rem;
     }
 }
 
-.stats-1 {
+.projects-a {
     @include base;
 
-    & ul {
-        list-style-type: none;
-        padding: 0;
-        
-        & li {
-            padding: 2rem;
-        }
+    & h1 {
+        margin-bottom: 0;
+        line-height: 0.8;
+        font-weight: 400;
     }
+}
+
+.piloting-1 {
+    list-style-type: none;
 
     &__value {
         font-size: 9rem;
@@ -38,13 +38,9 @@
         }
     }
 
-    &__description {
-        padding: 10rem 0;
-        max-width: 70rem;
-        margin: 0 auto;
-
-        @media screen and (min-width: 768px) {
-            font-size: 3rem;
-        }
+    &__para {
+        font-size: 2.8rem;
+        text-align: center;
+        font-variant: small-caps;
     }
 }
