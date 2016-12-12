@@ -1,6 +1,6 @@
 @mixin base {
     padding: 2rem;
-    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
+    background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -33,10 +33,7 @@
 
     & p {
         max-width: 120rem;
-
-        @media screen and (min-width: 768px) {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
     }
 
     &__image-container {
