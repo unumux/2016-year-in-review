@@ -1,0 +1,18 @@
+@mixin base {
+
+
+}
+
+.comparison-1 {
+    @include base;
+
+    li {
+        font-size: 4.8rem;
+        list-style-type: none;
+        font-weight: 600;
+    }
+
+    &__value {
+        font-size: 12.9rem;
+    }
+}
