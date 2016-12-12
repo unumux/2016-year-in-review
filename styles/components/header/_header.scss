@@ -3,10 +3,16 @@
 }
 
 .page-header--colonial-life {
-    // background-color: #1f4f7f;
-    // background-image: 
+    background-image: url('../../../images/colonial-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 40%;
     padding: 100px;
-    
+
+    @media screen and (min-width: 768px) {
+        background-size: 100%;
+    }
 }
 
 .page-header--home {

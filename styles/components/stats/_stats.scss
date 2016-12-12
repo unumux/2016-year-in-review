@@ -2,9 +2,18 @@
     background-image: linear-gradient(to bottom, #265b80, #1f3340);
 }
 
-.stats {
+@mixin base-2 {
+    background-color: #1a2833;
+}
+
+.stats-a {
     @include base;
+}
+
+.stats-b {
+    @include base-2;
 }
 
 @import 'panels/stats-1';
 @import 'panels/stats-2';
+@import 'panels/stats-3';

@@ -12,21 +12,24 @@
         
         & li {
             padding: 2rem;
-
-            @media screen and (min-width: 768px) {
-                display: inline-block;
-            }
         }
     }
 
     &__value {
         font-size: 9rem;
-        font-weight: 600;
+        font-weight: 700;
+        padding-bottom: 2rem;
+
+        @media screen and (min-width: 768px) {
+            font-size: 12rem;
+        }
     }
 
     &__label {
+        font-size: 2rem;
+        padding-bottom: 2rem;
         @media screen and (min-width: 768px) {
-            font-size: 2rem;
+            font-size: 3.5rem;
         }
     }
 
