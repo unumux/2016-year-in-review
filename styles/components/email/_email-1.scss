@@ -30,7 +30,7 @@
 
             &-value {
                 position: absolute;
-                top: 0;
+                top: 9rem;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -41,7 +41,7 @@
 
             &-label {
                 position: absolute;
-                top: 55px;
+                top: 18rem;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -49,6 +49,7 @@
                 margin: 0;
                 padding: 0;
                 font-weight: 400;
+                font-variant: small-caps;
             }
 
             &-percent {
@@ -67,8 +68,8 @@
 
             .email-1__circle--percent-1 {
                 margin: 4rem auto;
-                width: 400px;
-                height: 400px;
+                width: 450px;
+                height: 450px;
                 border-radius: 50%;
                 text-align: center;
                 color: #fff;
@@ -83,7 +84,7 @@
 
                 &::before, &::after {
                     content: '';
-                    border: 1.5rem solid #aaa;
+                    border: 2.5rem solid #aaa;
                     border-radius: 50%;
                     position: absolute;
                     left: 0;

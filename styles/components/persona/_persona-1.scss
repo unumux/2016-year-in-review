@@ -1,0 +1,29 @@
+@mixin base {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
+
+    @media screen and (min-width: 1330px) {
+        min-height: 50vh;
+    }
+}
+
+.persona-1 {
+    @include base;
+
+    & p {
+        font-size: 2rem;
+    }
+
+    &__image {
+        height: auto;
+        width: 150px;
+    }
+}
