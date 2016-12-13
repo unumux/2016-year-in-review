@@ -1,8 +1,13 @@
 @mixin base {
     padding: 2rem;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
 }
 
 .email-marketing-1 {
+    @include base;
 
     &__group {
         &::before {
