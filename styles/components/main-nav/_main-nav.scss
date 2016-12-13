@@ -1,0 +1,16 @@
+@mixin base() {
+    margin: 1rem;
+    position: fixed;
+    right: 0;
+    top: 0;
+    text-align: right;
+    z-index: 1;
+}
+
+.main-nav {
+    @include base;
+
+    @import "list";
+    @import "item";
+    @import "link";
+}
