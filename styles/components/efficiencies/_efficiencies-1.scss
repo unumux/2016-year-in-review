@@ -1,14 +1,22 @@
 @mixin base {
-    // background-size: 100% auto;
     padding: 2rem;
     display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-content: center;
+    flex-wrap: wrap;
     // align-items: center;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1320px) {
         padding: 4rem;
+        
+    }
+}
+
+.efficiences {
+    h1 {
+    }
+
+    p {        
+        font-size: 2rem;
+        margin: -5rem 2rem 0 11rem;
     }
 }
 
@@ -21,20 +29,27 @@
         text-align: left;
     }
 
-    
-
     &__content {
-        flex-direction: row;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        width: 23rem;
+
+        h1 {
+            color: $yellow;
+        }
+        
+        flex: 1 1 100%;
+        max-width: 23rem;
         padding: 2rem;
         margin: 0 auto;
-        margin-right: 2rem;
         margin-bottom: 2rem;
         background-color: #1f3340;
         box-shadow: 13px 15px 18px 0 rgba(0, 0, 0, 0.25);
+
+        @media screen and (min-width: 1320px) {
+            flex: 1 1 33.3333%;
+            max-width: 23rem;
+            align-items: center;
+            justify-content: center;
+        
+    }
 
         li {
             margin-left: -4rem;

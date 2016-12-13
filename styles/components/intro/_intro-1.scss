@@ -5,6 +5,10 @@
 .intro-1 {
     @include base;
 
+    h1 {
+        font-size: 4rem;
+    }
+
     & p {
         font-size: 2.8rem;
         max-width: 81rem;
@@ -34,6 +38,7 @@
 
     &__question {
         font-variant: small-caps;
+        color: $lime-green;
     }
 
 }
