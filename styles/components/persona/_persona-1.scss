@@ -1,9 +1,10 @@
 @mixin base {
     padding: 2rem;
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
@@ -14,17 +15,33 @@
 .persona-1 {
     @include base;
 
-    
+    &__value {
+        font-size: 12rem;
+        }
 
+        &__label {
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+    
     &__content {
+
+        & h1 {
+            margin: 0;
+        }
 
         & p {
             font-size: 2rem;
         }
 
+         
+
         flex: 1 1 100%;
+
         @media screen and (min-width: 768px) {
-            flex: 1 1 33.3333%;
+            flex: 1 1 50%;
+            max-width: 50%;
         }
     }
 }
@@ -32,30 +49,19 @@
 .persona-2 {
     @include base;
 
-    &__value {
-        font-size: 12rem;
-    }
-
-    &__label {
-        font-size: 2rem;
-        font-weight: 600;
-    }
-
     &__content {
         flex: 1 1 100%;
-    }
-}
 
-.persona-3 {
-    @include base;
+        @media screen and (min-width: 768px) {
+            flex: 1 1 50%;
+            max-width: 50%;
+        }
+    }
 
     &__image {
-        padding-top: 3rem;
-        width: 60rem;
+        width: 400px;
+        margin: 0 auto;
+        padding-top: 5rem;
     }
-
-    &__content {
-        flex: 1 1 100%;
-    }
-
 }
+
