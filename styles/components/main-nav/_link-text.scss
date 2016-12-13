@@ -7,7 +7,8 @@
 &__link-text {
     @include base;
 
-    .main-nav__link:hover & {
+    .main-nav__link:hover &,
+    .main-nav__link--current & {
         display: inline-block;
         opacity: 1;
         transform: translateX(0);
