@@ -1,0 +1,15 @@
+@mixin base {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.starmount {
+    @include base
+    
+    @import 'starmount-1';
+}

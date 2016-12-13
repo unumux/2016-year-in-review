@@ -5,7 +5,6 @@
     @include base;
     text-align: center;
 
-
     &__heading {
         position: relative;
         margin-top: 0;
@@ -32,9 +31,38 @@
             border-width: 3rem;
             margin-left: -3rem;
         }
-
-
     }
+
+    &__heading2 {
+        position: relative;
+        margin-top: 0;
+        font-variant: small-caps;
+        color: #fff;
+        background-color: #1f3340;
+        font-family: "oswald";
+        font-weight: 300px;
+        border-top: 3px solid white;
+
+        @media screen and (min-width: 768px) {
+            font-size: 6rem;
+        }
+        
+        &:after {
+            top: 100%;
+            left: 50%;
+            border: solid transparent;
+            content: "";
+            height: 0;
+            width: 0;
+            position: absolute;
+            border-color: rgba(136, 183, 213, 0);
+            border-top-color: #1f3340;
+            border-width: 3rem;
+            margin-left: -3rem;
+        }
+    }
+
+
 
     &__panel {
         margin: 0 auto;
@@ -67,4 +95,5 @@
             height: 32.9rem;
         }
     }
+
 }

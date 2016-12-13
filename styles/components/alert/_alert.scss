@@ -1,0 +1,9 @@
+@mixin base {
+
+}
+
+.alert {
+    @include base;
+
+    @import 'alert-1';
+}
