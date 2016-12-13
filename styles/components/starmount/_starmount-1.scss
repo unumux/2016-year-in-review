@@ -1,10 +1,19 @@
 @mixin base {
 
+    display: flex;
+    flex-direction: column;
 
 }
 
 .starmount-1 {
     @include base;
+
+    
+
+    &__image {
+        width: 37rem;
+        margin-left: 5rem;
+    }
 
     & p {
         font-size: 3rem;
@@ -13,4 +22,6 @@
         margin-left: 6rem;
         max-width: 120rem;
     }
+
+
 }

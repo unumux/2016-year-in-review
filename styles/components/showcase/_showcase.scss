@@ -41,8 +41,7 @@
         background-color: #1f3340;
         font-family: "oswald";
         font-weight: 300px;
-        border-top: 3px solid white;
-
+        
         @media screen and (min-width: 768px) {
             font-size: 6rem;
         }
@@ -66,6 +65,7 @@
 
     &__panel {
         margin: 0 auto;
+        width: 100%;
 
         & h1 {
             font-variant: small-caps;

@@ -1,0 +1,41 @@
+@mixin base() {
+    color: #ddd;
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+&__link {
+    @include base;
+
+    &::after {
+        border-radius: 50%;
+        border: 0.2rem solid #ddd;
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        margin: 0 0 0 1rem;
+        width: 1rem;
+    }
+
+    &[href="#stats"] {
+    }
+
+    &[href="#projects"] {
+    }
+
+    &[href="#agile-projects"] {
+    }
+
+    &[href="#videos"] {
+    }
+
+    &[href="#email-marketing"] {
+    }
+
+    &[href="#marketing-automation"] {
+    }
+
+}
