@@ -1,5 +1,5 @@
 @mixin base {
-    display: flex;
+    // display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
@@ -22,6 +22,7 @@
     &__image {
         width: 12.1rem;
         height: auto;
+        margin-top: 5rem;
     }
 
     & h1 {

@@ -1,0 +1,11 @@
+@mixin base {
+    min-height: 100vh;
+
+}
+
+.persona {
+
+    @include base;
+
+    @import 'persona-1';
+}
