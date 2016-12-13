@@ -33,10 +33,7 @@
 
     & p {
         max-width: 120rem;
-
-        @media screen and (min-width: 768px) {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
     }
 
     &__image-container {
