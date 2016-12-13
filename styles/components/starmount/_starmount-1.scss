@@ -1,13 +1,18 @@
 @mixin base {
 
+    display: flex;
+    flex-direction: column;
 
 }
 
 .starmount-1 {
     @include base;
 
+    
+
     &__image {
-        width: 45rem;
+        width: 37rem;
+        margin-left: 5rem;
     }
 
     & p {
