@@ -20,22 +20,24 @@
         position: relative;
 
         &-text1 {
-            position: absolute;
-            top: 70px;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            // position: absolute;
+            // top: 70px;
+            // bottom: 0;
+            // left: 0;
+            // right: 0;
+            line-height: 11rem;
             font-size: 11rem;
             font-weight: 700;
+            margin-top: 80px !important;
         }
 
         &-text2 {
-            position: absolute;
+            // position: absolute;
             font-size: 4.5rem;
-            top: 150px;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            // top: 150px;
+            // bottom: 0;
+            // left: 0;
+            // right: 0;
         }
     }
 
