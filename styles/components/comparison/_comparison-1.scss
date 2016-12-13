@@ -11,7 +11,12 @@
 
 .comparison-1 {
 
+    margin: 0 auto;
     flex: 1 1 100%;
+
+    @media screen and (min-width: 1163px) {
+        margin: unset;
+    }
 
     @include base;
 
@@ -49,7 +54,10 @@
         font-size: 2rem;
         display: block;
         padding-top: 4rem;
+        padding-bottom: 20rem;
     }
+
+
 
     @media screen and (min-width: 1163px) {
 
@@ -108,7 +116,7 @@
             margin-top: -3rem;
         }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1163px) {
         flex: 1 1 25%;
         margin-left: -23rem;
         margin-right: -23rem;
@@ -147,17 +155,6 @@
 
     @media screen and (min-width: 1163px) {
         flex: 1 1 25%;
-        padding-top: 8rem;
-    }
-}
-
-
-.comparison-4 {
-    flex: 1 1 100%;
-    padding-bottom: 5rem;
-
-    @media screen and (min-width: 1163px) {
-        flex: 1 1 25%;
     }
 }
 
@@ -165,17 +162,17 @@
     flex: 1 1 100%;
     display: none;
 
-    @media screen and (min-width: 1325px) {
+    @media screen and (min-width: 1163px) {
         flex: 1 1 25%;
         display: flex;
 
 
     &__rectangle-1 {
-        margin-top: 42rem;
         width: 180px;
         height: 119px;
         background-color: $yellow;
         margin-right: 4rem;
+        align-self: flex-end;
     }
 
     &__rectangle-2 {
@@ -191,7 +188,7 @@
     flex: 1 1 100%;
     display: none;
 
-    @media screen and (min-width: 1325px) {
+    @media screen and (min-width: 1163px) {
         flex: 1 1 25%;
         display: flex;
 
