@@ -6,6 +6,10 @@
 .starmount-1 {
     @include base;
 
+    &__image {
+        width: 45rem;
+    }
+
     & p {
         font-size: 3rem;
         font-weight: normal;
@@ -13,4 +17,6 @@
         margin-left: 6rem;
         max-width: 120rem;
     }
+
+
 }
