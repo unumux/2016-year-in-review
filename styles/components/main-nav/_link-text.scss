@@ -1,0 +1,15 @@
+@mixin base() {
+    opacity: 0;
+    transform: translateX(1rem);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+&__link-text {
+    @include base;
+
+    .main-nav__link:hover & {
+        display: inline-block;
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

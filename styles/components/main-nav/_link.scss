@@ -1,5 +1,5 @@
 @mixin base() {
-    color: transparent;
+    color: #ddd;
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
@@ -38,7 +38,4 @@
     &[href="#marketing-automation"] {
     }
 
-    &:hover {
-        color: #ddd;
-    }
 }
