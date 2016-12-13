@@ -1,0 +1,11 @@
+@mixin base {
+
+
+}
+
+.persona {
+
+    @include base;
+
+    @import 'persona-1';
+}

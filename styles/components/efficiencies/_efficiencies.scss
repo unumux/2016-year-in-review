@@ -3,12 +3,13 @@
     background-image: url(../../../images/conference.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 75vh;
     align-items: center;
 }
 
 .efficiencies {
     @include base;
+    
 
     @import 'efficiencies-1';
 }

@@ -1,5 +1,6 @@
 @mixin base {
     padding: 2rem;
+    max-width: 100vh;
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
@@ -16,10 +17,20 @@
 
     & h1 {
         font-size: 6rem;
+
+        @media screen and (min-width: 1163px) {
+            text-align:left;
+
+        }   
     }
 
     & p {
         font-size: 2rem;
+
+        @media screen and (min-width: 1163px) {
+            text-align:left;
+
+        }  
     }
 
     & li {
@@ -36,14 +47,19 @@
     &__content {
         color: #8c8c8c;
         font-size: 2rem;
+        display: block;
+        padding-top: 4rem;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1163px) {
+
+        flex: 1 1 25%;
 
     }
 
 }
-.comparison-3 {
+
+.comparison-2 {
     @include base;
 
     flex: 1 1 100%;
@@ -72,15 +88,17 @@
         font-size: 2rem;
     }
 
-    @media screen and (min-width: 768px) {
-
+    @media screen and (min-width: 1163px) {
+        flex: 1 1 25%;
+        // margin-right: -10rem;
     }
 }
 
-.comparison-2 {
+.comparison-3 {
     @include base;
 
     flex: 1 1 100%;
+    padding-top: 5rem;
 
     li {
             font-size: 2.4rem;
@@ -89,40 +107,99 @@
             color: #8c8c8c;
             margin-top: -3rem;
         }
+
+    @media screen and (min-width: 768px) {
+        flex: 1 1 25%;
+        margin-left: -23rem;
+        margin-right: -23rem;
+    }
+}
+
+
+.comparison-4 {
+    @include base;
+
+    flex: 1 1 100%;
+
+    & h1 {
+        font-size: 6rem;
     }
 
-.comparison-3 {
-    @include base;
-    flex: 1 1 100%;
-    // margin-bottom: 31rem;
+    & p {
+        font-size: 2rem;
+    }
+
+    & li {
+        font-size: 2.4rem;
+        font-weight: normal;
+        list-style-type: none;
+    }
+
+    &__value {
+        font-size: 12.9rem;
+        font-weight: normal;
+    }
+
+    &__content {
+        color: #8c8c8c;
+        font-size: 2rem;
+    }
+
+    @media screen and (min-width: 1163px) {
+        flex: 1 1 25%;
+        padding-top: 8rem;
+    }
 }
+
 
 .comparison-4 {
     flex: 1 1 100%;
+    padding-bottom: 5rem;
+
+    @media screen and (min-width: 1163px) {
+        flex: 1 1 25%;
+    }
 }
 
 .comparison-5 {
     flex: 1 1 100%;
+    display: none;
+
+    @media screen and (min-width: 1325px) {
+        flex: 1 1 25%;
+        display: flex;
+
+
+    &__rectangle-1 {
+        margin-top: 42rem;
+        width: 180px;
+        height: 119px;
+        background-color: $yellow;
+        margin-right: 4rem;
+    }
+
+    &__rectangle-2 {
+        width: 150px;
+        height: 539px;
+        background-color:$ocean;
+        }
+    }       
+  
 }
 
-.comparison {        
+.comparison-6 {
+    flex: 1 1 100%;
+    display: none;
 
-        &__rectangle-1 {
-            width: 180px;
-            height: 119px;
-            background-color: $yellow;
-            margin: 0 auto;
-            display: none;
-        }
+    @media screen and (min-width: 1325px) {
+        flex: 1 1 25%;
+        display: flex;
 
-        &__rectangle-2 {
-            width: 150px;
-            height: 539px;
-            background-color:$ocean;
-            margin: 0 auto;
-            display: none;
-        }
-    }
+        
+}       
+    
+    
+}
         
 .yellow {
     color: $yellow;
