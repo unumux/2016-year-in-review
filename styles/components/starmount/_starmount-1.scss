@@ -1,0 +1,15 @@
+@mixin base {
+
+
+}
+
+.starmount-1 {
+    @include base;
+
+    & p {
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: left;
+        margin-left: 6rem;
+    }
+}
