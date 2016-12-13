@@ -1,6 +1,11 @@
 @mixin base {
     background-image: linear-gradient(to bottom, #67a14c, #688465);
     min-height: 100vh;
+    // padding: 2rem;
+
+    @media screen and (min-width: 768px) {
+        // padding: 4rem;
+    }
 }
 
 .email-marketing {
