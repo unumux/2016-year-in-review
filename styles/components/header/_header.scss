@@ -16,17 +16,56 @@
 }
 
 .page-header--home {
+    display: flex;
     background-color: #1f4f7f;
     padding: 100px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.page-header__logo {
-    margin: 0 auto;
-    display: block;
-    max-height: 50px;
+.page-header {
 
-    @media screen and (min-width: 768px) {
-        max-height: 143px;
+    &__logo {
+        margin: 0 auto;
+        max-height: 50px;
+        margin-right: 3rem;
+
+        @media screen and (min-width: 768px) {
+            max-height: 143px;
+        }
+
     }
 
+    &__logo2 {
+
+        margin: 0 auto;
+        max-height: 50px;
+
+    }
+
+    &__logos {
+       
+    }
+
+    &__logos2{
+       
+
+    }
+
+}
+
+// .page-header__logo {
+//     margin: 0 auto;
+//     max-height: 50px;
+
+//     @media screen and (min-width: 768px) {
+//         max-height: 143px;
+//     }
+
+// }
+
+.page-header__logo2 {
+    margin: 0 auto;
+    max-height: 50px;
 }
