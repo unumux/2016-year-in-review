@@ -1,11 +1,18 @@
 @mixin base {
     background-image: radial-gradient(circle at 50% 0, #635e5f, #221f20);
     min-height: 100vh;
-    display: flex;
+    // display: flex;
 }
 
 .comparison {
-    @include base
+    @include base;
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 
     @import 'comparison-1';
 }
