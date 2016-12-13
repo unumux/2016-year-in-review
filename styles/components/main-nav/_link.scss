@@ -1,5 +1,5 @@
 @mixin base() {
-    color: #ddd;
+    color: transparent;
     display: inline-block;
     padding: 1rem;
     text-decoration: none;
@@ -39,5 +39,6 @@
     }
 
     &:hover {
+        color: #ddd;
     }
 }
