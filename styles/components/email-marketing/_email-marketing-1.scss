@@ -1,24 +1,43 @@
 @mixin base {
-
+    padding: 2rem;
 }
 
 .email-marketing-1 {
 
+    &__group {
+        &::before {
+            content: '';
+            display: block;
+            width: 150px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            margin: 7rem auto;
+        }
+
+        &-text {
+            font-weight: 600;
+            margin-bottom: 6rem !important;
+        }
+
+        &:last-child {
+            padding-bottom: 20rem;
+        }
+    }
+
     & h1 {
         margin-bottom: 0.5rem;
-        font-size: 5rem;
+        font-size: 7rem;
         font-weight: 600;
     }
     
     p {
-        font-family: "source sans pro";
         font-size: 3rem;
         text-align: center;
-        letter-spacing: -.05px;
-        font-weight: normal;
+        margin: 0 auto;
+        max-width: 120rem;
     }
 
     & li {
+        font-size: 3rem;
        @media screen and (min-width: 768px) {
             font-size: 2rem;
         }
@@ -32,100 +51,14 @@
 
      &__value {
         font-size: 9rem;
-        font-weight: 600;
+        font-weight: 700;
+
+        @media screen and (min-width: 768px) {
+            font-size: 11rem;
+        }
     }
 
     &__label {
-        @media screen and (min-width: 768px) {
-            font-size: 2rem;
-        }
-    }
-
-    &__group1 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 5px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group2 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group3 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group4 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group5 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group6 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group7 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
-    }
-
-    &__group8 {
-
-        &::after {
-            content: '';
-            display: block;
-            width: 100px;
-            border: 1px solid #fff;
-            margin: 7rem auto;
-        }
+        font-size: 3rem;
     }
 }
