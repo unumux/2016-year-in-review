@@ -1,9 +1,6 @@
 @mixin base {
-    // background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
 
     @media screen and (min-width: 1330px) {
         min-height: 50vh;
