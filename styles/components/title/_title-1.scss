@@ -11,6 +11,7 @@
         letter-spacing: 26.4px;
         font-size: 3.5rem;
         font-weight: 400;
+        // text-transform: uppercase;
 
         @media screen and (min-width: 768px) {
             font-size: 4.4rem;
@@ -18,7 +19,8 @@
     }
 
     p {
-        font-variant: small-caps;
+        // font-variant: small-caps;
+        text-transform: uppercase;
         font-size: 3.5rem;
         letter-spacing: 26.4px;
         font-weight: 400;
