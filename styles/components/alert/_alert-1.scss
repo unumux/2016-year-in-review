@@ -6,10 +6,10 @@
 .alert-1 {
     @include base;
 
-    font-size: 2rem;
-    font-variant: small-caps;
+    font-size: 3rem;
+    text-transform: uppercase;
 }
 
 .yellow {
-    color: $yellow;
+    color: #1F3340;
 }
