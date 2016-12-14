@@ -2,28 +2,39 @@ require('waypoints/lib/noframework.waypoints.js');
 
 const showcases = document.querySelectorAll(".showcase[id]");
 const waypoints = [];
+const links = document.querySelectorAll(".main-nav__link");
 
 showcases.forEach(showcase => {
     const waypoint = new Waypoint({
         element: showcase,
-        handler: function() {
-            updateCurrent(this.element.id);
-        }
+        handler: function(direction) {
+            identifyCurrent(this.element.id, direction);
+        },
+
     });
     waypoints.push(waypoint);
 });
 
-function updateCurrent(id) {
-    const oldEl = document.querySelector(".main-nav__link--current");
-    const newEl = document.querySelector(`[href='#${id}']`);
+function identifyCurrent(id, direction) {
+    
+    links.forEach((link, index) => {
+        link.classList.remove("main-nav__link--current");
+    });
 
-    if (oldEl !== null) {
-        oldEl.classList.remove("main-nav__link--current");
-        oldEl.classList.add("main-nav__link");
-    }
+    links.forEach((link, index) => {
+        if(link.attributes.href.value === `#${id}`) {
+            if(direction === "up") {
+                const newLink = links[index - 1 >= 0 ? index - 1 : 0];
+                setActiveLink(newLink);
+            } else {
+                console.log(link);
+                setActiveLink(link);
+            }
+        }
+    });
+}
 
-    if (newEl !== null) {
-        newEl.classList.remove("main-nav__link");
-        newEl.classList.add("main-nav__link--current");
-    }
+
+function setActiveLink(link) {
+    link.classList.add("main-nav__link--current");
 }
