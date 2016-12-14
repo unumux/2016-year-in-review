@@ -8,7 +8,6 @@
     &__heading {
         position: relative;
         margin-top: 0;
-        // font-variant: small-caps;
         text-transform: uppercase;
         color: #333;
         background-color: #fff;
@@ -32,6 +31,11 @@
             border-width: 3rem;
             margin-left: -3rem;
         }
+    }
+
+    &__heading--unum {
+        @extend .showcase__heading;
+        font-family: "Ubuntu";
     }
 
     &__heading2 {
