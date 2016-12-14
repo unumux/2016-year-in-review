@@ -6,7 +6,7 @@
 .title-1 {
     @include base;
 
-    & h1 {
+    h1 {
         font-family: "source sans pro";
         letter-spacing: 26.4px;
         font-size: 3.5rem;
@@ -17,7 +17,7 @@
         }
     }
 
-    & p {
+    p {
         font-variant: small-caps;
         font-size: 3.5rem;
         letter-spacing: 26.4px;
@@ -26,6 +26,12 @@
         @media screen and (min-width: 768px) {
             font-size: 4.4rem;
         }
+    }
+
+    a {
+        display: inline-block;
+        padding: 5px;
+        margin: 20px;
     }
 
     &__image {
