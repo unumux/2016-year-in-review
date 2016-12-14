@@ -8,7 +8,8 @@
     &__heading {
         position: relative;
         margin-top: 0;
-        font-variant: small-caps;
+        // font-variant: small-caps;
+        text-transform: uppercase;
         color: #333;
         background-color: #fff;
         font-family: "oswald";
@@ -68,7 +69,8 @@
         width: 100%;
 
         & h1 {
-            font-variant: small-caps;
+            // font-variant: small-caps;
+            text-transform: uppercase;
         }
     }
 

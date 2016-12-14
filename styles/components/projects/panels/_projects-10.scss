@@ -28,10 +28,11 @@
     &__content {
         & h1 {
             text-align: center;
-            line-height: 0.8;
+            line-height: 1;
             font-size: 4.8rem;
-            font-variant: small-caps;
             margin-bottom: 3rem;
+            text-transform: uppercase;
+            font-weight: 600;
         }
     }
 }
