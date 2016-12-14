@@ -2,18 +2,6 @@
 
 }
 
-.page-header--colonial-life {
-    background-image: url('../../../images/colonial-header.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: 50% 40%;
-    padding: 100px;
-
-    @media screen and (min-width: 768px) {
-        background-size: 100%;
-    }
-}
 
 .page-header--home {
     display: flex;
@@ -57,4 +45,24 @@
 .page-header__logo2 {
     margin: 0 auto;
     max-height: 50px;
+}
+
+.page-header--colonial-life {
+    background-image: url('../../../images/colonial-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 50% 40%;
+    padding: 100px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        background-size: 100%;
+    }
+}
+
+.page-header--colonial-life {
+    &__logo {
+        margin-right: 0;
+    }
 }
