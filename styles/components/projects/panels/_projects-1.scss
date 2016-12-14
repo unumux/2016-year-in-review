@@ -24,7 +24,7 @@
 
 .projects-1 {
     @include base;
-    
+
     & p {
         max-width: 120rem;
         font-size: 2rem;
@@ -59,9 +59,10 @@
 
         & h1 {
             text-align: left;
-            line-height: 0.8;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 600;
             font-size: 4.8rem;
-            font-variant: small-caps;
             margin-bottom: 3rem;
         }
     }
