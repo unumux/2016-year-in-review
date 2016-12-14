@@ -5,11 +5,12 @@
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+    // -webkit-font-smoothing: antialiased;
 }
 
 &__link {
     @include base;
-
+    
     &::after {
         border-radius: 50%;
         border: 0.2rem solid #ddd;
