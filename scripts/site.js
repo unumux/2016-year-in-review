@@ -1,3 +1,5 @@
+require('waypoints/lib/noframework.waypoints.js'); 
+
 const showcases = document.querySelectorAll(".showcase[id]");
 const waypoints = [];
 
