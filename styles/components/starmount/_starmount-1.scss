@@ -1,26 +1,36 @@
 @mixin base {
+    text-align: left;
+    padding: 2rem;
 
-    display: flex;
-    flex-direction: column;
-
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
 }
 
 .starmount-1 {
     @include base;
 
+    &__image-container {
+        margin: 0 auto;
+        max-width: 120rem;
+    }
     
 
     &__image {
         width: 37rem;
-        margin-left: 5rem;
+        // margin: 0 auto;
+        // max-width: 120rem;
+
+        @media screen and (min-width: 768px) {
+            width: 50rem;
+        }
     }
 
     & p {
         font-size: 3rem;
-        font-weight: normal;
-        text-align: left;
-        margin-left: 6rem;
         max-width: 120rem;
+        // margin: 0 auto;
+        padding-top: 2rem;
     }
 
 
