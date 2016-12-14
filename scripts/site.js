@@ -1,50 +1,27 @@
-let lastScrollPosition = 0;
-let ticking = false;
+const showcases = document.querySelectorAll(".showcase[id]");
+const waypoints = [];
 
-function update(scrollPosition) {
-    
-}
+showcases.forEach(showcase => {
+    const waypoint = new Waypoint({
+        element: showcase,
+        handler: function() {
+            updateCurrent(this.element.id);
+        }
+    });
+    waypoints.push(waypoint);
+});
 
-window.addEventListener('scroll', (e) => {
-    lastScrollPosition = window.scrollY;
+function updateCurrent(id) {
+    const oldEl = document.querySelector(".main-nav__link--current");
+    const newEl = document.querySelector(`[href='#${id}']`);
 
-    if (!ticking) {
-        window.requestAnimationFrame(() => {
-            update(lastScrollPosition);
-            ticking = false;
-        });
+    if (oldEl !== null) {
+        oldEl.classList.remove("main-nav__link--current");
+        oldEl.classList.add("main-nav__link");
     }
 
-    ticking = true;
-});
-
-var statsLink = document.querySelector('#stats');
-var projectsLink = document.querySelector('#projects');
-var agileProjectsLink = document.querySelector('#agile-projects-link');
-var emailMarketingLink = document.querySelector('#email-marketing-link');
-var videosLink = document.querySelector('#videos-link');
-var coming2017 = document.querySelector('#coming-2017-link');
-
-statsLink.addEventListener('click', function() {
-    window.location.hash('#stats');
-});
-
-projectsLink.addEventListener('click', function() {
-    window.location.hash('#projects');
-});
-
-agileProjectsLink.addEventListener('click', function() {
-    window.location.hash('#agile-projects');
-});
-
-emailMarketingLink.addEventListener('click', function() {
-    window.location.hash('#email-marketing');
-});
-
-videosLink.addEventListener('click', function() {
-    window.location.hash('#videos');
-});
-
-coming2017.addEventListener('click', function() {
-    window.location.hash('#coming-2017');
-});
+    if (newEl !== null) {
+        newEl.classList.remove("main-nav__link");
+        newEl.classList.add("main-nav__link--current");
+    }
+}
