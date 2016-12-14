@@ -27,7 +27,7 @@
     @include base;
 
     & p {
-        max-width: 120rem;
+        // max-width: 120rem;
         font-size: 2rem;
     }
 
@@ -65,7 +65,7 @@
             text-transform: uppercase;
             font-weight: 600;
             margin: 3rem auto;
-            max-width: 120rem;
+            // max-width: 120rem;
         }
     }
 }

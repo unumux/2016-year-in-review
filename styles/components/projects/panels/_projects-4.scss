@@ -25,14 +25,8 @@
 .projects-4 {
     @include base;
 
-    // & h1 {
-    //     text-align: left;
-    //     margin-bottom: 0;
-    //     line-height: 0.8;
-    // }
-
     & p {
-        max-width: 120rem;
+        // max-width: 120rem;
         font-size: 2rem;
     }
 
