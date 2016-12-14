@@ -5,7 +5,6 @@
 
     @media screen and (min-width: 1320px) {
         padding: 4rem;
-        
     }
 }
 
@@ -14,6 +13,10 @@
     padding: 2rem;
     padding-top: 18rem;
 
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+        padding-top: 18rem;
+    }
 
     h1{
         text-align: left;
@@ -59,8 +62,7 @@
             flex: 1 1 33.3333%;
             max-width: 35rem;
             align-items: center;
-            justify-content: center;
-        
+            justify-content: center;   
     }
 
         li {

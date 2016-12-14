@@ -48,11 +48,12 @@
         font-size: 12rem;
         font-weight: 600;
         line-height: 1.45;
-        font-variant: small-caps;
+        // font-variant: small-caps;
+        text-transform: uppercase;
         padding-bottom: 2rem;
 
         @media screen and (min-width: 768px) {
-            font-size: 14rem;
+            font-size: 12rem;
         }
     }
 
