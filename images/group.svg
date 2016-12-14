@@ -1,15 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="84px" height="84px" viewBox="0 0 84 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>5DE7F17E-D996-487B-AF07-98D664D6C86C</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="design-end-year" transform="translate(-678.000000, -827.000000)" fill="#FFFFFF">
-            <g id="Group" transform="translate(681.000000, 830.000000)">
-                <circle id="Oval-2" stroke="#FFFFFF" stroke-width="6" fill-opacity="0.100000001" cx="39" cy="39" r="39"></circle>
-                <polygon id="Triangle" transform="translate(38.500000, 42.000000) scale(1, -1) translate(-38.500000, -42.000000) " points="38.5 31 55 53 22 53"></polygon>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="84" height="84" viewBox="0 0 84 84" xmlns="http://www.w3.org/2000/svg"><title>5DE7F17E-D996-487B-AF07-98D664D6C86C</title><g transform="translate(3 3)" fill="#FFF" fill-rule="evenodd"><circle stroke="#FFF" stroke-width="6" fill-opacity=".1" cx="39" cy="39" r="39"/><path d="M38.5 53L55 31H22z"/></g></svg>

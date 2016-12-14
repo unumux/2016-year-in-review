@@ -1,17 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="61px" height="61px" viewBox="0 0 61 61" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>E517CDF1-2CEC-448D-B1EA-7685C8EE76CF</title>
-    <desc>Created with sketchtool.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="design-end-year" transform="translate(-1071.000000, -10861.000000)">
-            <g id="ic_exit_to_app-copy" transform="translate(1061.000000, 10851.000000)">
-                <g id="Icon-24px">
-                    <polygon id="Shape" points="0 0 81 0 81 81 0 81"></polygon>
-                    <path d="M34.05375,52.61625 L38.8125,57.375 L55.6875,40.5 L38.8125,23.625 L34.05375,28.38375 L42.76125,37.125 L10.125,37.125 L10.125,43.875 L42.76125,43.875 L34.05375,52.61625 L34.05375,52.61625 Z M64.125,10.125 L16.875,10.125 C13.12875,10.125 10.125,13.1625 10.125,16.875 L10.125,30.375 L16.875,30.375 L16.875,16.875 L64.125,16.875 L64.125,64.125 L16.875,64.125 L16.875,50.625 L10.125,50.625 L10.125,64.125 C10.125,67.8375 13.12875,70.875 16.875,70.875 L64.125,70.875 C67.8375,70.875 70.875,67.8375 70.875,64.125 L70.875,16.875 C70.875,13.1625 67.8375,10.125 64.125,10.125 L64.125,10.125 Z" id="Shape" fill="#FFFFFF"></path>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="61" height="61" viewBox="0 0 61 61" xmlns="http://www.w3.org/2000/svg"><title>E517CDF1-2CEC-448D-B1EA-7685C8EE76CF</title><g fill="none" fill-rule="evenodd"><path d="M-10-10h81v81h-81z"/><path d="M24.054 42.616l4.759 4.759L45.688 30.5 28.811 13.625l-4.758 4.759 8.707 8.741H.125v6.75h32.636l-8.707 8.741zM54.125.125H6.875a6.748 6.748 0 0 0-6.75 6.75v13.5h6.75v-13.5h47.25v47.25H6.875v-13.5H.125v13.5a6.748 6.748 0 0 0 6.75 6.75h47.25c3.713 0 6.75-3.037 6.75-6.75V6.875c0-3.713-3.037-6.75-6.75-6.75z" fill="#FFF"/></g></svg>
