@@ -64,6 +64,18 @@
     }
 }
 
-.videos__video-container--unum {
-    @extend .videos__video-container;
+.videos-1__video-container--unum {
+    @extend .videos-1__video-container;
+
+    @media screen and (min-width: 768px) {
+        flex: 1 1 50%;
+        max-width: 50%;
+        padding-top: 10%;
+    }
+
+    @media screen and (min-width: 1320px) {
+        flex: 1 1 50%;
+        max-width: 50%;
+        padding-top: 5%;
+    }
 }
