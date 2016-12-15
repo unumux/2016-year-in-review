@@ -43,6 +43,11 @@
     }
 }
 
+.stats-2--unum {
+    @extend .stats-2;
+    background-color: #007478;
+}
+
 .stats-2__circle {
     margin: 4rem auto;
     width: 300px;

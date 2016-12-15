@@ -35,14 +35,7 @@
 .projects-9 {
     @include base;
 
-    // & h1 {
-    //     text-align: left;
-    //     margin-bottom: 0;
-    //     line-height: 0.8;
-    // }
-
     & p {
-        // max-width: 120rem;
         font-size: 2rem;
     }
 
@@ -83,4 +76,10 @@
             // max-width: 120rem;            
         }
     }
+}
+
+.projects-9--unum {
+    @extend .projects-9;
+    background-image: radial-gradient(circle at 50% 5%, #627f95, #2c4f68), linear-gradient(#b7e1ff, #b7e1ff);
+    color: #fff;
 }

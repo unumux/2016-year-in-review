@@ -35,7 +35,6 @@
     @include base;
 
     & p {
-        // max-width: 120rem;
         font-size: 2rem;
     }
 
@@ -77,4 +76,9 @@
             // max-width: 120rem;
         }
     }
+}
+
+.projects-1--unum {
+    @extend .projects-1;
+    background-image: radial-gradient(circle at 50% 4%, #319fbd, #017999), linear-gradient(#0085a9, #0085a9);
 }

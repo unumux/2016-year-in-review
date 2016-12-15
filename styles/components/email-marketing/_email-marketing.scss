@@ -57,3 +57,8 @@
 
     @import 'email-marketing-1';
 }
+
+.email-marketing--unum {
+    @extend .email-marketing;
+    background-image: linear-gradient(to bottom, #00bac0, #02647f);
+}

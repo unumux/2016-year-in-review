@@ -36,6 +36,7 @@
     &__heading--unum {
         @extend .showcase__heading;
         font-family: "Ubuntu";
+        font-weight: 300 !important; // im sorry 
     }
 
     &__heading2 {
