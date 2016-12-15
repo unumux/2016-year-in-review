@@ -1,0 +1,10 @@
+@mixin base {
+    background-image: linear-gradient(179deg, #00bac0, #067695);
+    padding: 10rem;
+
+}
+
+.email-marketing-2 {
+    @include base;
+
+}

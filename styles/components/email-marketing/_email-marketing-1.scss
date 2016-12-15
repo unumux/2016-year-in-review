@@ -1,5 +1,6 @@
 @mixin base {
     padding: 2rem;
+    background-image: linear-gradient(to bottom, #04637e, #01495d);
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
