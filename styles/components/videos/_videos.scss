@@ -9,7 +9,6 @@
     @include base;
 
     & p {
-        // margin: 0;
         font-size: 2rem;
         text-align: left;
         font-weight: 300;
@@ -27,8 +26,11 @@
             padding-top: 5rem;
         }
 
+        &__para {
+            padding: 4rem;
+        }
+
         &__video {
-            // border-radius: 5px;
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
             overflow: hidden;
             width: 321px;
@@ -78,4 +80,10 @@
         max-width: 50%;
         padding-top: 5%;
     }
+}
+
+.videos-1__heading--unum {
+    font-size: 2rem !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
 }
