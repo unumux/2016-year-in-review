@@ -1,0 +1,90 @@
+@mixin base {
+    padding: 2rem;
+    background-image: radial-gradient(circle at 50% 5%, #627f95, #2c4f68), linear-gradient(#b7e1ff, #b7e1ff);
+    color: #fff;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
+
+    @media screen and (min-width: 1100px) {
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        // align-items: center;
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1330px) {
+        min-height: 50vh;
+    }
+
+    @media screen and (min-width: 1500px) {
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1800px) {
+        @include full-width;
+    }
+}
+
+.projects-13 {
+    @include base;
+
+    &__content {
+        margin-bottom: 5rem;
+
+        & h1 {
+            text-align: center;
+            line-height: 1;
+            font-size: 4.8rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        & p {
+            text-align: center;
+            font-size: 32px;
+        }
+    }
+
+    &__circle {
+        margin: 4rem auto;
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        border: 14px solid #fff;
+        position: relative;
+
+        @media screen and (min-width: 1100px) {
+            height: 400px;
+            width: 400px;
+        }
+
+        & p {
+            position: absolute;
+        }
+    }
+
+    &__label-1a {
+        top: 30%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__value-1a {
+        top: 40%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__label-1b {
+
+    }
+}
