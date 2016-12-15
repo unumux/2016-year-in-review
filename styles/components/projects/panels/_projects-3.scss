@@ -103,8 +103,13 @@
     }
 
     &__content {
+
+        & h1 {
+            font-size: 3rem;
+        }
         @media screen and (min-width: 1100px) {
             flex: 1 1 33.3333%;
+            font-size: 4.8rem;
         }
     }
 

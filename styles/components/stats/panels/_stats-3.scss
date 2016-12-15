@@ -45,6 +45,32 @@
     &__circles {
         padding-top: 4rem;
     }
+
+    &__label-a {
+        font-size: 2rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 150px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            margin: 2rem auto;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 150px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            margin: 2rem auto;
+        }
+    
+        @media screen and (min-width: 768px) {
+            font-size: 3.5rem;
+        }
+    }
 }
 
 .stats-3__circle {
