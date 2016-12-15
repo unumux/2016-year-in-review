@@ -9,6 +9,18 @@
     @media all and (min-width: 1163px) {
         max-width: 60vw;
     }
+
+    @media screen and (min-width: 1100px) {
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1500px) {
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1800px) {
+        @include full-width;
+    }
 }
 
 .comparison-1 {
@@ -24,20 +36,17 @@
 
     & h1 {
         font-size: 6rem;
-
-        @media screen and (min-width: 1163px) {
-            text-align:left;
-
-        }   
+        text-align: left;
+  
     }
 
     & p {
         font-size: 2rem;
+        text-align:left;  
+    }
 
-        @media screen and (min-width: 1163px) {
-            text-align:left;
-
-        }  
+    & sup {
+        text-align: left;
     }
 
     & li {
@@ -56,7 +65,6 @@
         font-size: 2rem;
         display: block;
         padding-top: 4rem;
-        padding-bottom: 20rem;
         padding-right: 4rem;
         padding-left: 4rem;
     }
