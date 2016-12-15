@@ -45,7 +45,8 @@
 
 .stats-2--unum {
     @extend .stats-2;
-    background-color: #007478;
+    // background-color: #007478;
+    background-image: linear-gradient(to top, #007478, #02989d);
 }
 
 .stats-2__circle {
