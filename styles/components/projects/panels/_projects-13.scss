@@ -11,11 +11,8 @@
     }
 
     @media screen and (min-width: 1100px) {
-        // display: flex;
-        // flex-direction: row;
-        // justify-content: center;
-        // align-items: center;
         @include full-width;
+        height: 100vh;
     }
 
     @media screen and (min-width: 1330px) {
@@ -48,7 +45,13 @@
 
         & p {
             text-align: center;
-            font-size: 32px;
+            // font-size: 32px;
+        }
+    }
+
+    &__circles {
+        @media screen and (min-width: 768px) {
+            // display: flex;
         }
     }
 
@@ -61,8 +64,8 @@
         position: relative;
 
         @media screen and (min-width: 1100px) {
-            height: 400px;
-            width: 400px;
+            // height: 400px;
+            // width: 400px;
         }
 
         & p {
@@ -71,20 +74,86 @@
     }
 
     &__label-1a {
+        top: 25%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2rem;
+    }
+
+    &__value-1a {
+        font-weight: 600;
         top: 30%;
         bottom: 0;
         left: 0;
         right: 0;
+        font-size: 7rem;
     }
 
-    &__value-1a {
-        top: 40%;
+    &__label-1b {
+        top: 60%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        font-size: 2rem;
+    }
+
+    &__label-2a {
+        font-size: 2rem;
+        top: 55%;
         bottom: 0;
         left: 0;
         right: 0;
     }
 
-    &__label-1b {
+    &__value-2a {
+        font-size: 7rem;
+        font-weight: 600;
+        top: 25%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
 
+    &__label-3a {
+        font-size: 2rem;
+        top: 20%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__value-3a {
+        font-size: 7rem;
+        font-weight: 600;
+        top: 28%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__label-3b {
+        font-size: 2rem;
+        top: 60%; 
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__value-4a {
+        font-size: 7rem;
+        font-weight: 600;
+        top: 25%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    &__label-4a {
+        font-size: 2rem;
+        top: 55%;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
 }
