@@ -100,3 +100,12 @@
         color: $yellow;
     }
 }
+
+.stats-1--unum {
+    @extend .stats-1;
+    background-image: linear-gradient(to top, #007478, #02989d);
+}
+
+.stats-a--unum {
+    background-color: #02989d;
+}

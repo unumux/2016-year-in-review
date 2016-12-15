@@ -48,3 +48,8 @@
         }
     }
 }
+
+.projects-10--unum {
+    @extend .projects-10;
+    background-image: radial-gradient(circle at 50% 3%, rgba(5, 146, 151, 0.5), #2f969f), linear-gradient(#00bac0, #00bac0);
+}
