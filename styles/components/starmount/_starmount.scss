@@ -1,7 +1,13 @@
 @mixin base {
     display: flex;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+
+    @media screen and (min-height: 1100px) {
+        height: 100vh;
+
+    }
+    
     background-image: radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(#374755, #374755);
 }
 
