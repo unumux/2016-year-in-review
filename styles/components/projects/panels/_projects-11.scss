@@ -1,0 +1,82 @@
+@mixin base {
+    padding: 2rem;
+    // background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
+    }
+
+    @media screen and (min-width: 1100px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1330px) {
+        min-height: 50vh;
+    }
+
+    @media screen and (min-width: 1500px) {
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1800px) {
+        @include full-width;
+    }
+}
+
+.projects-11 {
+    @include base;
+
+    & p {
+        font-size: 2rem;
+    }
+
+    &__image-container {
+        padding-top: 4em;  // mobile only
+
+        @media screen and (min-width: 1100px) {
+            padding-top: initial;
+            padding-left: 2rem;
+        }
+    }
+
+    &__image {
+        height: 200px;
+        width: auto;
+
+        @media screen and (min-width: 680px) {
+            height: 350px;
+        }
+
+        @media screen and (min-width: 1300px) {
+            height: 479px;
+        }
+    }
+
+    &__content {
+        @media screen and (min-width: 1100px) {
+            flex: 1 1 33.3333%;
+        }
+
+        & h1 {
+            text-align: left;
+            line-height: 1;
+            font-size: 4.8rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin: 3rem auto;
+        }
+    }
+}
+
+.projects-11--unum {
+    @extend .projects-6;
+    background-image: radial-gradient(circle at 50% 3%, #139da6, #10767f), linear-gradient(#00bac0, #00bac0);
+}
