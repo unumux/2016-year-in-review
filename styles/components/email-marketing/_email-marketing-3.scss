@@ -1,26 +1,15 @@
 @mixin base {
     padding: 2rem;
-    background-image: linear-gradient(to bottom, #04637e, #01495d);
-
-    @media screen and (min-width: 768px) {
-        padding: 4rem;
-    }
-
-    @media screen and (min-width: 1100px) {
-        @include full-width;
-    }
-
-    @media screen and (min-width: 1500px) {
-        @include full-width;
-    }
-
-    @media screen and (min-width: 1800px) {
-        @include full-width;
-    }
+    background-image: linear-gradient(179deg, #00bac0, #067695);
 }
 
-.email-marketing-1 {
+.email-marketing-3 {
     @include base;
+
+    & h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
 
     &__heading {
         font-size: 4rem;
@@ -30,14 +19,6 @@
 
     &__image {
         width: 45rem;
-        height: auto;
-    }
-
-    &__image1 {
-        padding-top: 5rem;
-        width: 100%;
-        height: 25%;
-
     }
 
     &__grouping {
@@ -200,5 +181,5 @@
         }
 
     }
-    
+
 }
