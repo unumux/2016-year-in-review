@@ -82,6 +82,16 @@
         margin: 0;
         padding: 0;
         font-weight: 400;
+
+        &-a {
+            font-size: 2rem;
+            text-transform: uppercase;
+            position: absolute;
+            top: 75px;
+            bottom: 0;
+            left: -1px;
+            right: 0;
+        }
     }
 
     &-percent {
