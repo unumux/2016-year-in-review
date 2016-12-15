@@ -46,6 +46,18 @@
         padding-top: 4rem;
     }
 
+    &__circle {
+        &-label-a {
+            font-size: 2rem;
+            text-transform: uppercase;
+            position: absolute;
+            top: 75px;
+            bottom: 0;
+            left: -1px;
+            right: 0;
+        }
+    }
+
     &__label-a {
         font-size: 2rem;
         padding-top: 2rem;
