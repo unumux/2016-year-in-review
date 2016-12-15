@@ -63,3 +63,7 @@
         }
     }
 }
+
+.videos__video-container--unum {
+    @extend .videos__video-container;
+}
