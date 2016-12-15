@@ -3,8 +3,10 @@
     background-image: radial-gradient(circle at 50% 5%, #627f95, #2c4f68), linear-gradient(#b7e1ff, #b7e1ff);
     color: #fff;
     min-height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
@@ -45,13 +47,25 @@
 
         & p {
             text-align: center;
-            // font-size: 32px;
+            font-size: 3.2rem;
         }
     }
 
     &__circles {
         @media screen and (min-width: 768px) {
-            // display: flex;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 1880px) {
+            max-width: 1880px;
+        }
+    }
+
+    &__circle-container {
+        @media screen and (min-width: 768px) {
+            flex: 1 1 50%;
+            max-width: 50%;
         }
     }
 
@@ -60,16 +74,12 @@
         height: 300px;
         width: 300px;
         border-radius: 50%;
-        border: 14px solid #fff;
+        border: 1.4rem solid #fff;
         position: relative;
-
-        @media screen and (min-width: 1100px) {
-            // height: 400px;
-            // width: 400px;
-        }
 
         & p {
             position: absolute;
+            text-align: center;
         }
     }
 
