@@ -1,4 +1,5 @@
 @mixin base {
+    // display: flex;
     padding: 2rem;
     max-width: 100vw;
     // min-height: 100vh;
@@ -8,12 +9,13 @@
     }
 
     @media all and (min-width: 1163px) {
-        max-width: 60vw;
+        // max-width: 60vw;
     }
 
     @media screen and (min-width: 1100px) {
-        @include full-width;
-        height: 100vh;
+        // @include full-width;
+        // display: flex;
+        
     }
 
     @media screen and (min-width: 1500px) {
@@ -28,55 +30,62 @@
 .comparison-1 {
 
     margin: 0 auto;
-    flex: 1 1 100%;
-
-    @media screen and (min-width: 1163px) {
+    
+    @media screen and (min-width: 1100px) {
         margin: unset;
     }
 
     @include base;
 
-    & h1 {
-        font-size: 6rem;
-        text-align: left;
-  
-    }
-
-    & p {
-        font-size: 2rem;
-        text-align:left; 
-        padding-bottom: 2rem; 
-    }
-
-    & sup {
-        text-align: left;
-    }
-
-    & li {
-        font-size: 2.4rem;
-        font-weight: normal;
-        list-style-type: none;
-    }
-
-    &__value {
-        font-size: 12.9rem;
-        font-weight: normal;
-    }
+    
 
     &__content {
         color: #8c8c8c;
         font-size: 2rem;
-        display: block;
+        flex: 1 1 100%;
         padding-top: 4rem;
         padding-right: 4rem;
         padding-left: 4rem;
+
+            & h1 {
+                font-size: 5rem;
+                text-align: left;
+                color: #fff;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 6rem;
+                }
+    
+            }
+
+            & p {
+                font-size: 2rem;
+                text-align:left; 
+                padding-bottom: 2rem;
+                color: #fff; 
+            }
+
+            & sup {
+                text-align: left;
+            }
+
+            & li {
+                font-size: 2.4rem;
+                font-weight: normal;
+                list-style-type: none;
+            }
+
+            &__value {
+                font-size: 12.9rem;
+                font-weight: normal;
+            }
     }
 
 
 
-    @media screen and (min-width: 1163px) {
+    @media screen and (min-width: 1100px) {
 
-        flex: 1 1 25%;
+        display: flex;
 
     }
 
@@ -85,8 +94,13 @@
 .comparison-2 {
     @include base;
 
+    &__content {
+        flex: 1 1 50%;
+    }
+
     &__circles {
         padding-top: 4rem;
+        text-align: left;
     }
 
     &__circle {
@@ -100,9 +114,12 @@
         font-weight: 600;
         position: relative;
 
+        
+
     @media screen and (min-width: 1000px) {
-        display: inline-block;
-        margin: 0 4rem;
+        // display: inline-block;
+        // margin: 0 4rem;
+        // flex: 1 1 25%;
     }
 
     &::before, &::after {
@@ -189,7 +206,6 @@
 .comparison-3 {
     @include base;
 
-    flex: 1 1 100%;
     padding-top: 5rem;
 
     ul {
@@ -205,9 +221,9 @@
     }
 
     @media screen and (min-width: 1163px) {
-        flex: 1 1 25%;
-        margin-left: -23rem;
-        margin-right: -23rem;
+        // flex: 1 1 25%;
+        // margin-left: -23rem;
+        // margin-right: -23rem;
     }
 }
 
@@ -232,8 +248,9 @@
         position: relative;
 
     @media screen and (min-width: 1000px) {
-        display: inline-block;
+        // display: inline-block;
         margin: 0 4rem;
+        // flex: 1 1 25%;
     }
 
     &::before, &::after {
@@ -313,31 +330,7 @@
             }
         }
     }
-}
 
-.comparison-5 {
-    flex: 1 1 100%;
-    display: none;
-
-    @media screen and (min-width: 1163px) {
-        flex: 1 1 25%;
-        display: flex;
-  
-}
-}
-
-.comparison-6 {
-    flex: 1 1 100%;
-    display: none;
-
-    @media screen and (min-width: 1163px) {
-        flex: 1 1 25%;
-        display: flex;
-
-        
-}       
-    
-    
 }
         
 .yellow {
