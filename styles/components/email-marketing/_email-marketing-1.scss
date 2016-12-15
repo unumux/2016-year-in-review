@@ -22,13 +22,13 @@
     @include base;
 
     &__group {
-        &::before {
-            content: '';
-            display: block;
-            width: 150px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            margin: 7rem auto;
-        }
+        // &::before {
+        //     content: '';
+        //     display: block;
+        //     width: 150px;
+        //     border: 1px solid rgba(255, 255, 255, 0.5);
+        //     margin: 7rem auto;
+        // }
 
         &-text {
             font-weight: 600;
