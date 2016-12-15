@@ -127,6 +127,17 @@
 
             }
 
+            &-text2 {
+                margin-top: 15%;
+                font-size: 1.5rem;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 2rem;
+                    margin-top: 25%;
+                }
+
+            }
+
             &-text3 {
 
                 font-size: 1.5rem;
@@ -153,6 +164,16 @@
                     font-size: 2rem;
                     padding-left: initial;
                     padding-right: initial;
+                }
+            }
+
+            &-text6 {
+                line-height: 11rem;
+                font-size: 9rem;
+                font-weight: 700;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 11rem;
                 }
             }
 
