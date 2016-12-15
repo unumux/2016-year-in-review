@@ -29,6 +29,8 @@
 
 .projects--unum {
     @extend .projects;
-    background-image: radial-gradient(circle at 50% 4%, #319fbd, #017999), linear-gradient(#0085a9, #0085a9);;
+    // background-image: radial-gradient(circle at 50% 4%, #319fbd, #017999), linear-gradient(#0085a9, #0085a9);;
     // background-color: #319fbd;
+    background-image: none;
+    background-color: #00bac0;
 }
