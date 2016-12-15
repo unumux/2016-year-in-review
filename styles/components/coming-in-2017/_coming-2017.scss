@@ -8,3 +8,7 @@
 
     @import 'coming-2017-1';
 }
+
+.coming-2017--unum {
+    @extend .coming-2017;
+}
