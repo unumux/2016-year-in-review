@@ -1,5 +1,7 @@
 @mixin base {
     padding: 2rem;
+    background-image: radial-gradient(circle at 50% 0, rgba(184, 227, 180, 0.5), rgba(103, 131, 100, 0.5)), linear-gradient(#688465, #688465);
+    color: #fff;
     // background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
     min-height: 100vh;
     display: flex;
@@ -72,8 +74,18 @@
             text-transform: uppercase;
             font-weight: 600;
             margin: 3rem auto;
+            // max-width: 120rem;            
         }
+
     }
+
+    &__objectives {
+        font-size: 2rem;
+        text-align: left;
+        line-height: 3.5rem;
+        letter-spacing: -.03rem;
+
+}
 }
 
 .projects-11--unum {
