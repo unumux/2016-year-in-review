@@ -1,53 +1,38 @@
 @mixin base {
-    background-image: linear-gradient(to bottom, #67a14c, #688465);
+    background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
     min-height: 100vh;
-    // padding: 2rem;
-
-    @media screen and (min-width: 768px) {
-        // padding: 4rem;
-    }
 }
 
 .email-marketing {
     @include base;
 
-    &__circle {
-        margin-top: 8rem;
-        margin: 0 auto;
-        height: 300px;
-        width: 300px;
+    .showcase__panel  &__circle {
+        margin: 40rem auto;
+        height: 350px;
+        width: 350px;
         border-radius: 50%;
         border: 14px solid #fff;
         position: relative;
 
-        @media screen and (min-width: 1100px) {
+        @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
             height: 400px;
             width: 400px;
         }
 
         &-text1 {
-            // position: absolute;
-            // top: 70px;
-            // bottom: 0;
-            // left: 0;
-            // right: 0;
             line-height: 11rem;
             font-size: 9rem;
             font-weight: 700;
-            margin-top: 80px !important;
+            margin-top: 80px;
 
             @media screen and (min-width: 1100px) {
                 font-size: 11rem;
+                margin-top: 90px;
             }
         }
 
         &-text2 {
-            // position: absolute;
             font-size: 2.5rem;
-            // top: 150px;
-            // bottom: 0;
-            // left: 0;
-            // right: 0;
 
             @media screen and (min-width: 1100px) {
                 font-size: 4.5rem;
