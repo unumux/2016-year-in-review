@@ -16,10 +16,14 @@
 .page-header--home {
     display: flex;
     background-color: #1f4f7f;
-    padding: 100px;
+    padding: 25px;
     justify-content: center;
     align-items: center;
     align-content: center;
+
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 .page-header {
