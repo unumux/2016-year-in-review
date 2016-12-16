@@ -6,8 +6,22 @@
 .email-marketing {
     @include base;
 
+    &__circle2 {
+            margin: 40rem auto;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            border: 14px solid #fff;
+            position: relative;
+
+            @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
+                height: 400px;
+                width: 400px;
+            }
+        }
+
     .showcase__panel  &__circle {
-        margin: 40rem auto;
+        margin: 2rem auto;
         height: 350px;
         width: 350px;
         border-radius: 50%;
@@ -38,6 +52,20 @@
                 font-size: 4.5rem;
             }
         }
+
+        &__circle2 {
+            margin: 40rem auto;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            border: 14px solid #fff;
+            position: relative;
+
+            @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
+                height: 400px;
+                width: 400px;
+            }
+        }
     }
 
     @import 'email-marketing-1';
@@ -48,6 +76,11 @@
 .email-marketing--unum {
     @extend .email-marketing;
     background-image: linear-gradient(to bottom, #00bac0, #02647f);
+}
+
+.email-marketing--cl {
+    @extend .email-marketing;
+    background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
 }
 
 // .email-marketing-2 {
