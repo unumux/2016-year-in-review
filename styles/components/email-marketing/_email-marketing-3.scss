@@ -1,120 +1,29 @@
 @mixin base {
     padding: 2rem;
     background-image: linear-gradient(179deg, #00bac0, #067695);
+
+    @media screen and (min-width: 1100px) {
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1500px) {
+        @include full-width;
+    }
+
+    @media screen and (min-width: 1800px) {
+        @include full-width;
+    }
 }
 
 .email-marketing-3 {
     @include base;
 
-    & h1 {
-        font-size: 4rem;
-        font-weight: 600;
-    }
+    // & h1 {
+    //     font-size: 4rem;
+    //     font-weight: 600;
+    // }
 
-    &__heading {
-        font-size: 4rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem !important; //<--- SO SORRY!
-    }
-
-    &__image {
-        width: 45rem;
-    }
-
-    &__grouping {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 5rem;
-        padding-bottom: 5rem;
-    }
-
-    &__group {
-        // &::before {
-        //     content: '';
-        //     display: block;
-        //     width: 150px;
-        //     border: 1px solid rgba(255, 255, 255, 0.5);
-        //     margin: 7rem auto;
-        // }
-
-        &-1 {
-            flex: 1 1 100%;
-            margin-top: 1rem;
-
-            @media screen and (min-width: 680px) {
-                flex: 1 1 50%;
-            }
-        }
-
-
-        &-text {
-            font-weight: 600;
-            margin-bottom: 6rem !important;
-        }
-
-        &:last-child {
-            padding-bottom: 20rem;
-        }
-    }
-
-    & h1 {
-        margin-bottom: 5.5rem;
-        font-size: 4rem;
-        font-weight: 600;
-
-        @media screen and (min-width: 1100px) {
-            font-size: 7rem;
-        }
-    }
-    
-    p {
-        font-size: 2rem;
-        text-align: center;
-        margin: 0 auto;
-        max-width: 120rem;
-
-        @media screen and (min-width: 1100px) {
-            font-size: 3rem;
-        }
-    }
-
-    & li {
-        font-size: 2rem;
-       @media screen and (min-width: 768px) {
-            font-size: 2rem;
-        }
-
-        @media screen and (min-width: 1100px) {
-            font-size: 3rem;
-        }
-    }
-
-    & ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-     &__value {
-        font-size: 9rem;
-        font-weight: 700;
-
-        @media screen and (min-width: 768px) {
-            font-size: 11rem;
-        }
-    }
-
-    &__label {
-        font-size: 2rem;
-
-        @media screen and (min-width: 1100px) {
-            font-size: 3rem;
-        }
-    }
-
-    .email-marketing-3 {
-
-        &__circle {
+    &__circle {
 
             &-text1 {
                 line-height: 11rem;
@@ -179,7 +88,5 @@
             }
 
         }
-
-    }
 
 }
