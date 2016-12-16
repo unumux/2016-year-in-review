@@ -22,6 +22,10 @@
         background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
     }
 
+    &--cl2 {
+          background-image: radial-gradient(circle at 49% 1%, #5b7858 2%, #3c5c39 98%), linear-gradient(#67a14c, #67a14c);
+    }
+
     // & h1 {
     //     font-size: 4rem;
     //     font-weight: 600;
@@ -88,6 +92,36 @@
 
                 @media screen and (min-width: 1100px) {
                     font-size: 11rem;
+                }
+            }
+
+            &-text7 {
+
+                line-height: 11rem;
+                font-size: 9rem;
+                font-weight: 700;
+                margin-top: 25%;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 11rem;
+                    margin-top: 30%;
+                }
+
+            }
+
+        }
+
+        &__circle3 {
+
+            &-text5 {
+                font-size: 1.5rem;
+                padding-left: 4rem;
+                padding-right: 4rem;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 2.4rem;
+                    padding-left: initial;
+                    padding-right: initial;
                 }
             }
 
