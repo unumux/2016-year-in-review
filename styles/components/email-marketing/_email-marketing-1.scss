@@ -1,6 +1,7 @@
 @mixin base {
     padding: 2rem;
     background-image: linear-gradient(to bottom, #04637e, #01495d);
+    min-height: 100vh;
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
@@ -8,6 +9,7 @@
 
     @media screen and (min-width: 1100px) {
         @include full-width;
+        height: 200vh;
     }
 
     @media screen and (min-width: 1500px) {
@@ -21,6 +23,11 @@
 
 .email-marketing-1 {
     @include base;
+
+    &--cl {
+        @extend .email-marketing-1;
+        background-image: linear-gradient(179deg, #688465, #3c5c38);
+    }
 
     &__heading {
         font-size: 4rem;
@@ -79,6 +86,21 @@
             & p {
                 font-size: 2.4rem;
             }
+        }
+
+        &-2 {
+
+            flex: 1 1 100%;
+            margin-top: 1rem;
+
+            @media screen and (min-width: 680px) {
+                flex: 1 1 33.333%;
+            }
+
+            & p {
+                font-size: 2.4rem;
+            }
+
         }
 
 
