@@ -1,7 +1,8 @@
 @mixin base {
-    background-image: url('../../../images/motion-background.jpg');
+    background-image: url('../../../images/motion-background.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50% 50%;
     min-height: 100vh;
 }
 
