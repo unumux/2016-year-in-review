@@ -2,6 +2,9 @@
     padding: 2rem;
 	background-image: radial-gradient(circle at 52% 0, #7c99b1, #405362), linear-gradient(#3f5362, #3f5362);
     min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
         padding: 4rem;
@@ -29,8 +32,9 @@
 
     & h1 {
         text-align: left;
-        margin-bottom: 0;
-        line-height: 0.8;
+        margin: 3rem auto;
+        font-size: 4.8rem !important;
+        line-height: 1.0;
     }
 
     &__objectives {
@@ -47,6 +51,7 @@
         text-align: center;
         display: flex;
         flex-wrap: wrap;
+        padding-left: 0;
     }
 
     &__stat {
@@ -54,7 +59,7 @@
         padding-bottom: 2rem;
 
         @media screen and (min-width: 1100px) {
-            flex: 1 1 25%;
+            flex: 1 1 20%;
         }
     }
 
@@ -76,7 +81,6 @@
 
 
     & p {
-        // max-width: 120rem;
         font-size: 2rem;
     }
 
@@ -148,7 +152,6 @@
     }
 
     &__project-content {
-        // max-width: 120rem;
         @media screen and (min-width: 1100px) {
             flex: 1 1 33.3333%;
         }
@@ -160,7 +163,6 @@
             font-weight: 600;
             text-transform: uppercase;
             margin: 3rem auto;
-            // max-width: 120rem;
         }
     }
 
