@@ -27,8 +27,15 @@
             padding-top: 5rem;
         }
 
+        &__heading {
+            font-size: 3.5rem !important;
+            text-transform: none !important;
+            font-weight: 400 !important;
+        }
+
         &__para {
-            padding: 4rem;
+            padding: 6rem;
+            padding-top: 10rem;
         }
 
         &__video {
@@ -50,6 +57,18 @@
                 padding-bottom: 0;
             }
 
+            @media screen and (min-width: 768px) {
+                flex: 1 1 50%;
+                max-width: 50%;
+                padding-top: 10%;
+            }
+
+            @media screen and (min-width: 1320px) {
+                flex: 1 1 50%;
+                max-width: 50%;
+                padding-top: 5%;
+            }
+
             & h1 {
                 font-size: 3rem;
                 margin: 0 auto;
@@ -69,22 +88,8 @@
 
 .videos-1__video-container--unum {
     @extend .videos-1__video-container;
-
-    @media screen and (min-width: 768px) {
-        flex: 1 1 50%;
-        max-width: 50%;
-        padding-top: 10%;
-    }
-
-    @media screen and (min-width: 1320px) {
-        flex: 1 1 50%;
-        max-width: 50%;
-        padding-top: 5%;
-    }
 }
 
 .videos-1__heading--unum {
-    font-size: 2rem !important;
-    text-transform: none !important;
-    font-weight: 400 !important;
+    @extend .videos-1__heading;
 }
