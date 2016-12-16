@@ -1,7 +1,7 @@
 @mixin base {
     padding: 2rem;
-    background-image: radial-gradient(circle at 50% 4%, rgba(255, 255, 255, 0.5), #e0ddce), linear-gradient(#e0ddce, #e0ddce);
-    color: #333;
+    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
+    color: #fff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -36,7 +36,6 @@
     @include base;
 
     & p {
-        // max-width: 120rem;
         font-size: 2rem;
     }
 
@@ -74,7 +73,6 @@
             text-transform: uppercase;
             font-weight: 600;
             margin: 3rem auto;
-            // max-width: 120rem;
         }
     }
 }
