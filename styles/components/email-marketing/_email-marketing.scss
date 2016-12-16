@@ -20,6 +20,20 @@
             }
         }
 
+        &__circle3 {
+            margin: 40rem auto;
+            height: 375px;
+            width: 375px;
+            border-radius: 50%;
+            border: 14px solid #fff;
+            position: relative;
+
+            @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
+                height: 410px;
+                width: 410px;
+            }
+        }
+
     .showcase__panel  &__circle {
         margin: 2rem auto;
         height: 350px;
@@ -79,6 +93,11 @@
 }
 
 .email-marketing--cl {
+    @extend .email-marketing;
+    background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
+}
+
+.email-marketing--cl2 {
     @extend .email-marketing;
     background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
 }
