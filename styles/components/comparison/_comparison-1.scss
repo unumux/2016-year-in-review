@@ -5,7 +5,7 @@
     // min-height: 100vh;
 
     @media screen and (min-width: 768px) {
-        padding: 4rem;
+        // padding: 4rem;
     }
 
     @media all and (min-width: 1163px) {
@@ -233,7 +233,7 @@
     @include base;
 
     &__circles {
-        padding-top: 4rem;
+        // padding-top: 4rem;
     }
 
     &__circle {
@@ -339,4 +339,8 @@
 
 .blue {
     color: $ocean;
+}
+
+.gray {
+    color: $gray;
 }

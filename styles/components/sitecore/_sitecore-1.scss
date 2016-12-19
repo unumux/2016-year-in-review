@@ -27,6 +27,10 @@
 .sitecore-1 {
     @include base;
 
+    &__list {
+        padding: 1rem;
+    }
+
     &__list-item {
         list-style-type: none;
     }
