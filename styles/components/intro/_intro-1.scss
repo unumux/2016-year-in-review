@@ -19,8 +19,11 @@
     @include base;
 
     h1 {
-        font-size: 4rem;
-
+        font-size: 5rem;
+        margin: 0 auto;
+        // padding-left: 20rem;
+        // padding-right: 20rem;
+        padding-bottom: 5rem;
         span {
             font-size: 6rem;
             display: block;
@@ -44,6 +47,11 @@
         width: 3.5rem;
     }
 
+    &__image2 {
+        padding-bottom: 1rem;
+        width: 35rem;
+    }
+
     &__description {
 
         &::after {
@@ -60,4 +68,7 @@
         text-transform: uppercase;
     }
 
+    .yellow {
+        color: $yellow;
+    }
 }
