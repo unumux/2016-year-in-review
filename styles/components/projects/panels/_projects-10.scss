@@ -1,11 +1,13 @@
 @mixin base {
     padding: 2rem;
-    // background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
     min-height: 100vh;
     // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../images/content-pilot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
     @media screen and (min-width: 768px) {
         padding: 4rem;
