@@ -24,6 +24,15 @@
 .email-marketing-1 {
     @include base;
 
+    &__para {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__para2 {
+        padding-top: 4rem;
+    }
+
     &--cl {
         @extend .email-marketing-1;
         background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
@@ -87,6 +96,10 @@
         //     border: 1px solid rgba(255, 255, 255, 0.5);
         //     margin: 7rem auto;
         // }
+
+        &-sub {
+            padding-top: 8rem;
+        }
 
         &-1 {
             flex: 1 1 100%;
