@@ -9,7 +9,7 @@
 
     @media screen and (min-width: 1100px) {
         @include full-width;
-        height: 200vh;
+        height: 110vh;
     }
 
     @media screen and (min-width: 1500px) {
@@ -24,6 +24,15 @@
 .email-marketing-1 {
     @include base;
 
+    &__para {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__para2 {
+        padding-top: 4rem;
+    }
+
     &--cl {
         @extend .email-marketing-1;
         background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
@@ -36,6 +45,10 @@
     &--cl--light {
         @extend .email-marketing-1--cl;
         background-image: linear-gradient(179.02deg, #70AC48 0%, #61963D 100%);
+    }
+
+    &--unum {
+        padding-bottom: 2rem;
     }
 
     &__heading {
@@ -76,13 +89,10 @@
     }
 
     &__group {
-        // &::before {
-        //     content: '';
-        //     display: block;
-        //     width: 150px;
-        //     border: 1px solid rgba(255, 255, 255, 0.5);
-        //     margin: 7rem auto;
-        // }
+
+        &-sub {
+            padding-top: 8rem;
+        }
 
         &-1 {
             flex: 1 1 100%;
@@ -204,7 +214,7 @@
 
                 @media screen and (min-width: 1100px) {
                     font-size: 2.4rem;
-                    margin-top: 25%;
+                    margin-top: 20%;
                 }
 
             }

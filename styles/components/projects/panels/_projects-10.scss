@@ -1,18 +1,20 @@
 @mixin base {
     padding: 2rem;
-    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
     min-height: 100vh;
     // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../../../images/content-pilot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     
     @media screen and (min-width: 768px) {
         padding: 4rem;
     }
 
     @media screen and (min-width: 1100px) {
-        height: 150vh;
+        height: 100vh;
     }
 
     @media screen and (min-width: 1330px) {
@@ -49,10 +51,10 @@
     }
 
     &__image {
-        margin-top: -10%;
-        width: 30rem;
+        // margin-top: -10%;
+        width: 68.5rem;
         height: auto;
-        margin-bottom: 2rem;
+        margin-bottom: 6.6rem;
     }
 }
 
