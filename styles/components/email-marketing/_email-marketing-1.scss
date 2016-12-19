@@ -26,9 +26,17 @@
 
     &--cl {
         @extend .email-marketing-1;
-        background-image: linear-gradient(179deg, #688465, #3c5c38);
+        background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
+
+    &--cl--light {
+        @extend .email-marketing-1--cl;
+        background-image: linear-gradient(179.02deg, #70AC48 0%, #61963D 100%);
+    }
 
     &__heading {
         font-size: 4rem;
@@ -86,6 +94,10 @@
 
             & p {
                 font-size: 2.4rem;
+            }
+
+            & h1 {
+                margin-bottom: 3rem;
             }
         }
 
