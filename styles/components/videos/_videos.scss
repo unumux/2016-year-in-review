@@ -47,25 +47,25 @@
 
     &__video-container {
         flex: 1 1 100%;
-        max-width: 100%;
+        // max-width: 100%;
         // padding-bottom: 10rem;
 
         @media screen and (min-width: 1200px) {
             // padding-top: 15%;
             flex: 1 1 33.3333%;
-            max-width: 33.3333%;
+            // max-width: 33.3333%;
             // padding-bottom: 0;
         }
 
         @media screen and (min-width: 768px) {
             flex: 1 1 50%;
-            max-width: 50%;
+            // max-width: 50%;
             // padding-top: 10%;
         }
 
         @media screen and (min-width: 1320px) {
             flex: 1 1 50%;
-            max-width: 50%;
+            // max-width: 50%;
             // padding-top: 5%;
         }
 
@@ -74,12 +74,12 @@
             margin: 0 auto;
             text-align: left;
             display: block;
-            max-width: 321px;
+            // max-width: 321px;
         }
 
         p {
             font-size: 2rem;
-            max-width: 321px;
+            // max-width: 321px;
             margin: 0 auto;
         }
     }
