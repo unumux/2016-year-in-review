@@ -1,6 +1,6 @@
 @mixin base {
     // padding: 2rem;
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
     }
 
     @media screen and (min-width: 1330px) {
-        min-height: 50vh;
+        //min-height: 50vh;
     }
 
     @media screen and (min-width: 1500px) {
