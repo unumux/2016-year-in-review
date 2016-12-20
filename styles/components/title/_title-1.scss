@@ -1,7 +1,7 @@
 @mixin base {
     // padding: 2rem;
     // padding-top: 13rem;
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +10,7 @@
 
     @media screen and (min-width: 1100px) {
         // @include full-width;
-        height: 100vh;
+        //height: 100vh;
     }
 
     @media screen and (min-width: 1500px) {
