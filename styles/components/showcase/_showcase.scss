@@ -13,6 +13,7 @@
         background-color: #fff;
         font-family: "oswald";
         font-weight: 300px;
+        margin: 0;
 
         @media screen and (min-width: 768px) {
             font-size: 6rem;
@@ -37,6 +38,7 @@
         @extend .showcase__heading;
         font-family: "Ubuntu";
         font-weight: 300 !important; // im sorry 
+        margin: 0;
     }
 
     &__heading2 {
@@ -47,6 +49,7 @@
         background-color: #1f3340;
         font-family: "oswald";
         font-weight: 300px;
+        margin: 0;
         
         @media screen and (min-width: 768px) {
             font-size: 6rem;
