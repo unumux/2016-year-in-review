@@ -70,32 +70,32 @@
 
     &__logo {
         margin: 0 auto;
-        max-height: 50px;
+        // max-height: 50px;
 
         @media screen and (min-width: 768px) {
-            max-height: 143px;
+            // max-height: 143px;
         }
 
     }
 
     &__logo2 {
         margin: 0 auto;
-        max-height: 50px;
+        // max-height: 50px;
         max-width: 201px;
     }
 
     &__logos {
-       margin-right: 3rem;
+    //    margin-right: 3rem;
     }
 }
 
 .page-header__logo2 {
     margin: 0 auto;
-    max-height: 50px;
+    // max-height: 50px;
 }
 
 .page-header__logo2.smaller {
-    max-height: 35px;
+    // max-height: 35px;
 }
 
 .page-header--colonial-life {
@@ -104,7 +104,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: 50% 40%;
-    padding: 100px;
+    // padding: 100px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -112,11 +112,11 @@
     }
 
     @media screen and (min-width: 1320px) {
-        padding: 150px;
+        // padding: 150px;
     }
 
     &__logo {
-        margin-right: 0;
+        // margin-right: 0;
     }
 }
 
@@ -126,7 +126,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 50% 50%;
-    padding: 100px;
+    // padding: 100px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -134,7 +134,7 @@
     }
 
     @media screen and (min-width: 1320px) {
-        padding: 150px;
+        // padding: 150px;
         background-position: 50% 40%;
     }
 
