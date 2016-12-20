@@ -30,7 +30,7 @@
 .new-1 {
     @include base;
 
-    & h1 {
+    h1 {
         font-size: 5rem;
         line-height: 0.8;
         font-weight: 600;
@@ -42,7 +42,7 @@
         }
     }
 
-    & p {
+    p {
         font-size: 2.8rem;
         max-width: 120rem;
 

@@ -3,85 +3,84 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    min-height: 100vh;
+    //min-height: 100vh;
 }
 
 .videos {
     @include base;
 
-    & p {
+    p {
         font-size: 2rem;
         text-align: left;
         font-weight: 300;
     }
+}
+.videos-1 {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5rem;
 
-    &-1 {
-        padding: 2rem;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+    @media screen and (min-width: 768px) {
+        padding: 4rem;
         padding-top: 5rem;
+    }
+
+    &__heading {
+        font-size: 3.5rem !important;
+        text-transform: none !important;
+        font-weight: 400 !important;
+    }
+
+    &__para {
+        padding: 6rem;
+        padding-top: 10rem;
+    }
+
+    &__video {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        width: 321px;
+        height: 176px;
+    }
+
+    &__video-container {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding-bottom: 10rem;
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 15%;
+            flex: 1 1 33.3333%;
+            max-width: 33.3333%;
+            padding-bottom: 0;
+        }
 
         @media screen and (min-width: 768px) {
-            padding: 4rem;
-            padding-top: 5rem;
+            flex: 1 1 50%;
+            max-width: 50%;
+            padding-top: 10%;
         }
 
-        &__heading {
-            font-size: 3.5rem !important;
-            text-transform: none !important;
-            font-weight: 400 !important;
+        @media screen and (min-width: 1320px) {
+            flex: 1 1 50%;
+            max-width: 50%;
+            padding-top: 5%;
         }
 
-        &__para {
-            padding: 6rem;
-            padding-top: 10rem;
+        h1 {
+            font-size: 3rem;
+            margin: 0 auto;
+            text-align: left;
+            display: block;
+            max-width: 321px;
         }
 
-        &__video {
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-            overflow: hidden;
-            width: 321px;
-            height: 176px;
-        }
-
-        &__video-container {
-            flex: 1 1 100%;
-            max-width: 100%;
-            padding-bottom: 10rem;
-
-            @media screen and (min-width: 1200px) {
-                padding-top: 15%;
-                flex: 1 1 33.3333%;
-                max-width: 33.3333%;
-                padding-bottom: 0;
-            }
-
-            @media screen and (min-width: 768px) {
-                flex: 1 1 50%;
-                max-width: 50%;
-                padding-top: 10%;
-            }
-
-            @media screen and (min-width: 1320px) {
-                flex: 1 1 50%;
-                max-width: 50%;
-                padding-top: 5%;
-            }
-
-            & h1 {
-                font-size: 3rem;
-                margin: 0 auto;
-                text-align: left;
-                display: block;
-                max-width: 321px;
-            }
-
-            & p {
-                font-size: 2rem;
-                max-width: 321px;
-                margin: 0 auto;
-            }
+        p {
+            font-size: 2rem;
+            max-width: 321px;
+            margin: 0 auto;
         }
     }
 }

@@ -1,7 +1,7 @@
 @mixin base {
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    //min-height: 100vh;
 
     @media screen and (min-height: 1100px) {
         height: 100vh;

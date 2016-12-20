@@ -1,13 +1,13 @@
 @mixin base {
     background-image: linear-gradient(#688465, #688465);
-    height: 100vh;
+    //height: 100vh;
     display: flex;
     align-items: center;
 
 }
 
 .new {
-    @include base 
+    @include base;
 
     @import 'new-1';
 }
