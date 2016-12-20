@@ -3,11 +3,11 @@
     //min-height: 100vh;
     // display: flex;
     align-items: center;
-    padding-bottom: 5rem;
+    // padding-bottom: 5rem;
 }
 
 .sitecore {
-    @include base
+    @include base;
 
     @import 'sitecore-1';
 }

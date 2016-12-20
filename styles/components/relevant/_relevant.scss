@@ -7,7 +7,7 @@
 }
 
 .relevant {
-    @include base
+    @include base;
 
     @import 'relevant-1';
 }
