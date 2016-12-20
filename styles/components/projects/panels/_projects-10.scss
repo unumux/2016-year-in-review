@@ -1,5 +1,5 @@
 @mixin base {
-    padding: 2rem;
+    // padding: 2rem;
     min-height: 100vh;
     // height: 100vh;
     display: flex;
@@ -10,7 +10,7 @@
     background-size: cover;
     
     @media screen and (min-width: 768px) {
-        padding: 4rem;
+        // padding: 4rem;
     }
 
     @media screen and (min-width: 1100px) {
@@ -18,15 +18,15 @@
     }
 
     @media screen and (min-width: 1330px) {
-        @include full-width;
+        // @include full-width;
     }
 
     @media screen and (min-width: 1500px) {
-        @include full-width;
+        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        @include full-width;
+        // @include full-width;
     }
 }
 
