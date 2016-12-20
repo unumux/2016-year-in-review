@@ -1,29 +1,24 @@
 @mixin base {
-    // padding: 2rem;
-    text-align: left;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-
-    // @media screen and (min-width: 768px) {
-    //     padding: 4rem;
-    // }
-
-    // @media screen and (min-width: 1100px) {
-    //     @include full-width;
-    // }
-
-    // @media screen and (min-width: 1500px) {
-    //     @include full-width;
-    // }
-
-    // @media screen and (min-width: 1800px) {
-    //     @include full-width;
-    // }
+    text-align: left;
 }  
 
 .coming-2017-1 {
     @include base;
+
+    &__content {
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+    }
 
     & h1 {
         font-size: 4.8rem;
@@ -34,24 +29,16 @@
         }
     }
 
-    &__content {
-        flex: 1 1 100%;
-
-        @media screen and (min-width: 768px) {
-            flex: 1 1 50%;
-            // max-width: 50%;
-        }
-    }
 
     &__list {
         padding-left: 2rem;
 
-        &::after {
+        &::after {            
+            border: 1px solid rgba(255, 255, 255, 0.5);
             content: '';
             display: block;
-            width: 150px;
             margin: 7rem 0;
-            border: 1px solid rgba(255, 255, 255, 0.5);
+            width: 150px;
         }
     }
 
@@ -61,14 +48,18 @@
     }
 
     &__image-container {
-        padding-top: 6rem;
-        margin: 0 auto;
-        flex: 1 1 100%;
         align-self: center;
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 auto;
+        padding-top: 6rem;
         padding-left: 2rem;
 
         @media screen and (min-width: 768px) {
-            flex: 1 1 50%;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
             max-width: 50%;
         }
     }
@@ -80,8 +71,4 @@
             width: 700px;
         }
     }
-}
-
-.coming-2017-1--unum {
-
 }
