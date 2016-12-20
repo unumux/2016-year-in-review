@@ -79,3 +79,14 @@ function setActiveLink(link) {
 //     });
 // });
 
+function scrollPage() {
+var sy = scrollY();
+if ( sy &gt;= changeHeaderOn ) {
+classie.add( header, 'smaller' );
+}
+else {
+classie.remove( header, 'smaller' );
+}
+didScroll = false;
+}
+
