@@ -21,7 +21,7 @@
         
         &:after {
             top: 100%;
-            left: 50%;
+            left: 50%; // adjust this ?
             border: solid transparent;
             content: "";
             height: 0;
@@ -29,8 +29,8 @@
             position: absolute;
             border-color: rgba(136, 183, 213, 0);
             border-top-color: #fff;
-            border-width: 2.12rem;
-            margin-left: -1rem;
+            border-width: 1.5rem;
+            margin-left: -1.5rem;
         }
     }
 
