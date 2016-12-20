@@ -1,0 +1,17 @@
+@mixin base() {
+    width: auto;
+    padding: 2rem;
+}
+
+&__image {
+    @include base;
+
+    @media screen and (min-width: 768px) {
+        height: 30rem;
+        width: auto;
+    }
+
+    @media screen and (min-width: 1320px) {
+        height: 32.9rem;
+    }
+}
