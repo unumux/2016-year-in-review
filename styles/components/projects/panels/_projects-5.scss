@@ -1,5 +1,5 @@
 @mixin base {
-    padding: 2rem;
+    // padding: 2rem;
     background-image: radial-gradient(circle at 50% 2%, rgba(255, 255, 255, 0.5), #cfcab9), linear-gradient(#e0ddce, #e0ddce);
     color: #333;
     min-height: 100vh;
@@ -8,7 +8,7 @@
     justify-content: center;
 
     @media screen and (min-width: 768px) {
-        padding: 4rem;
+        // padding: 4rem;
     }
 
     @media screen and (min-width: 1100px) {
@@ -16,7 +16,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        @include full-width;
+        // @include full-width;
     }
 
     @media screen and (min-width: 1330px) {
@@ -24,11 +24,11 @@
     }
 
     @media screen and (min-width: 1500px) {
-        @include full-width;
+        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        @include full-width;
+        // @include full-width;
     }
 }
 
