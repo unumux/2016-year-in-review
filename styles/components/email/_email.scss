@@ -6,7 +6,7 @@
 }
 
 .email {
-    @include base
+    @include base;
 
     @import 'email-1';
 }

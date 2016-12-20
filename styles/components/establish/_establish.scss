@@ -6,7 +6,7 @@
 }
 
 .establish {
-    @include base
+    @include base;
 
     @import 'establish-1';
 }

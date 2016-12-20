@@ -2,13 +2,10 @@
   "private": true,
   "devDependencies": {
     "@unumux/ux-build-tools": "^3.6.0",
-    "imagemin": "^5.2.2",
-    "imagemin-mozjpeg": "^6.0.0",
-    "imagemin-pngquant": "^5.0.0",
-    "imagemin-svgo": "^5.2.0"
+    "imagemin-cli": "^3.0.0"
   },
   "scripts": {
-    "minify": "node ./minify.js",
+    "minify": "imagemin images-src/* --out-dir=images",
     "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
   },
   "dependencies": {
