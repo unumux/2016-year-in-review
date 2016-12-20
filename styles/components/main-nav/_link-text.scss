@@ -1,7 +1,7 @@
 @mixin base() {
     opacity: 0;
     transform: translateX(1rem);
-    //transition: opacity 0.05s;
+    transition: opacity 0.5s, transform 0.5s;
 }
 
 &__link-text {
