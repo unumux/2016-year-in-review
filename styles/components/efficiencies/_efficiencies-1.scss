@@ -1,5 +1,4 @@
 @mixin base {
-    background-image: linear-gradient(#688465, #688465);
     background-image: url("../images/conference-1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -7,43 +6,23 @@
     flex-wrap: wrap;
 }
 
-.efficiences {
-    h1 {
-        line-height: 7.1rem;
-        margin-bottom: 0;
-    }
-
-    p {     
-        font-size: 2rem;
-        margin: 0 auto;
-    }
-}
-
 .efficiencies-1 {
     @include base;
+
+    h1 {
+        font-size: 4rem;
+        text-align: left;
+        text-transform: uppercase;
+    }
 
     &__content {
         background-color: #1f3340;
         box-shadow: 13px 15px 18px 0 rgba(0, 0, 0, 0.25);
         flex-basis: 100%;
         flex-grow: 1;
-        flex-shrink: 1;
-        margin: 0 auto;
+        flex-shrink: 0;
+        margin-bottom: 2rem;
         padding: 2rem;
-
-        @media screen and (min-width: 500px) {
-            flex-basis: 25%;
-            flex-grow: 1;
-            flex-shrink: 1;
-        }
-
-        @media screen and (min-width: 1320px) {
-            align-items: center;
-            flex-basis: 33.3333%;
-            flex-grow: 1;
-            flex-shrink: 1;
-            justify-content: center;  
-        }
 
         h1 {
             color: $yellow;
@@ -58,8 +37,21 @@
         li {
             font-size: 2rem;
             list-style-type: none;
-            margin-bottom: 1.5rem;
             text-align: left;
+        }
+        
+        @media screen and (min-width: 768px) {
+            flex-basis: calc(33% - 1rem);
+            flex-grow: 1;
+            flex-shrink: 0;
+            margin: 1rem;
+        }
+        
+        @media screen and (min-width: 960px) {
+            flex-basis: calc(33% - 2rem);
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin: 1rem;
         }
     }
 
