@@ -1,7 +1,7 @@
 @mixin base {
     // padding: 2rem;
     background-image: radial-gradient(circle at 50% 0, rgba(184, 227, 180, 0.5), rgba(103, 131, 100, 0.5)), linear-gradient(#688465, #688465);
-    min-height: 100vh;
+    //min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -19,7 +19,7 @@
     }
 
     @media screen and (min-width: 1330px) {
-        min-height: 50vh;
+        //min-height: 50vh;
     }
 
     @media screen and (min-width: 1500px) {
