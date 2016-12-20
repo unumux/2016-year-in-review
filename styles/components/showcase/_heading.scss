@@ -1,0 +1,44 @@
+@mixin base() {
+    position: relative;
+    margin-top: 0;
+    text-transform: uppercase;
+    color: #333;
+    background-color: #fff;
+    font-family: "oswald";
+    font-weight: 300px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 6rem;
+    }
+
+    &:after {
+        top: 100%;
+        left: 50%; // adjust this ?
+        border: solid transparent;
+        content: "";
+        height: 0;
+        width: 0;
+        position: absolute;
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: #fff;
+        border-width: 1.5rem;
+        margin-left: -1.5rem;
+    }
+}
+
+&__heading {
+    @include base;
+
+    &--inverse {
+        @include base;
+
+        background-color: #1f3340;
+        color: #fff;
+    }
+
+    &--unum {
+        @include base;
+        font-family: "Ubuntu";
+        font-weight: 300 !important; // im sorry 
+    }
+}
