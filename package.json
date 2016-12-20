@@ -9,7 +9,6 @@
     "start": "gulp --gulpfile=node_modules/@unumux/ux-build-tools/index.js --cwd=."
   },
   "dependencies": {
-    "scrollspy-js": "^0.1.3",
-    "waypoints": "^4.0.1"
+    "scrollspy-js": "^0.1.3"
   }
 }

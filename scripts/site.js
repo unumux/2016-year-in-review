@@ -1,43 +1,72 @@
-require('waypoints/lib/noframework.waypoints.js'); 
+function updatePoints() {
+    const showcases = document.querySelectorAll(".showcase[id]");
 
-const showcases = document.querySelectorAll(".showcase[id]");
-const waypoints = [];
-const links = document.querySelectorAll(".main-nav__link");
+    points = [];
+    showcases.forEach((showcase) => {
+        let point = {
+            offset: showcase.offsetTop,
+            el: showcase
+        }
 
-showcases.forEach(showcase => {
-    const waypoint = new Waypoint({
-        element: showcase,
-        handler: function(direction) {
-            identifyCurrent(this.element.id, direction);
-        },
+        points.push(point);
+    });
+}
 
-    });
-    waypoints.push(waypoint);
+function updateHash(scrollPosition) {
+    let above = points.filter(point => point.offset <= scrollPosition);
+
+    if (above.length > 0) {
+        let currentSection = above[above.length - 1].el;
+        let id = currentSection.id;
+
+        currentSection.id = "";
+        window.location.hash = `#${id}`;
+        currentSection.id = id;
+    }
+
+}
+
+function updateNav() {
+    const oldEl = document.querySelector(".main-nav__link--current");
+    const newEl = document.querySelector(`[href='${window.location.hash}']`);
+
+    if (oldEl !== null) {
+        oldEl.classList.remove("main-nav__link--current");
+        oldEl.classList.add("main-nav__link");
+    }
+
+    if (newEl !== null) {
+        newEl.classList.remove("main-nav__link");
+        newEl.classList.add("main-nav__link--current");
+    }
+}
+
+function updateScroll() {
+    lastScrollPosition = window.scrollY;
+
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            updateHash(lastScrollPosition);
+            ticking = false;
+        });
+    }
+
+    ticking = true;
+}
+
+let points = [];
+let lastScrollPosition = 0;
+let ticking = false;
+
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+    updatePoints();
+    updateNav();
 });
 
-function identifyCurrent(id, direction) {
-    
-    links.forEach((link, index) => {
-        link.classList.remove("main-nav__link--current");
-    });
-
-    links.forEach((link, index) => {
-        if(link.attributes.href.value === `#${id}`) {
-            if(direction === "up") {
-                const newLink = links[index - 1 >= 0 ? index - 1 : 0];
-                setActiveLink(newLink);
-            } else {
-                console.log(link);
-                setActiveLink(link);
-            }
-        }
-    });
-}
-
-
-function setActiveLink(link) {
-    link.classList.add("main-nav__link--current");
-}
+window.addEventListener("resize", updatePoints);
+window.addEventListener('scroll', updateScroll);
+window.addEventListener("hashchange", updateNav);
 
 //Sticky header
 
