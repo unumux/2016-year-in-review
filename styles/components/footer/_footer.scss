@@ -65,7 +65,7 @@
 
     &__info {
 
-        background-image: url('/2016-year-in-review/images/unum-background.png');
+        background-image: url('../images/unum-background.png');
         background-size:cover;
         background-repeat: no-repeat;
         background-position: 50% 50%;
@@ -77,7 +77,7 @@
     }
 
     &__info2 {
-        background-image: url('/2016-year-in-review/images/colonial-background.png');
+        background-image: url('../images/colonial-background.png');
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
@@ -101,4 +101,9 @@
 
 .page-footer__heading {
 
+}
+
+.page-footer__logo2,
+.page-footer__logo4 {
+    border: 1px solid red;
 }
