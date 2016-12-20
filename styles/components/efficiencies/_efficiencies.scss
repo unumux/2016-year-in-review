@@ -4,6 +4,16 @@
 
 .efficiencies {
     @include base;
+
+    h1{
+        line-height: 7.1rem;
+        margin-bottom: 0;
+    }
+
+    p {     
+        font-size: 2rem;
+        margin: 0 auto;
+    }
     
     @import 'efficiencies-1';
 }
