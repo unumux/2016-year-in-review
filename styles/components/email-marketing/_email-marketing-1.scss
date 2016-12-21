@@ -1,195 +1,267 @@
-@mixin base {}
+@mixin base {
+    background-image: linear-gradient(to bottom, #04637e, #01495d);
+
+    @media screen and (min-width: 768px) {
+    }
+
+    @media screen and (min-width: 1100px) {
+        
+    }
+
+    @media screen and (min-width: 1500px) {
+    }
+
+    @media screen and (min-width: 1800px) {
+    }
+}
 
 .email-marketing-1 {
-	@include base;
-	h1 {
-		font-size: 4rem;
-		font-weight: 600;
-		margin-bottom: 5.5rem;
-		@media screen and (min-width: 1100px) {
-			font-size: 7rem;
-		}
-	}
-	p {
-		font-size: 2rem;
-		margin: 0 auto;
-		max-width: 120rem;
-		text-align: center;
-		@media screen and (min-width: 1100px) {
-			font-size: 3rem;
-		}
-	}
-	li {
-		font-size: 2rem;
-		@media screen and (min-width: 768px) {
-			font-size: 2rem;
-		}
-		@media screen and (min-width: 1100px) {
-			font-size: 3rem;
-		}
-	}
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-	}
-	&__value {
-		font-size: 9rem;
-		font-weight: 700;
-		@media screen and (min-width: 768px) {
-			font-size: 11rem;
-		}
-	}
-	&__label {
-		font-size: 2rem;
-		@media screen and (min-width: 1100px) {
-			font-size: 3rem;
-		}
-	}
-	&__para {
-		font-size: 24px;
-		font-weight: 600;
-	}
-	&__para2 {
-		padding-top: 4rem;
-	}
-	&__heading {
-		font-size: 4rem;
-		font-weight: 600;
-		margin-bottom: 1.5rem !important; //<--- SO SORRY!
-	}
-	&__image {
-		height: auto;
-		margin: 0 auto;
-		width: 38rem;
-		@media screen and (min-width: 1100px) {
-			width: 65rem;
-		}
-	}
-	&__image1 {
-		height: 20rem;
-		margin: 0 auto;
-		padding-top: 5rem;
-		width: 38rem;
-		@media screen and (min-width: 1100px) {
-			height: auto;
-			width: 65rem;
-		}
-	}
-	&__grouping {
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 5rem;
-		padding-bottom: 5rem;
-	}
-	&__group {
-		&-sub {
-			padding-top: 8rem;
-		}
-		&-1 {
-			flex-basis: 100%;
-			flex-grow: 1;
-			flex-shrink: 1;
-			margin-top: 1rem;
-			@media screen and (min-width: 680px) {
-				flex-basis: 50%;
-				flex-grow: 1;
-				flex-shrink: 1;
-			}
-			p {
-				font-size: 2.4rem;
-			}
-			h1 {
-				margin-bottom: 3rem;
-			}
-		}
-		&-2 {
-			flex-basis: 100%;
-			flex-grow: 1;
-			flex-shrink: 1;
-			margin-top: 1rem;
-			@media screen and (min-width: 680px) {
-				flex-basis: 33.333%;
-				flex-grow: 1;
-				flex-shrink: 1;
-			}
-			p {
-				font-size: 2.4rem;
-			}
-		}
-		&-text {
-			font-weight: 600;
-			margin-bottom: 6rem !important;
-		}
-		&:last-child {
-			padding-bottom: 20rem;
-		}
+    @include base;
 
-	&--cl {
-		@extend .email-marketing-1;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		&--light {
-			@extend .email-marketing-1--cl;
-		}
-	}
-	&--unum {
-		padding-bottom: 2rem;
-	}
-}
+    h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 5.5rem;
 
-.email-marketing-3 {
-	&__circle {
-		&-text1 {
-			font-size: 9rem;
-			font-weight: 700;
-			line-height: 11rem;
-			margin-top: 80px !important;
-			@media screen and (min-width: 1100px) {
-				font-size: 11rem;
-			}
-		}
-		&-text2 {
-			font-size: 1.5rem;
-			margin-top: 15%;
-			@media screen and (min-width: 1100px) {
-				font-size: 2.4rem;
-				margin-top: 20%;
-			}
-		}
-		&-text3 {
-			font-size: 1.5rem;
-			@media screen and (min-width: 1100px) {
-				font-size: 2.4rem;
-			}
-		}
-		&-text4 {
-			font-size: 7.5rem;
-			font-weight: 700;
-			line-height: 10rem;
-			margin-top: 80px !important;
-		}
-		&-text5 {
-			font-size: 1.5rem;
-			padding-left: 4rem;
-			padding-right: 4rem;
-			@media screen and (min-width: 1100px) {
-				font-size: 2.4rem;
-				padding-left: initial;
-				padding-right: initial;
-			}
-		}
-		&-text6 {
-			line-height: 11rem;
-			font-size: 9rem;
-			font-weight: 700;
-			@media screen and (min-width: 1100px) {
-				font-size: 11rem;
-			}
-		}
-	}
-}
+        @media screen and (min-width: 1100px) {
+            font-size: 7rem;
+        }
+    }
+    
+    p {
+        font-size: 2rem;
+        margin: 0 auto;
+        max-width: 120rem;
+        text-align: center;
+
+        @media screen and (min-width: 1100px) {
+            font-size: 3rem;
+        }
+    }
+
+    & li {
+        font-size: 2rem;
+
+       @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+
+        @media screen and (min-width: 1100px) {
+            font-size: 3rem;
+        }
+    }
+
+    & ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+     &__value {
+        font-size: 9rem;
+        font-weight: 700;
+
+        @media screen and (min-width: 768px) {
+            font-size: 11rem;
+        }
+    }
+
+    &__label {
+        font-size: 2rem;
+
+        @media screen and (min-width: 1100px) {
+            font-size: 3rem;
+        }
+    }
+    
+    &__para {
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__para2 {
+        padding-top: 4rem;
+    }
+
+    &--cl {
+        @extend .email-marketing-1;
+
+        background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &--light {
+            @extend .email-marketing-1--cl;
+
+            background-image: linear-gradient(179.02deg, #70AC48 0%, #61963D 100%);
+        }
+    }
+
+    &--unum {
+        padding-bottom: 2rem;
+    }
+
+    &__heading {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 1.5rem !important; //<--- SO SORRY!
+    }
+
+    &__image {
+        height: auto;
+        margin: 0 auto;
+        width: 38rem;
+
+        @media screen and (min-width: 1100px) {
+            width: 65rem;
+        }
+    }
+
+    &__image1 {
+        height: 20rem;
+        margin: 0 auto;
+        padding-top: 5rem;
+        width: 38rem;
+        
+        @media screen and (min-width: 1100px) {
+            height: auto;
+            width: 65rem;
+        }
+
+    }
+
+    &__grouping {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    &__group {
+
+        &-sub {
+            padding-top: 8rem;
+        }
+
+        &-1 {
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-top: 1rem;
+
+            @media screen and (min-width: 680px) {
+                flex-basis: 50%;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+            p {
+                font-size: 2.4rem;
+            }
+
+            h1 {
+                margin-bottom: 3rem;
+            }
+        }
+
+        &-2 {
+
+            flex-basis: 100%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            margin-top: 1rem;
+
+            @media screen and (min-width: 680px) {
+                flex-basis: 33.333%;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+
+                p {
+                    font-size: 2.4rem;
+                }
+
+        }
+
+        &-text {
+            font-weight: 600;
+            margin-bottom: 6rem !important;
+        }
+
+        &:last-child {
+            padding-bottom: 20rem;
+        }
+    }
 
 
+    .email-marketing-3 {
+
+        &__circle {
+
+            &-text1 {
+                font-size: 9rem;
+                font-weight: 700;
+                line-height: 11rem;
+                margin-top: 80px !important;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 11rem;
+                }
+
+            }
+
+            &-text2 {
+                font-size: 1.5rem;
+                margin-top: 15%;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 2.4rem;
+                    margin-top: 20%;
+                }
+
+            }
+
+            &-text3 {
+                font-size: 1.5rem;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 2.4rem;
+                }
+            }
+
+            &-text4 {
+                font-size: 7.5rem;
+                font-weight: 700;
+                line-height: 10rem;
+                margin-top: 80px !important;
+
+            }
+
+            &-text5 {
+                font-size: 1.5rem;
+                padding-left: 4rem;
+                padding-right: 4rem;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 2.4rem;
+                    padding-left: initial;
+                    padding-right: initial;
+                }
+            }
+
+            &-text6 {
+                line-height: 11rem;
+                font-size: 9rem;
+                font-weight: 700;
+
+                @media screen and (min-width: 1100px) {
+                    font-size: 11rem;
+                }
+            }
+
+        }
+
+    }
+    
 }
