@@ -1,13 +1,4 @@
 @mixin base() {
-
-    @media screen and (min-width:1100px) {
-    }
-
-    @media screen and (min-width: 1500px) {
-    }
-
-    @media screen and (min-width: 1800px) {
-    }
 }
 
 .page-header--home {
@@ -32,9 +23,6 @@
     &__logo {
         margin: 0 auto;
 
-        @media screen and (min-width: 768px) {
-        }
-
     }
 
     &__logo2 {
@@ -57,9 +45,6 @@
 
     @media screen and (min-width: 768px) {
         background-size: 100%;
-    }
-
-    @media screen and (min-width: 1320px) {
     }
 
 }
