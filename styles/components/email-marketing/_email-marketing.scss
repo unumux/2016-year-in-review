@@ -1,46 +1,46 @@
 @mixin base {
     background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
-    //min-height: 100vh;
 }
 
 .email-marketing {
     @include base;
 
     &__circle2 {
-            margin: 40rem auto;
-            height: 350px;
-            width: 350px;
-            border-radius: 50%;
-            border: 14px solid #fff;
-            position: relative;
+        border: 14px solid #fff;
+        border-radius: 50%;
+        margin: 40rem auto;
+        height: 350px;
+        position: relative;
+        width: 350px;
 
-            @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
-                height: 400px;
-                width: 400px;
-            }
+        @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
+            height: 400px;
+            width: 400px;
         }
+    }
 
-        &__circle3 {
-            margin: 40rem auto;
-            height: 375px;
-            width: 375px;
-            border-radius: 50%;
-            border: 14px solid #fff;
-            position: relative;
+    &__circle3 {
+        border: 14px solid #fff;
+        border-radius: 50%;
+        height: 375px;
+        margin: 40rem auto;
+        position: relative;
+        width: 375px;
 
-            @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
-                height: 410px;
-                width: 410px;
-            }
+        @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
+            height: 410px;
+            width: 410px;
         }
+    }
 
     .showcase__panel  &__circle {
-        margin: 2rem auto;
-        height: 350px;
-        width: 350px;
-        border-radius: 50%;
+        
         border: 14px solid #fff;
+        border-radius: 50%;
+        height: 350px;
+        margin: 2rem auto;
         position: relative;
+        width: 350px;
 
         @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
             height: 400px;
@@ -48,9 +48,9 @@
         }
 
         &-text1 {
-            line-height: 11rem;
             font-size: 9rem;
             font-weight: 700;
+            line-height: 11rem;
             margin-top: 80px;
 
             @media screen and (min-width: 1100px) {
@@ -68,12 +68,12 @@
         }
 
         &__circle2 {
-            margin: 40rem auto;
-            height: 350px;
-            width: 350px;
-            border-radius: 50%;
             border: 14px solid #fff;
+            border-radius: 50%;
+            height: 350px;
+            margin: 40rem auto;
             position: relative;
+            width: 350px;
 
             @media screen and (min-width: 1100px) { // messes up text if we change size of the circle
                 height: 400px;
@@ -89,7 +89,6 @@
 
 .email-marketing--unum {
     @extend .email-marketing;
-    // background-image: linear-gradient(to bottom, #00bac0, #02647f);
 }
 
 .email-marketing--cl {
@@ -97,6 +96,7 @@
     @extend .email-marketing-1;
     @extend .email-marketing-2;
     @extend .email-marketing-3;
+
     background-image: radial-gradient(circle at 49% 1%,#71af46,#60953a),linear-gradient(#67a14c,#67a14c);
 }
 
@@ -105,10 +105,6 @@
     @extend .email-marketing-1;
     @extend .email-marketing-2;
     @extend .email-marketing-3;
+
     background-image: radial-gradient(circle at 49% 1%, #5b7858 2%, #3c5c39 98%), linear-gradient(#67a14c, #67a14c);
 }
-
-// .email-marketing-2 {
-//     @include base;
-//     @import 'email-marketing-2';
-// }

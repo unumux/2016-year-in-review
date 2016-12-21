@@ -1,26 +1,19 @@
 @mixin base() {
-    // padding: 2rem;
-    //min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: linear-gradient(#7f2725, #7f2725);
 
     @media screen and (min-width: 1100px) {
-        // @include full-width;
-        //height: 100vh;
     }
 
     @media screen and (min-width: 1330px) {
-        // padding-bottom: 10rem;
     }
 
     @media screen and (min-width: 1500px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        // @include full-width;
     }
 }
 
@@ -42,7 +35,6 @@
         padding-bottom: 2rem;
 
         &-a {
-            // margin-top: -6rem;
             font-size: 20rem;
             font-weight: 700;
         }
@@ -55,15 +47,16 @@
     &__label {
         font-size: 2rem;
         padding-bottom: 2rem;
+
         @media screen and (min-width: 768px) {
             font-size: 3.5rem;
         }
 
         &-b {
-            text-transform: uppercase;
             font-size: 4.8rem;
             font-weight: 600;
             margin-top: -3rem;
+            text-transform: uppercase;
         }
     }
 
@@ -73,19 +66,19 @@
         padding-bottom: 2rem;
 
         &::before {
+            border: 1px solid rgba(255, 255, 255, 0.5);
             content: '';
             display: block;
-            width: 150px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
             margin: 2rem auto;
+            width: 150px;
         }
 
         &::after {
+            border: 1px solid rgba(255, 255, 255, 0.5);
             content: '';
             display: block;
-            width: 150px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
             margin: 2rem auto;
+            width: 150px;
         }
     
         @media screen and (min-width: 768px) {
@@ -94,9 +87,9 @@
     }
 
     &__description {
-        padding: 10rem 0;
-        max-width: 70rem;
         margin: 0 auto;
+        max-width: 70rem;
+        padding: 10rem 0;
 
         @media screen and (min-width: 768px) {
             font-size: 3rem;
@@ -123,6 +116,7 @@
 
 .stats-1--unum {
     @extend .stats-1;
+    
     background-image: linear-gradient(to top, #007478, #02989d);
 }
 

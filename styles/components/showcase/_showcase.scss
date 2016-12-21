@@ -5,9 +5,6 @@
 .showcase {
     @include base;
 
-    @import "heading";
-    @import "panel";
-
     h1 {
         font-weight: 600;
         font-size: 4.8rem;
@@ -32,4 +29,6 @@
         }
     }
 
+    @import "heading";
+    @import "panel";
 }

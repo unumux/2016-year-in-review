@@ -1,30 +1,25 @@
 @mixin base() {
 
     @media screen and (min-width:1100px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1500px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        // @include full-width;
     }
 }
 
 .page-header--home {
-    display: flex;
-    background-color: #1f4f7f;
-    // padding: 25px;
-    justify-content: center;
     align-items: center;
     align-content: center;
-    //position: fixed;
+    background-color: #1f4f7f;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
     right: 0;
     left: 0;
     z-index: 999;
-    overflow: hidden;
     
 }
 
@@ -32,79 +27,32 @@
     height: 15px;
 }
 
-// .page-header--home .shrink {
-//     width: 100%;
-//     height: 50px;
-//     overflow: hidden;
-//     position: fixed;
-//     left: 0;
-//     z-index: 9999;
-//     background: #fff!important;
-//     -webkit-transition: height 0.3s;
-//     -moz-transition: height 0.3s;
-//     -ms-transition: height 0.3s;
-//     -o-transition: height 0.3s;
-//     transition: height 0.3s;
-// }
-
-// .page-header--home.clone {
-//     position: fixed;
-//     height: 10rem;
-//     top: -0.5rem;
-//     left: 0;
-//     right: 0;
-//     z-index: 999;
-//     transition: 0.2s top cubic-bezier(.3,.73,.3,.74);
-
-// }
-
-// .page-header--home.smaller {
-//     height: 6rem;
-// }
-
-// body.down header.clone {
-//   top: 0;
-// }
-
 .page-header {
 
     &__logo {
         margin: 0 auto;
-        // max-height: 50px;
 
         @media screen and (min-width: 768px) {
-            // max-height: 143px;
         }
 
     }
 
     &__logo2 {
         margin: 0 auto;
-        // max-height: 50px;
         max-width: 201px;
-    }
-
-    &__logos {
-    //    margin-right: 3rem;
     }
 }
 
 .page-header__logo2 {
     margin: 0 auto;
-    // max-height: 50px;
-}
-
-.page-header__logo2.smaller {
-    // max-height: 35px;
 }
 
 .page-header--colonial-life {
     background-image: url('../images/colonial-header.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-position: 50% 40%;
-    // padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -112,21 +60,16 @@
     }
 
     @media screen and (min-width: 1320px) {
-        // padding: 150px;
     }
 
-    &__logo {
-        // margin-right: 0;
-    }
 }
 
 .page-header--unum {
     background-image: url('../images/unum-header.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100%;
     background-position: 50% 50%;
-    // padding: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
     text-align: center;
 
     @media screen and (min-width: 768px) {
@@ -134,7 +77,6 @@
     }
 
     @media screen and (min-width: 1320px) {
-        // padding: 150px;
         background-position: 50% 40%;
     }
 
