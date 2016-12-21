@@ -1,8 +1,4 @@
 @mixin base {
-    background-color: #1f4f7f;
-
-    @media screen and (min-width: 1330px) {
-    }
 }
 
 .intro { 
@@ -13,9 +9,6 @@
         font-size: 4rem;
         line-height: 5rem;
         text-transform: uppercase;
-
-        @media screen and (min-width: 678px) {
-        }
 
         @media screen and (min-width: 1036px) {
             font-size: 5rem;

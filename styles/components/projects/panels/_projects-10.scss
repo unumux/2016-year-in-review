@@ -1,25 +1,10 @@
 @mixin base {
     align-items: center;
-    background-image: url('../images/content-pilot.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url('../images/content-pilot.jpg');
+    // background-repeat: no-repeat;
+    // background-size: cover;
     display: flex;
     justify-content: center;
-    
-    @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1100px) {
-    }
-
-    @media screen and (min-width: 1330px) {
-    }
-
-    @media screen and (min-width: 1500px) {
-    }
-
-    @media screen and (min-width: 1800px) {
-    }
 }
 
 .projects-10 {
@@ -52,6 +37,6 @@
 .projects-10--unum {
     @extend .projects-10;
     
-    background-image: none;
-    background-color: #627f95;
+    // background-image: none;
+    // background-color: #627f95;
 }
