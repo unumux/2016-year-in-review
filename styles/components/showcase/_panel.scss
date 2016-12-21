@@ -15,6 +15,7 @@
         text-transform: uppercase;
     }
 
+    //OVERVIEW SITE BG COLORS
     &--title, 
     &--intro {
         @include base;
@@ -97,4 +98,78 @@
         background-color: #E0832E;
         padding: 2rem;
     }
+
+    //COLONIAL SITE BGs
+    &--stats-2 {
+        @include base;        
+        background-color: #1F3340;
+    }
+
+    &--paul {
+        @include base;        
+        background-color: #1A2833;
+    }
+
+    &--email-a {
+        @include base;        
+        background-color: #67A14C;
+        background-image: radial-gradient(circle, #71AE47 0%, #60953B 100%);
+    }
+
+    &--email-b {
+        @include base;        
+        background-color: #67A14C;
+        background-image: radial-gradient(circle, #5B7B55 0%, #41643C 100%);
+    }
+
+    &--project-a,
+    &--pilot-b {
+        @include base;        
+        background-color: #1F3340;
+        background-image: radial-gradient(circle, rgba(122,167,197,0.5) 0%, rgba(31,51,64,0.5) 100%);
+    }
+
+    &--project-b {
+        @include base;        
+        background-color: #67A14C;
+        background-image: radial-gradient(circle, #90C869 0%, #60953B 100%);
+    }
+
+    &--project-c,
+    &--pilot-a {
+        @include base;        
+        background-color: #688465;
+        background-image: radial-gradient(circle, rgba(185,228,180,0.5) 0%, rgba(104,132,101,0.5) 100%);
+    }
+
+    &--project-d,
+    &--pilot-d {
+        @include base;        
+        background-color: #E0DDCE;
+        background-image: radial-gradient(circle, rgba(255,255,255,0.5) 0%, #CFCAB9 100%);
+    }
+
+    &--pilot-c {
+        @include base;
+        background-image: url("../images/paid-search-pilot@2x.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+
+    &--agile-1 {
+        
+    }
+    
+    &--agile-2 {
+
+    }
+    
+    &--agile-3 {
+
+    }
+
+    &--agile-4 {
+
+    }
+
 }
