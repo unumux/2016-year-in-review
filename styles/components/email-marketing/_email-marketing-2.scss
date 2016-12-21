@@ -1,6 +1,7 @@
 @mixin base {
     align-content: center;
     align-items: center;
+    background-image: linear-gradient(179deg, #00bac0, #067695);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,9 +23,9 @@
     &--cl {
         @extend .email-marketing-2;
         
+        background-image: none;
     }
 
 }
-
 
 

@@ -1,4 +1,5 @@
 @mixin base {
+    background-image: radial-gradient(circle at 49% 1%, #71af46, #60953a), linear-gradient(#67a14c, #67a14c);
 }
 
 .email-marketing {
@@ -96,6 +97,7 @@
     @extend .email-marketing-2;
     @extend .email-marketing-3;
 
+    background-image: radial-gradient(circle at 49% 1%,#71af46,#60953a),linear-gradient(#67a14c,#67a14c);
 }
 
 .email-marketing--cl2 {
@@ -104,4 +106,5 @@
     @extend .email-marketing-2;
     @extend .email-marketing-3;
 
+    background-image: radial-gradient(circle at 49% 1%, #5b7858 2%, #3c5c39 98%), linear-gradient(#67a14c, #67a14c);
 }
