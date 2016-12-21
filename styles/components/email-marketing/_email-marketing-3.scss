@@ -1,21 +1,18 @@
 @mixin base {
-    background-image: linear-gradient(179deg, #00bac0, #067695);
 }
 
 .email-marketing-3 {
-    @include base;
+    // @include base;
 
-    &--cl {
-        @include base;
+    // &--cl {
+    //     @include base;
 
-        background-image: radial-gradient(circle, #71AE47 0%, #60953B 100%);
-    }
+    // }
 
-    &--cl2 {
-        @include base;
+    // &--cl2 {
+    //     @include base;
 
-        background-image: radial-gradient(circle at 49% 1%, #5b7858 2%, #3c5c39 98%), linear-gradient(#67a14c, #67a14c);
-    }
+    // }
 
     &__circle {
         &-text1 {
