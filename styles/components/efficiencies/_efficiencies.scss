@@ -1,5 +1,8 @@
 @mixin base {
     align-items: center;
+    background-image: url("../images/conference-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .efficiencies {
