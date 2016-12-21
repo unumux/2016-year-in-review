@@ -1,8 +1,11 @@
 @mixin base() {
     margin: 0 auto;
     max-width: 120rem;
-    padding: 2rem;
     width: 100%;
+    padding: 20rem 0;
+    // margin: 0 calc(0px - (100vw - 100%) / 2);
+    padding-left: calc((100vw - 100%) / 2);
+    padding-right: calc((100vw - 100%) / 2);
 }
 
 &__panel {
@@ -12,4 +15,86 @@
         text-transform: uppercase;
     }
 
+    &--title, 
+    &--intro {
+        @include base;
+        background-color: #005488;
+        background-image: radial-gradient(circle, hsla(255,255,255,0.25) 0%, hsla(0,0,0,0.25) 100%);
+    }
+    
+    &--intro {
+        @include base;
+        background-color: #005488;
+        background-image: linear-gradient(180deg, hsla(255,255,255,0.20) 0%, hsla(0,0,0,0.20) 100%);
+    }
+
+    &--engage {
+        @include base;        
+        background-color: #005488;
+        background-image: linear-gradient(180deg, hsla(255,255,255,0.20) 0%, hsla(0,0,0,0.20) 100%);
+    }
+
+    &--quality {
+        @include base;        
+        background-color: #1E6679;
+        background-image: linear-gradient(180deg, hsla(255, 255, 255, 0.20) 0%, hsla(0,0,0, 0.20) 100%);
+    }
+
+    &--new {
+        @include base;        
+        background-color: #688465;
+        background-image: linear-gradient(180deg, hsla(255, 255, 255, 0.20) 0%, hsla(0,0,0, 0.20) 100%);
+    }
+
+    &--establish {
+        @include base;        
+        background-color: #7F2725;
+        background-image: linear-gradient(180deg, hsla(255, 255, 255, 0.20) 0%, hsla(0,0,0, 0.20) 100%);
+    }
+
+    &--relevant { 
+        @include base;        
+        background-color: #374755;
+        background-image: linear-gradient(180deg, hsla(255, 255, 255, 0.20) 0%, hsla(0,0,0, 0.20) 100%);
+    }
+
+    &--comparison {
+        @include base;        
+        background-image: linear-gradient(180deg, #595456 0%, #231F20 100%);
+    }
+
+    &--persona {
+        @include base;        
+        background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
+    }
+
+    &--efficiencies {
+        @include base;
+        background-image: url("../images/conference-1.png");
+        background-repeat: no-repeat;
+        background-size: cover;        
+    }
+
+    &--sitecore {
+        @include base;
+        background-color: #1E6679;
+        background-image: linear-gradient(180deg, hsla(255, 255, 255, 0.20) 0%, hsla(0,0,0, 0.20) 100%);
+    }
+
+    &--starmount {
+        @include base;
+        background-color: #374755;
+        background-image: linear-gradient(180deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+    }
+
+    &--stats-a {
+        @include base;
+        background-color: #7F2725;
+        background-image: linear-gradient(180deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
+    }
+
+    &--alert {
+        background-color: #E0832E;
+        padding: 2rem;
+    }
 }
