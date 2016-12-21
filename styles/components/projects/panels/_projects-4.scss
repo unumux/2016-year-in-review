@@ -1,26 +1,13 @@
 @mixin base {
-    background-image: radial-gradient(circle at 50% 0, rgba(121, 167, 196, 0.5), rgba(31, 51, 64, 0.5)), linear-gradient(#1f3340, #1f3340);
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @media screen and (min-width: 768px) {
-    }
 
     @media screen and (min-width: 1100px) {
         align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
-
-    @media screen and (min-width: 1330px) {
-    }
-
-    @media screen and (min-width: 1500px) {
-    }
-
-    @media screen and (min-width: 1800px) {
     }
 }
 

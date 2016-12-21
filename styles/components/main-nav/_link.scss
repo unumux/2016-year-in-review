@@ -5,7 +5,6 @@
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-    // -webkit-font-smoothing: antialiased;
 }
 
 &__link {
@@ -35,23 +34,4 @@
             width: 1rem;
         }
     }
-
-    &[href="#stats"] {
-    }
-
-    &[href="#projects"] {
-    }
-
-    &[href="#agile-projects"] {
-    }
-
-    &[href="#videos"] {
-    }
-
-    &[href="#email-marketing"] {
-    }
-
-    &[href="#marketing-automation"] {
-    }
-
 }

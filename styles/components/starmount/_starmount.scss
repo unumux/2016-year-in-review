@@ -1,11 +1,6 @@
 @mixin base {
     align-items: center;
-    background-image: radial-gradient(circle at 50% 0, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)), linear-gradient(#374755, #374755);
-    display: flex;
-
-    @media screen and (min-height: 1100px) {
-    }
-    
+    display: flex;    
 }
 
 .starmount {

@@ -1,23 +1,7 @@
 @mixin base {
     align-items: center;
-	background-image: radial-gradient(circle at 52% 0, #7c99b1, #405362), linear-gradient(#3f5362, #3f5362);
     display: flex;
     justify-content: center;
-
-    @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1100px) {
-    }
-
-    @media screen and (min-width: 1330px) {
-    }
-
-    @media screen and (min-width: 1500px) {
-    }
-
-    @media screen and (min-width: 1800px) {
-    }
 }
 
 .projects-3 {
@@ -212,7 +196,6 @@
 }
 
 .projects-3__value2 {
-    background-color: #1a2833;
     padding: 2rem;
     width: 300px;
 
@@ -222,7 +205,6 @@
 }
 
 .projects-3__label2 {
-    background-color: rgba(26, 39, 51, 0.5);
     padding: 2rem;
     width: 300px;
 
