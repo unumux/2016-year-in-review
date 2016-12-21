@@ -1,5 +1,6 @@
 @mixin base() {
     position: relative;
+    margin-bottom: 0;
     margin-top: 0;
     text-transform: uppercase;
     color: #333;
@@ -26,7 +27,7 @@
     }
 }
 
-&__heading {
+.showcase__heading {
     @include base;
 
     &--inverse {
