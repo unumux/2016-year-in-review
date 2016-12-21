@@ -8,12 +8,12 @@
 
     &__content {
         
-        & h1 {
+        h1 {
             font-size: 32px;
             font-weight: 400;
         }
 
-        & p {
+        p {
             font-size: 2rem;            
         }
     }
@@ -32,7 +32,7 @@
             display: none;
         }
 
-        & h1 {
+        h1 {
             font-size: 5rem;
             font-weight: 600;
 

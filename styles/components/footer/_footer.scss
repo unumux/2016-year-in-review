@@ -1,18 +1,13 @@
 @mixin base() {
     display: flex;
-    //padding-bottom: 5rem;
-    //min-height: 100vh;
 
     @media screen and (min-width: 1100px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1500px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        // @include full-width;
     }
 }
 
@@ -20,67 +15,61 @@
 
     @include base;
 
-    .logo__section {
-        // display: flex;
-    }
-
     &__logo {
         display: block;
-        width: 14rem;
-        margin: 0 auto;
         height: 100%;
+        margin: 0 auto;
+        width: 14rem;
         
     }
 
     &__logo2 {
         display: block;
-        width: 4rem;
-        margin: 0 auto;
+        flex-basis: 50%;
         flex-direction: column;
-        flex: 1 1 50%;
-        // height: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 auto;
+        width: 4rem;
     }
     
     &__logo3 {
         display: block;
-        width: 18rem;
-        margin: 0 auto;
         height: 100%;
+        margin: 0 auto;
+        width: 18rem;
     }
     
     &__logo4 {
         display: block;
-        width: 4rem;
         margin: 0 auto;
-        // height: 100%;
+        width: 4rem;
     }
 
- 
-
-
     &__info {
-
-        background-image: url('../images/unum-background.png');
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
         align-items: center;
-        flex: 1 1 50%;
-        max-width: 50%;
-        // height: 40rem;
+        background-image: url('../images/unum-background.png');
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size:cover;
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
         margin: 0 auto;
+        max-width: 50%;
     }
 
     &__info2 {
+        align-items: center;
         background-image: url('../images/colonial-background.png');
         background-size: cover;
         background-position: 50% 50%;
         background-repeat: no-repeat;
-        align-items: center;
-        // height: 39.95rem;
-        max-width: 50%;
-        flex: 1 1 50%;
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
         margin: 0 auto;
+        max-width: 50%;
     }
 
     &__image,
@@ -88,12 +77,4 @@
         display: block;
         height: 100%;
     }
-}
-
-.page-footer--colonial-life {
-
-}
-
-.page-footer__heading {
-
 }
