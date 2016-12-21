@@ -16,7 +16,7 @@
         flex-shrink: 1;
         font-size: 2rem;
 
-            & h1 {
+            h1 {
                 color: #fff;
                 font-size: 5rem;
                 text-align: left;
@@ -26,17 +26,17 @@
                 }
             }
 
-            & p {
+            p {
                 color: #fff; 
                 font-size: 2rem;
                 text-align:left; 
             }
 
-            & sup {
+            sup {
                 text-align: left;
             }
 
-            & li {
+            li {
                 font-size: 2.4rem;
                 font-weight: normal;
                 list-style-type: none;

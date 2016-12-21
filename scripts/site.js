@@ -13,7 +13,7 @@ function updatePoints() {
 }
 
 function updateHash(scrollPosition) {
-    let above = points.filter(point => point.offset <= scrollPosition);
+    let above = points.filter(point => point.offset < scrollPosition + 50);
 
     if (above.length > 0) {
         let currentSection = above[above.length - 1].el;

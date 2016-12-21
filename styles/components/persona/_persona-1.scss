@@ -1,27 +1,20 @@
 @mixin base {
-    // padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: left;
-    //min-height: 100vh;
 
     @media screen and (min-width: 768px) {
-        // padding: 4rem;
     }
 
     @media screen and (min-width: 1100px) {
-        // @include full-width;
-        //height: 100vh;
     }
 
     @media screen and (min-width: 1500px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        // @include full-width;
     }
 }
 
@@ -30,33 +23,28 @@
 
     &__value {
         font-size: 12rem;
-        // max-width: 120rem;
         margin: 0 auto;
     }
 
     &__label {
         font-size: 2rem;
         font-weight: 600;
-        // max-width: 120rem;
         margin: 0 auto;
     }
     
     &__content {
-        flex: 1 1 100%;
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
 
-        & h1 {
-            // margin: 3rem auto;
-            // max-width: 120rem;
-        }
-
-        & p {
+        p {
             font-size: 2rem;
-            // max-width: 120rem;
         }
 
         @media screen and (min-width: 768px) {
-            flex: 1 1 50%;
-            // max-width: 50%;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
     }
 
@@ -69,17 +57,19 @@
     @include base;
 
     &__content {
-        flex: 1 1 100%;
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
 
         @media screen and (min-width: 768px) {
-            flex: 1 1 50%;
-            // max-width: 50%;
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
     }
 
     &__image {
         width: 400px;
-        // padding-top: 5rem;
 
         @media screen and (min-width: 1100px) {
             width: 500px;

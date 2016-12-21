@@ -1,40 +1,33 @@
 @mixin base {
-    // padding: 2rem;
-    //min-height: 100vh;
+    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: radial-gradient(circle at 52% 0, #90c869, #60953a), linear-gradient(#67a14c, #67a14c);
 
     @media screen and (min-width: 768px) {
-        // padding: 4rem;
     }
 
     @media screen and (min-width: 1100px) {
+        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        // @include full-width;
     }
 
     @media screen and (min-width: 1330px) {
-        //min-height: 50vh;
     }
 
     @media screen and (min-width: 1500px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        // @include full-width;
     }
 }
 
 .projects-1 {
     @include base;
 
-    & p {
+    p {
         font-size: 2rem;
         margin-bottom: 3rem;
     }
@@ -45,7 +38,6 @@
         @media screen and (min-width: 1100px) {
             padding-top: initial;
             padding-left: 2rem;
-            
         }
     }
 
@@ -79,10 +71,12 @@
 
     &__content {
         @media screen and (min-width: 1100px) {
-            flex: 1 1 33.3333%;
+            flex-basis: 33.3333%;
+            flex-grow: 1;
+            flex-shrink: 1;
         }
 
-        & h1 {
+        h1 {
             text-align: left;
             line-height: 1;
             text-transform: uppercase;
@@ -95,5 +89,6 @@
 
 .projects-1--unum {
     @extend .projects-1;
+
     background-image: radial-gradient(circle at 50% 4%, #319fbd, #017999), linear-gradient(#0085a9, #0085a9);
 }

@@ -1,21 +1,16 @@
 @mixin base {
-    // padding: 2rem;
     background-image: linear-gradient(179deg, #00bac0, #067695);
 
     @media screen and (min-width: 768px) {
-        // padding: 4rem;
     }
 
     @media screen and (min-width: 1100px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1500px) {
-        // @include full-width;
     }
 
     @media screen and (min-width: 1800px) {
-        // @include full-width;
     }
 }
 
@@ -24,166 +19,167 @@
 
     &--cl {
         @include base;
+
         background-image: radial-gradient(circle, #71AE47 0%, #60953B 100%);
     }
 
     &--cl2 {
         @include base;
-          background-image: radial-gradient(circle at 49% 1%, #5b7858 2%, #3c5c39 98%), linear-gradient(#67a14c, #67a14c);
+
+        background-image: radial-gradient(circle at 49% 1%, #5b7858 2%, #3c5c39 98%), linear-gradient(#67a14c, #67a14c);
     }
 
     &__circle {
-            &-text1 {
-                line-height: 11rem;
-                font-size: 9rem;
-                font-weight: 700;
-                margin-top: 80px !important;
+        &-text1 {
+            font-size: 9rem;
+            font-weight: 700;
+            line-height: 11rem;
+            margin-top: 80px !important;
 
-                @media screen and (min-width: 1100px) {
-                    font-size: 11rem;
-                }
-
-            }
-
-            &-text2 {
-                margin-top: 15%;
-                font-size: 1.5rem;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 2.4rem;
-                    margin-top: 25%;
-                }
-
-            }
-
-            &-text3 {
-                font-size: 1.5rem;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 2.4rem;
-                }
-            }
-
-            &-text4 {
-                line-height: 10rem;
-                font-size: 7.5rem;
-                font-weight: 700;
-                margin-top: 80px !important;
-
-            }
-
-            &-text5 {
-                font-size: 1.5rem;
-                padding-left: 4rem;
-                padding-right: 4rem;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 2.4rem;
-                    padding-left: initial;
-                    padding-right: initial;
-                }
-            }
-
-            &-text6 {
-                line-height: 11rem;
-                font-size: 9rem;
-                font-weight: 700;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 11rem;
-                }
-            }
-
-            &-text7 {
-                line-height: 11rem;
-                font-size: 9rem;
-                font-weight: 700;
-                margin-top: 25%;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 11rem;
-                    margin-top: 30%;
-                }
-
-            }
-
-            &-text8 {
-                line-height: 11rem;
-                font-size: 9rem;
-                font-weight: 700;
-                margin-top: 25%;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 11rem;
-                }
-            }
-
-            &-text9 {
-                font-size: 2.4rem;
-                margin-top: 15%;
-                line-height: 0.8;
-            }
-
-            &-text10 {
-                font-size: 8rem;
-                font-weight: 700;
-            }
-
-            &-text11 {
-                font-size: 2rem;
-            }
-
-            &-text12 {
-                font-size: 2.4rem;
-                margin-top: 13%;
-            }
-
-            &-text13 {
-                font-size: 9rem;
-                font-weight: 700;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 11rem;
-                }
-            }
-
-            &-text14 {
-                font-size: 1.5rem;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 2.4rem;
-                }
-            }
-        }
-
-        &__circle3 {
-
-            &-text5 {
-                font-size: 1.5rem;
-                padding-left: 4rem;
-                padding-right: 4rem;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 2.4rem;
-                    padding-left: initial;
-                    padding-right: initial;
-                }
-            }
-
-            &-text7 {
-
-                line-height: 11rem;
-                font-size: 9rem;
-                font-weight: 700;
-                margin-top: 25%;
-
-                @media screen and (min-width: 1100px) {
-                    font-size: 11rem;
-                    margin-top: 30%;
-                }
-
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
             }
 
         }
+
+        &-text2 {
+            font-size: 1.5rem;
+            margin-top: 15%;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 2.4rem;
+                margin-top: 25%;
+            }
+
+        }
+
+        &-text3 {
+            font-size: 1.5rem;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 2.4rem;
+            }
+        }
+
+        &-text4 {
+            font-size: 7.5rem;
+            font-weight: 700;
+            line-height: 10rem;
+            margin-top: 80px !important;
+
+        }
+
+        &-text5 {
+            font-size: 1.5rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 2.4rem;
+                padding-left: initial;
+                padding-right: initial;
+            }
+        }
+
+        &-text6 {
+            line-height: 11rem;
+            font-size: 9rem;
+            font-weight: 700;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
+            }
+        }
+
+        &-text7 {
+            line-height: 11rem;
+            margin-top: 25%;
+            font-size: 9rem;
+            font-weight: 700;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
+                margin-top: 30%;
+            }
+
+        }
+
+        &-text8 {
+            line-height: 11rem;
+            margin-top: 25%;
+            font-size: 9rem;
+            font-weight: 700;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
+            }
+        }
+
+        &-text9 {
+            font-size: 2.4rem;
+            line-height: 0.8;
+            margin-top: 15%;
+        }
+
+        &-text10 {
+            font-size: 8rem;
+            font-weight: 700;
+        }
+
+        &-text11 {
+            font-size: 2rem;
+        }
+
+        &-text12 {
+            font-size: 2.4rem;
+            margin-top: 13%;
+        }
+
+        &-text13 {
+            font-size: 9rem;
+            font-weight: 700;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
+            }
+        }
+
+        &-text14 {
+            font-size: 1.5rem;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    &__circle3 {
+        
+        &-text5 {
+            font-size: 1.5rem;
+            padding-left: 4rem;
+            padding-right: 4rem;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 2.4rem;
+                padding-left: initial;
+                padding-right: initial;
+            }
+        }
+
+        &-text7 {
+            font-size: 9rem;
+            font-weight: 700;
+            line-height: 11rem;
+            margin-top: 25%;
+
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
+                margin-top: 30%;
+            }
+
+        }
+
+    }
 
 }
