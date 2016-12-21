@@ -8,5 +8,32 @@
 .intro { 
     @include base;
 
+    span {
+        display: block;
+        font-size: 4rem;
+        line-height: 5rem;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 678px) {
+        }
+
+        @media screen and (min-width: 1036px) {
+            font-size: 5rem;
+        }
+    }
+
+    &__image {
+        padding-bottom: 1rem;
+        width: 35rem;
+
+        @media screen and (min-width: 768px) {
+            width: 45rem;
+        }
+    }
+
+    .yellow {
+        color: $yellow;
+    }
+
     @import 'intro-1';
 }
