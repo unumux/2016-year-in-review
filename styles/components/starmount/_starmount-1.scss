@@ -1,16 +1,5 @@
 @mixin base {
 
-    @media screen and (min-width: 768px) {
-    }
-
-    @media screen and (min-width: 1100px) {
-    }
-
-    @media screen and (min-width: 1500px) {
-    }
-
-    @media screen and (min-width: 1800px) {
-    }
 }
 
 .starmount-1 {
@@ -30,12 +19,5 @@
         @media screen and (min-width: 768px) {
             width: 50rem;
         }
-
-        @media screen and (min-width: 1320px) {
-            
-        }
     }
-
-
-
 }
