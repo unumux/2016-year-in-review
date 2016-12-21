@@ -1,7 +1,21 @@
+@mixin enterprise-base() {
+    padding: 5rem;
+}
+
 @mixin base() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    padding: 20rem;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        background-size: 100%;
+    }
 }
 
 .page-header--home {
+    @include enterprise-base;
     align-items: center;
     align-content: center;
     background-color: #005488;
@@ -14,11 +28,8 @@
     
 }
 
-.page-header--home.smaller {
-    height: 15px;
-}
-
 .page-header {
+    @include base;
 
     &__logo {
         margin: 0 auto;
@@ -36,30 +47,15 @@
 }
 
 .page-header--colonial-life {
+    @include base;
     background-image: url('../images/colonial-header.jpg');
     background-position: 50% 40%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100% 100%;
-    text-align: center;
-
-    @media screen and (min-width: 768px) {
-        background-size: 100%;
-    }
-
 }
 
 .page-header--unum {
+    @include base;
     background-image: url('../images/unum-header.jpg');
     background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-size: 100%;
-    text-align: center;
-
-    @media screen and (min-width: 768px) {
-        background-size: 100%;
-    }
 
     @media screen and (min-width: 1320px) {
         background-position: 50% 40%;
