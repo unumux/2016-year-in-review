@@ -51,6 +51,7 @@
 
     @media screen and (min-width: 1100px) {
         display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -136,8 +137,9 @@
             position: absolute;
             right: 0;
             top: 30px;
+        }
 
-            &-1 {
+        &-percent-1 {
                 bottom: 0;
                 font-size: 6rem;
                 font-weight: 400;
@@ -148,13 +150,17 @@
                 right: 0;
                 top: -30px;
             }
-        }
     }
 
     &__content {
         flex-basis: 50%;
         flex-grow: 1;
         flex-shrink: 1;
+
+        @media screen and (min-width: 1100px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -254,8 +260,9 @@
             position: absolute;
             right: 0;
             top: 30px;
+        }
 
-            &-1 {
+        &-percent-1 {
                 bottom: 0;
                 font-size: 6rem;
                 font-weight: 400;
@@ -265,7 +272,6 @@
                 position: absolute;
                 right: 0;
                 top: -30px;
-            }
         }
     }
 
