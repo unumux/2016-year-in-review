@@ -192,5 +192,63 @@
 
     &--videos {
         background-image: url('../images/motion-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    //UNUM BGs
+
+    &--stats-2-unum {
+        @include base;
+        background-color: #007478;
+    }
+
+    &--stats-3-unum {
+        @include base;
+        background-color: #375469;
+    }
+
+    &--email-2-unum {
+        @include base;
+        background-image: linear-gradient(179.01deg, #00BAC0 0%, #077695 100%);
+    }
+
+    &--email-1-unum {
+        @include base;
+        background-image: linear-gradient(180deg, #04637E 0%, #02495D 100%);
+    }
+
+    &--featured-a,
+    &--featured-d,
+    &--featured-g {
+        @include base;
+        background-color: #B7E1FF;
+        background: radial-gradient(circle, #627F95 0%, #2C4F69 100%);
+    }
+
+    &--featured-b,
+    &--featured-f {
+        @include base;
+        background-color: #00BAC0;
+        background: radial-gradient(circle, #139DA6 0%, #10767F 100%);
+    }
+
+    &--featured-c,
+    &--featured-e {
+        @include base;
+        background-color: #0085A9;
+        background: radial-gradient(circle, #319FBD 0%, #027999 100%);
+    }
+
+    &--featured-h {
+        background-image: url('../images/content-pilot.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &--videos-1 {
+        background-image: url('../images/motion-background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
