@@ -1,28 +1,86 @@
 @mixin base {
-    // background-image: url('../images/motion-background.png');
-    // background-position: 50% 50%;
-    // background-repeat: no-repeat;
-    // background-size: cover;
 }
 
-.videos {
-    @include base;
+// .showcase__panel--videos {
 
-    p {
-        font-size: 2rem;
-        font-weight: 300;
-        text-align: left;
-    }
-}
+//     .videos-1 {
+//     @include base;
+
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-around;
+
+//     &__heading {
+//         font-size: 3.5rem !important;
+//         text-transform: none !important;
+//         font-weight: 400 !important;
+//         padding-bottom: 5rem;
+//     }
+
+//     &__video {
+//         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+//         height: 176px;
+//         overflow: hidden;
+//         width: 321px;
+//     }
+
+//     &__video-container {
+//         flex-basis: 100%;
+//         flex-grow: 0;
+//         flex-shrink: 1;
+//         margin-bottom: 5rem;
+//         padding-right: 1rem;
+//         width: 32.1rem;
+
+//         @media screen and (min-width: 1024px) {
+//             flex-basis: 50%;
+//             flex-grow: 0;
+//             flex-shrink: 1;
+//         }
+
+//         @media screen and (min-width: 1200px) {
+//             flex-basis: auto;
+//             flex-grow: 0;
+//             flex-shrink: 1;
+//             margin: 2rem;
+//             justify-content: space-between;
+            
+//         }
+
+//         h1 {
+//             display: block;
+//             font-size: 2.75rem;
+//             margin: 0 auto;
+//             padding-top: 1rem;
+//             text-align: left;
+//         }
+
+//         p {
+//             font-size: 1.5rem;
+//             margin: 0 auto;
+
+//             @media all and (min-width: 1024px) {
+//                 font-size: 2rem;
+//             }
+//         }
+//     }
+//     }
+// }
 .videos-1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 
     &__heading {
         font-size: 3.5rem !important;
         text-transform: none !important;
         font-weight: 400 !important;
+        padding-bottom: 5rem;
+    }
+
+    &__para {
+        margin: 6rem 0;
+        padding: 0 8rem;
     }
 
     &__video {
@@ -34,45 +92,94 @@
 
     &__video-container {
         flex-basis: 100%;
-        flex-grow: 1;
+        flex-grow: 0;
         flex-shrink: 1;
+        margin-bottom: 5rem;
+        padding-right: 1rem;
+        width: 32.1rem;
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 50%;
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
 
         @media screen and (min-width: 1200px) {
-            flex-basis: 33.3333%;
-            flex-grow: 1;
+            flex-basis: auto;
+            flex-grow: 0;
             flex-shrink: 1;
-        }
-
-        @media screen and (min-width: 768px) {
-            flex-basis: 50%;
-            flex-grow: 1;
-            flex-shrink: 1;
-        }
-
-        @media screen and (min-width: 1320px) {
-            flex-basis: 50%;
-            flex-grow: 1;
-            flex-shrink: 1;
+            margin: 2rem;
+            justify-content: space-between;
+            
         }
 
         h1 {
             display: block;
-            font-size: 3rem;
+            font-size: 2.75rem;
             margin: 0 auto;
+            padding-top: 1rem;
             text-align: left;
         }
 
         p {
-            font-size: 2rem;
-            margin: 0 auto;
+            font-size: 1.5rem;
+            // margin: 0 auto;
+            text-align: left;
+
+            @media all and (min-width: 1024px) {
+                font-size: 2rem;
+            }
         }
     }
 }
 
-.videos-1__video-container--unum {
-    @extend .videos-1__video-container;
+.videos-1__video-container--unum,
+.videos-1__video-container {
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin-bottom: 5rem;
+    padding-right: 1rem;
+    width: 32.1rem;
+
+    @media screen and (min-width: 1024px) {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+        margin: 2rem;
+        justify-content: space-between;
+        
+    }
+
+    h1 {
+        display: block;
+        font-size: 2.75rem;
+        margin: 0 auto;
+        padding-top: 1rem;
+        text-align: left;
+    }
+
+    p {
+        font-size: 1.5rem;
+        // margin: 0 auto;
+        text-align: left;
+
+        @media all and (min-width: 1024px) {
+            font-size: 2rem;
+        }
+    }
 }
 
-.videos-1__heading--unum {
-    @extend .videos-1__heading;
+.videos-1__heading--unum,
+.videos-1__heading {
+    font-size: 3.5rem !important;
+    text-transform: none !important;
+    font-weight: 400 !important;
+    padding-bottom: 5rem;
 }
