@@ -4,5 +4,9 @@
 .comparison {
     @include base;
 
+    h1 {
+        text-align: left;
+    }
+
     @import 'comparison-1';
 }
