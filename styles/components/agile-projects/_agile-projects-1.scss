@@ -7,10 +7,12 @@
 
 
     &__content {
+        margin-bottom: 6rem;
         
         h1 {
-            font-size: 32px;
+            font-size: 4rem;
             font-weight: 400;
+            margin-bottom: 0.5rem;
         }
 
         p {
@@ -19,6 +21,7 @@
     }
 
     &__group {
+        max-width: 140rem;
 
         &::after {
             border: 0.5px solid rgba(255, 255, 255, 0.5);
@@ -32,14 +35,6 @@
             display: none;
         }
 
-        h1 {
-            font-size: 5rem;
-            font-weight: 600;
-
-            @media screen and (min-width: 768px) {
-                font-size: 6rem;
-            }
-        }
     }
 }
 

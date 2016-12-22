@@ -21,6 +21,19 @@
         }
     }
 
+    .showcase__panel--pilot-b {
+        h1 {
+
+            @media all and (min-width: 768px) {
+                font-size: 4rem;
+            }
+            
+            @media all and (min-width: 800px) {
+                font-size: 6rem;
+            }
+        }
+    }
+
     @import 'panels/projects-a';
     @import 'panels/projects-1';
     @import 'panels/projects-2';
