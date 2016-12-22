@@ -247,9 +247,15 @@
     }
 
     &--featured-h {
+        @include base;
         background-image: url('../images/content-pilot.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        
+        h1 {
+            text-align: center;
+        }
+
     }
 
     &--videos-1 {
