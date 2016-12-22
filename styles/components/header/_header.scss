@@ -1,7 +1,3 @@
-@mixin enterprise-base() {
-    padding: 5rem;
-}
-
 @mixin base() {
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,20 +7,6 @@
     @media screen and (min-width: 768px) {
         background-size: 100%;
     }
-}
-
-.page-header--home {
-    @include enterprise-base;
-    align-items: center;
-    align-content: center;
-    background-color: #0F4E75;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    right: 0;
-    left: 0;
-    z-index: 999;
-    
 }
 
 .page-header {
@@ -49,6 +31,34 @@
     margin: 0 auto;
 }
 
+.page-header--home {
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    //position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #04436A;
+
+    .page-header__logo {
+        width: auto;
+        margin-right: 10rem;
+    }
+
+    &.scrolling {
+        background-color: #005488;
+
+        .page-header__logo,
+        .page-header__logo2 {
+            width: 50%;
+        }
+    }
+}
 .page-header--colonial-life {
     @include base;
     background-image: url('../images/colonial-header.jpg');
