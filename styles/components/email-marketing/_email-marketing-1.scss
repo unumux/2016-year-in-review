@@ -66,7 +66,7 @@
     }
 
     &--cl {
-        @extend .email-marketing-1;
+       @extend .email-marketing-1;
 
         // background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
         display: flex;
@@ -74,7 +74,7 @@
         justify-content: center;
 
         &--light {
-            @extend .email-marketing-1--cl;
+            //@extend .email-marketing-1--cl;
 
             // background-image: linear-gradient(179.02deg, #70AC48 0%, #61963D 100%);
         }
@@ -87,7 +87,7 @@
     &__heading {
         font-size: 4rem;
         font-weight: 600;
-        margin-bottom: 1.5rem !important; //<--- SO SORRY!
+        margin-bottom: 1.5rem !important; //<--- SO SORRY! - It's okay.
     }
 
     &__image {
