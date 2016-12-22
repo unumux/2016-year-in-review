@@ -21,19 +21,6 @@
         }
     }
 
-    .showcase__panel--pilot-b {
-        h1 {
-
-            @media all and (min-width: 768px) {
-                font-size: 4rem;
-            }
-            
-            @media all and (min-width: 800px) {
-                font-size: 6rem;
-            }
-        }
-    }
-
     .showcase__panel {
 
         &--project-a,
@@ -68,6 +55,21 @@
         &--pilot-c {
             h1 {
                 text-align: center;
+            }
+        }
+    }
+
+    .showcase__panel--pilot-b {
+        h1 {
+
+            font-size: 3rem;
+
+            @media all and (min-width: 768px) {
+                font-size: 4rem;
+            }
+            
+            @media all and (min-width: 800px) {
+                font-size: 6rem;
             }
         }
     }
