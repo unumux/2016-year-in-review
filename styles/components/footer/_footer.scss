@@ -1,5 +1,6 @@
 @mixin base() {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .page-footer {
@@ -9,7 +10,7 @@
     &__logo {
         display: block;
         height: 100%;
-        margin: 0 auto;
+        margin: 2rem auto;
         width: 14rem;
         
     }
@@ -27,7 +28,7 @@
     &__logo3 {
         display: block;
         height: 100%;
-        margin: 0 auto;
+        margin: 2rem auto;
         width: 18rem;
     }
     
@@ -37,30 +38,30 @@
         width: 4rem;
     }
 
-    &__info {
+    &__info,
+    &__info2 {
         align-items: center;
-        background-image: url('../images/unum-background.png');
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size:cover;
-        flex-basis: 50%;
+        flex-basis: 100%;
         flex-grow: 1;
         flex-shrink: 1;
         margin: 0 auto;
-        max-width: 50%;
+        padding: 10rem 0;
+
+        @media all and (min-width: 768px) {
+            flex-basis: 50%;
+            padding: 40rem 0;
+        }
+    }
+
+    &__info {
+        background-image: url('../images/unum-background.png');
     }
 
     &__info2 {
-        align-items: center;
         background-image: url('../images/colonial-background.png');
-        background-size: cover;
-        background-position: 50% 50%;
-        background-repeat: no-repeat;
-        flex-basis: 50%;
-        flex-grow: 1;
-        flex-shrink: 1;
-        margin: 0 auto;
-        max-width: 50%;
     }
 
     &__image,

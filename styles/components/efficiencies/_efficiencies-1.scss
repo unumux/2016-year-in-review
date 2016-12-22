@@ -11,6 +11,10 @@
         text-align: left;
         text-transform: uppercase;
     }
+    
+    p {
+        margin: 3rem 0;
+    }
 
     &__content {
         background-color: #1f3340;
@@ -19,11 +23,12 @@
         flex-grow: 1;
         flex-shrink: 0;
         margin-bottom: 2rem;
-        padding: 2rem;
+        padding: 4rem 2rem;
 
         h1 {
             color: $yellow;
             font-size: 2.4rem;
+            margin-bottom: 2rem;
         }
 
         ul {
@@ -46,7 +51,7 @@
         
         @media screen and (min-width: 960px) {
             flex-basis: calc(33% - 2rem);
-            flex-grow: 0;
+            flex-grow: 1;
             flex-shrink: 0;
             margin: 1rem;
         }
