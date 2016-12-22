@@ -10,6 +10,18 @@
 .main-nav {
     @include base;
 
+    h1 {  
+        text-transform: uppercase;
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 2.75rem;
+        padding-right: 1rem;
+    }   
+ 
+     ul {
+        margin-top: 0;
+    }
+
     @import "list";
     @import "item";
     @import "link";
