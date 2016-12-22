@@ -1,5 +1,11 @@
 @mixin base {}
 
+.showcase__panel--comparison {
+    h1 {
+        max-width: 140rem;
+        margin: 0 auto;
+    }
+}
 
 .comparison-1 {
     @include base;
@@ -16,6 +22,8 @@
         flex-grow: 1;
         flex-shrink: 1;
         font-size: 2rem;
+        max-width: 140rem;
+        margin: 0 auto;
 
             h1 {
                 color: #fff;
@@ -51,6 +59,7 @@
 
     @media screen and (min-width: 1100px) {
         display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -136,8 +145,9 @@
             position: absolute;
             right: 0;
             top: 30px;
+        }
 
-            &-1 {
+        &-percent-1 {
                 bottom: 0;
                 font-size: 6rem;
                 font-weight: 400;
@@ -148,13 +158,33 @@
                 right: 0;
                 top: -30px;
             }
-        }
     }
 
     &__content {
         flex-basis: 50%;
         flex-grow: 1;
         flex-shrink: 1;
+        max-width: 140rem;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1100px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .comparison-2__circles,
+            .comparison-3,
+            .comparison-4__circles {
+                flex-basis: 33%;
+                flex-grow: 1;
+                flex-shrink: 0;
+                padding: 0;
+            }
+
+            .comparison-3 {
+                margin: 15rem 0;
+            }
+        }
     }
 }
 
@@ -254,8 +284,9 @@
             position: absolute;
             right: 0;
             top: 30px;
+        }
 
-            &-1 {
+        &-percent-1 {
                 bottom: 0;
                 font-size: 6rem;
                 font-weight: 400;
@@ -265,7 +296,6 @@
                 position: absolute;
                 right: 0;
                 top: -30px;
-            }
         }
     }
 
