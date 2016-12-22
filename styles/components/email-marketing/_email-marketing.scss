@@ -142,19 +142,20 @@
     &__image {
         height: auto;
         margin: 0 auto;
-        width: 38rem;
+        max-width: 100%;
         @media screen and (min-width: 1100px) {
-            width: 65rem;
+            //width: 65rem;
+            max-width: 50%;
         }
     }
     &__image1 {
-        height: 20rem;
+        height: auto;
         margin: 0 auto;
         padding-top: 5rem;
-        width: 38rem;
+        max-width: 100%;
         @media screen and (min-width: 1100px) {
-            height: auto;
-            width: 65rem;
+            //width: 65rem;
+            max-width: 50%;
         }
     }
     &__grouping {
@@ -470,19 +471,20 @@
     &__image {
         height: auto;
         margin: 0 auto;
-        width: 38rem;
+        max-width: 100%;
         @media screen and (min-width: 1100px) {
-            width: 65rem;
+            //width: 65rem;
+            max-width: 50%;
         }
     }
     &__image1 {
-        height: 20rem;
+        height: auto;
         margin: 0 auto;
         padding-top: 5rem;
-        width: 38rem;
+        max-width: 100%;
         @media screen and (min-width: 1100px) {
-            height: auto;
-            width: 65rem;
+            //width: 65rem;
+           max-width: 50%;
         }
     }
     &__grouping {

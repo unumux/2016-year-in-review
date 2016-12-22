@@ -10,6 +10,12 @@
 .main-nav {
     @include base;
 
+    display: none;
+
+    @media all and (min-width: 768px) {
+        display: block;
+    }
+
     h1 {
         color: #ddd;  
         font-size: 2.75rem;
