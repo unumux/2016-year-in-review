@@ -1,8 +1,4 @@
-@mixin base {
-}
 .projects {
-    @include base;
-
     p {
         text-align: left;
     }
@@ -29,10 +25,64 @@
 
 .projects--unum {
     @extend .projects;
+
+    .showcase__panel {
+
+        &--featured-b,
+        &--featured-c,
+        &--featured-d {
+            h1,
+            section {
+                max-width: 140rem;
+                margin: 0 auto;
+            }
+
+            h1 {
+                text-align: left;
+                font-size: 4.8rem;
+            }
+
+            section {
+                display: flex;
+                align-items: flex-start;
+
+                div:first-child {
+                    margin-top: 5rem;
+                }
+            }
+        }
+    }
 }
 
 .projects--unum--pilots {
     @extend .projects--unum;
+
+    .showcase__panel {
+
+        &--featured-e,
+        &--featured-f {
+            h1,
+            section {
+                max-width: 140rem;
+                margin: 0 auto;
+            }
+
+            h1 {
+                text-align: left;
+                font-size: 4.8rem;
+            }
+
+            section {
+                display: flex;
+                align-items: flex-start;
+
+                div:first-child {
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+    }
 }
 
 .projects--pilots {
