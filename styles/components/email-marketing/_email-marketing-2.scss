@@ -10,12 +10,12 @@
 .email-marketing-2 {
     @include base;
 
-    &--cl {
-        @extend .email-marketing-2;
-        
-        background-image: none;
-    }
 
 }
 
+.email-marketing-2--cl {
+    @include base;
+        
+    background-image: none;
+}
 
