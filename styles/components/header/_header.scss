@@ -17,7 +17,7 @@
     @include enterprise-base;
     align-items: center;
     align-content: center;
-    background-color: #005488;
+    background-color: #0F4E75;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -34,7 +34,7 @@
         margin: 0 auto;
         width: 50%;
 
-        @media all and (min-width:600px) {
+        @media all and (min-width:768px) {
             width: auto;
         }
     }
