@@ -10,12 +10,13 @@
 .main-nav {
     @include base;
 
-    h1 {  
-        text-transform: uppercase;
+    h1 {
+        color: #ddd;  
+        font-size: 2.75rem;
         font-weight: 300;
         margin-bottom: 0;
-        font-size: 2.75rem;
         padding-right: 1rem;
+        text-transform: uppercase;
     }   
  
      ul {

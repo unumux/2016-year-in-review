@@ -239,6 +239,13 @@
         background: radial-gradient(circle, #319FBD 0%, #027999 100%);
     }
 
+    &--featured-g {
+
+        h1 {
+            text-align: center;
+        }
+    }
+
     &--featured-h {
         background-image: url('../images/content-pilot.jpg');
         background-repeat: no-repeat;
