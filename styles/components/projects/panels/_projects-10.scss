@@ -27,7 +27,11 @@
     &__image {
         height: auto;
         margin-bottom: 6.6rem;
-        width: 68.5rem;
+        width: 37.5rem;
+
+        @media all and (min-width: 786px) {
+            width: 50rem;
+        }
     }
 }
 
