@@ -34,6 +34,44 @@
         }
     }
 
+    .showcase__panel {
+
+        &--project-a,
+        &--project-b,
+        &--project-c,
+        &--project-d,
+        &--pilot-a,
+        &--pilot-b,
+        &--pilot-c,
+        &--pilot-d {
+            h1,
+            section {
+                max-width: 140rem;
+                margin: 0 auto;
+            }
+
+            h1 {
+                text-align: left;
+                font-size: 4.8rem;
+            }
+
+            section {
+                display: flex;
+                align-items: flex-start;
+
+                div:first-child {
+                    margin-top: 5rem;
+                }
+            }
+        }
+
+        &--pilot-c {
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+
     @import 'panels/projects-a';
     @import 'panels/projects-1';
     @import 'panels/projects-2';
