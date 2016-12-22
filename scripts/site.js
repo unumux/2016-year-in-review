@@ -65,8 +65,21 @@ document.addEventListener("DOMContentLoaded", function(event) { 
 });
 
 window.addEventListener("resize", updatePoints);
-window.addEventListener('scroll', updateScroll);
+window.addEventListener("scroll", updateScroll);
 window.addEventListener("hashchange", updateNav);
+
+
+
+// window.addEventListener("scroll", stickyHeader);
+
+// function stickyHeader() {
+//     const header = document.querySelector("header");
+    
+//     if(window.scrollY > 0 && !header.classList.contains("scrolling")) {
+//         header.classList.add("scrolling");
+//     }
+// }
+
 
 //Sticky header
 
