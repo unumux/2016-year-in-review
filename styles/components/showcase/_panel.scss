@@ -22,6 +22,28 @@
         background-color: #005488;
         background-image: radial-gradient(circle, hsla(255,255,255,0.25) 0%, hsla(0,0,0,0.25) 100%);
     }
+
+    &--intro,
+    &--engage,
+    &--quality,
+    &--new,
+    &--establish,
+    &--relevant,
+    &--persona,
+    &--sitecore,
+    &--starmount {
+        section {
+            max-width: 130rem;
+            margin: 0 auto;
+        }
+    }
+
+    &--persona {
+        h1 {
+            max-width: 130rem;
+            margin: 0 auto;
+        }
+    }
     
     &--intro {
         @include base;
