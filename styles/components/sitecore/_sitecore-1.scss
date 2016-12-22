@@ -10,7 +10,7 @@
     h1 {
         font-size: 6rem;
         font-weight: normal;
-        line-height: 10.7rem;
+        // line-height: 10.7rem;
     }
 
     &__list-item {
@@ -27,7 +27,7 @@
     &__value {
         font-size: 20rem;
         font-weight: 600;
-        line-height: 4.6rem;
+        // line-height: 4.6rem;
 
         @media screen and (min-width: 768px) {
             font-size: 30rem;
@@ -37,7 +37,7 @@
     &__label {
         font-size: 8rem;
         font-weight: 600;
-        line-height: 1.45;
+        // line-height: 1.45;
         text-transform: uppercase;
 
         @media screen and (min-width: 768px) {

@@ -164,36 +164,41 @@
 
     &--agile-1 {
         @include base;
-        background-image: url("http://placekitten.com/200/200");
+        background-image: url("../images/empact.jpg");
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: cover;  
+        background-position: 50% 50%;  
     }
     
     &--agile-2 {
         @include base;
-        background-image: url("http://placekitten.com/200/200");
+        background-image: url("../images/Field Appeal-2.jpg");
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: cover;
+        background-position: 50% 50%;    
     }
 
     &--agile-3 {
         @include base;
-        background-image: url("http://placekitten.com/200/200");
+        background-image: url("../images/plana-1.jpg");
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: cover;
+        background-position: 50% 50%;    
     }
 
     &--agile-4 {
         @include base;
-        background-image: url("http://placekitten.com/200/200");
+        background-image: url("../images/plana.jpg");
         background-repeat: no-repeat;
-        background-size: cover;    
+        background-size: cover;
+        background-position: 50% 50%;    
     }
 
     &--videos {
         background-image: url('../images/motion-background.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: 50% 50%;
     }
 
     //UNUM BGs
