@@ -7,6 +7,7 @@ TARGET_BRANCH="gh-pages"
 function doCompile {
   ux styles
   ux js
+  npm run minify
   rsync -aP --exclude=node_modules --exclude=images-src --exclude=.gitignore --exclude=out ./* ./out
 }
 
