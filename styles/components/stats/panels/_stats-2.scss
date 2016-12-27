@@ -82,13 +82,24 @@
         top: 55px;
 
         &-a {
+
             bottom: 0;
-            font-size: 2rem;
-            left: -1px;
-            position: absolute;
-            right: 0;
-            text-transform: uppercase;
-            top: 75px;
+                font-size: 2rem;
+                left: -1px;
+                position: absolute;
+                right: 0;
+                text-transform: uppercase;
+                top: 40px;
+
+            @media all and (min-width: 768px) {
+                bottom: 0;
+                font-size: 2rem;
+                left: -1px;
+                position: absolute;
+                right: 0;
+                text-transform: uppercase;
+                top: 75px;
+            }
         }
     }
 
@@ -101,7 +112,7 @@
         padding: 0;
         position: absolute;
         right: 0;
-        top: 40px;
+        top: 15px;
 
         @media all and (min-width: 768px) {
             bottom: 0;
