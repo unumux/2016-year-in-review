@@ -46,7 +46,7 @@
         &::before {
             content: '';
             display: block;
-            width: 150px;
+            width: 15rem;
             border: 1px solid rgba(255, 255, 255, 0.5);
             margin: 2rem auto;
         }
@@ -54,7 +54,7 @@
         &::after {
             content: '';
             display: block;
-            width: 150px;
+            width: 15rem;
             border: 1px solid rgba(255, 255, 255, 0.5);
             margin: 2rem auto;
         }
@@ -73,14 +73,28 @@
     border: 1rem solid $lime-green;
     border-radius: 50%;
     color: #fff;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    height: 300px;
-    line-height: 210px;
+    height: 25rem;
+    line-height: 21rem;
     margin: 4rem auto;
     position: relative;
     text-align: center;
-    width: 300px;
+    width: 25rem;
+
+    @media all and (min-width: 768px) {
+        border: 1rem solid $lime-green;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 5rem;
+        font-weight: 600;
+        height: 30rem;
+        line-height: 21rem;
+        margin: 4rem auto;
+        position: relative;
+        text-align: center;
+        width: 30rem;
+    }
 
     @media screen and (min-width: 1000px) {
         display: inline-block;
@@ -119,7 +133,19 @@
         padding: 0;
         position: absolute;
         right: 0;
-        top: 40px;
+        top: 35px;
+
+        @media all and (min-width: 768px) {
+            bottom: 0;
+            font-size: 4rem;
+            font-weight: 400;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 40px;
+        }
     }
 }
 
@@ -127,12 +153,12 @@
     border-radius: 50%;
     color: #fff;
     font-weight: 600;
-    height: 250px;
-    line-height: 250px;
+    height: 25rem;
+    line-height: 25rem;
     margin: 4rem auto;
     position: relative;
     text-align: center;
-    width: 250px;
+    width: 25rem;
 
     @media screen and (min-width: 1000px) {
         display: inline-block;
@@ -140,7 +166,7 @@
     }
 
     &::before, &::after {
-        border: 1.5rem solid #aaa;
+        border: .75rem solid #aaa;
         border-color: $lime-green #fff #fff $lime-green;
         border-radius: 50%;
         bottom: 0;
@@ -150,6 +176,19 @@
         right: 0;
         transition: transform 1s;
         top: 0;
+
+        @media all and (min-width: 768px) {
+            border: 1.5rem solid #aaa;
+            border-color: $lime-green #fff #fff $lime-green;
+            border-radius: 50%;
+            bottom: 0;
+            content: '';
+            left: 0;
+            position: absolute;
+            right: 0;
+            transition: transform 1s;
+            top: 0;
+        }
     }
 
 }
