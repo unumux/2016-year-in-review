@@ -1,26 +1,13 @@
 @mixin base {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .intro-1 {
     @include base;
 
-    h1 {
-    
-        font-size: 5rem;
-        margin: 0 auto;
-    }
-
     & p {
-        font-size: 2.8rem;
-        margin: 0 auto;
 
         @media screen and (min-width: 768px) {
-            font-size: 3.6rem;
+            // font-size: 3.6rem;
         }
     }
 
@@ -43,5 +30,15 @@
     &__question {
         color: $lime-green;
         text-transform: uppercase;
+    }
+
+     a {
+        background-image: url(../images/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        height: 3rem;
+        margin-top: 3rem;
+        width: 3rem;
     }
 }
