@@ -1,32 +1,31 @@
 @mixin base {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 
 .title-1 {
     @include base;
 
-    p {
-        font-size: 2.5rem;
-        font-weight: 400;
-        letter-spacing: 26.4px;
-        text-transform: uppercase;
+     h1 {
+        font-weight: 300;
+        letter-spacing: 0.25rem;
 
         @media screen and (min-width: 768px) {
-            font-size: 4.4rem;
+            letter-spacing: 1rem;
         }
     }
 
-    a {
-        display: inline-block;
-        margin: 5rem;
+    img {
+        display: block;
+        margin: 2rem auto;
     }
 
-    &__image {
-        width: 3.5rem;
+    a {
+        background-image: url(../images/down-arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        height: 3rem;
+        margin-top: 3rem;
+        width: 3rem;
     }
 }
