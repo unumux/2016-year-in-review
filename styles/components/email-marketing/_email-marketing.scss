@@ -78,14 +78,24 @@
         &__circle2 {
             border: 14px solid #fff;
             border-radius: 50%;
-            height: 350px;
+            height: 30rem;
             margin: 40rem auto;
             position: relative;
-            width: 350px;
+            width: 30rem;
+
+            @media all and (min-width: 768px) {
+                border: 14px solid #fff;
+                border-radius: 50%;
+                height: 35rem;
+                margin: 40rem auto;
+                position: relative;
+                width: 35rem;
+            }
+
             @media screen and (min-width: 1100px) {
                 // messes up text if we change size of the circle
-                height: 400px;
-                width: 400px;
+                height: 400rem;
+                width: 400rem;
             }
         }
     }
