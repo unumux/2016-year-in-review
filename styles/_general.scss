@@ -62,6 +62,18 @@ img {
     max-width: 100%;
 }
 
+div {
+    font-size: $footnote-mobile;
+
+    @media all and (min-width: 768px) {
+        font-size: $footnote-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $footnote-desktop;
+    }
+}
+
 //TO REMOVE THE FEEDBACK link
 
 .QSIFeedBackLink {
