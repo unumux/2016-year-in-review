@@ -1,13 +1,13 @@
 @mixin base {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 }
 
 .showcase__panel--sitecore {
     h1 {
-        font-weight: normal;
-        margin: 0;
+        // font-weight: normal;
+        // margin: 0;
     }
 }
 
@@ -15,45 +15,36 @@
     @include base;
 
     h1 {
-        font-weight: normal;
-        margin: 0;
+        // font-weight: normal;
+        // margin: 0;
     }
 
-    &__list {
-        padding: 0;
-        margin: 0;
+    span {
+        display: block;
+        font-size: 24rem;
+        margin-top: 10rem;
+        margin-bottom: 6rem;
     }
 
-    &__list-item {
-        list-style-type: none;
-    }
+    // &__list {
+    //     padding: 0;
+    //     margin: 0;
+    // }
+
+    // &__list-item {
+    //     list-style-type: none;
+    // }
 
     &__image {
         display: block;
         height: auto;
-        margin-top: 5rem;
+        // margin-top: 5rem;
         margin: 0 auto;
         width: 12.1rem;
     }
 
-    &__value {
-        font-size: 20rem;
-        font-weight: 600;
-
-        @media screen and (min-width: 768px) {
-            font-size: 30rem;
-        }
-    }
-
     &__label {
-        font-size: 8rem;
-        font-weight: 600;
-        // line-height: 1.45;
         text-transform: uppercase;
-
-        @media screen and (min-width: 768px) {
-            font-size: 12rem;
-        }
     }
 
     &__list-item2 {
