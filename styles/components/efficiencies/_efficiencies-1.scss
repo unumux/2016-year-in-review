@@ -6,14 +6,8 @@
 .efficiencies-1 {
     @include base;
 
-    h1 {
-        font-size: 4rem;
-        text-align: left;
-        text-transform: uppercase;
-    }
-    
     p {
-        margin: 3rem 0;
+        flex-basis: 100%;
     }
 
     &__content {
@@ -23,7 +17,8 @@
         flex-grow: 1;
         flex-shrink: 0;
         margin-bottom: 2rem;
-        padding: 2rem 1rem;
+        padding: 2rem;
+        text-align: center;
 
         @media all and (min-width: 768px) {
             padding: 4rem 2rem;
@@ -31,7 +26,7 @@
 
         h1 {
             color: $yellow;
-            font-size: 2.4rem;
+            font-size: 4rem;
             margin-bottom: 2rem;
         }
 
@@ -41,29 +36,21 @@
         }
 
         li {
-            font-size: 2rem;
             list-style-type: none;
-            text-align: left;
         }
         
         @media screen and (min-width: 768px) {
-            flex-basis: calc(33% - 1rem);
+            flex-basis: calc(30% - 1rem);
             flex-grow: 1;
             flex-shrink: 0;
             margin: 1rem;
         }
         
         @media screen and (min-width: 960px) {
-            flex-basis: calc(33% - 2rem);
+            flex-basis: calc(30% - 2rem);
             flex-grow: 1;
             flex-shrink: 0;
             margin: 1rem;
         }
-    }
-
-    h1 {
-        font-size: 4rem;
-        text-align: left;
-        text-transform: uppercase;
     }
 }
