@@ -12,17 +12,13 @@
     }
 
     &__label {
-        @include footnote-font;
+        @include footnote;
     }
     
     &__content {
         flex-basis: 100%;
         flex-grow: 1;
         flex-shrink: 1;
-
-        p {
-            // font-size: 2rem;
-        }
 
         @media screen and (min-width: 768px) {
             flex-basis: 50%;

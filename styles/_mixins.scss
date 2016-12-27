@@ -27,7 +27,7 @@
   padding-right: calc((100vw - 100%) / 2);
 }
 
-@mixin footnote-font {
+@mixin footnote {
     font-size: $footnote-mobile;
 
     @media all and (min-width: 768px) {
