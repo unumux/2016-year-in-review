@@ -44,13 +44,8 @@
     }
 }
 
-.comparison-2 {
-    @include base;
-
-    &__circles {
-        padding-top: 4rem;
-        text-align: left;
-    }
+.comparison-2,
+.comparison-4 {
 
     &__circle {
         border-radius: 50%;
@@ -63,37 +58,28 @@
         text-align: center;
         width: 250px;
 
-    &::before, &::after {
-        border: 1.5rem solid #aaa;
-        border-color: $yellow #fff #fff $yellow;
-        border-radius: 50%;
-        bottom: 0;
-        content: '';
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        transition: transform 1s;
-    }
+        &:before, &:after {
+            content: '';
+            bottom: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border-radius: 50%;
+            transition: transform 1s;
+            border: 1.5rem solid #aaa;
+        }
 
-    &::after {
-        border-color: transparent transparent white transparent;
-    }
-
-    &::before {
-        transform: rotate(135deg);
-    }
-
-    &-value {
-        bottom: 0;
-        font-size: 5rem;
-        left: 0;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
+        &-value {
+            bottom: 0;
+            font-size: 5rem;
+            left: 0;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
 
         &-label {
             bottom: 0;
@@ -105,7 +91,7 @@
             position: absolute;
             right: 0;
             top: 55px;
-
+        
             &-a {
                 bottom: 0;
                 font-size: 2rem;
@@ -138,7 +124,31 @@
                 position: absolute;
                 right: 0;
                 top: -30px;
-            }
+        }
+    }
+}
+
+.comparison-2 {
+    @include base;
+
+    &__circles {
+        padding-top: 4rem;
+        text-align: left;
+    }
+
+    &__circle {
+
+        &::before, &::after {
+            border-color: $yellow #fff #fff $yellow;
+        }
+
+        &::after {
+            border-color: transparent transparent white transparent;
+        }
+
+        &::before {
+            transform: rotate(135deg);
+        }
     }
 
     &__content {
@@ -167,7 +177,7 @@
             }
         }
     }
-}
+ }
 
 .comparison-3 {
     @include base;
@@ -190,94 +200,20 @@
     @include base;
 
     &__circle {
-        color: #fff;
-        border-radius: 50%;
-        font-weight: 600;
-        height: 250px;
-        line-height: 250px;
-        margin: 4rem auto;
-        width: 250px;
-        position: relative;
-        text-align: center;
 
-    &::before, &::after {
-        content: '';
-        border: 1.5rem solid #aaa;
-        border-color: #fff $ocean #fff $ocean;
-        border-radius: 50%;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transform: rotate(-45deg);
-        transition: transform 1s;
-    }
-
-    &::after {
-        border-color: transparent transparent $ocean transparent;
-    }
-
-    &::before {
-        transform: rotate(-45deg);
-    }
-        &-value {
-            bottom: 0;
-            font-size: 5rem;
-            left: 0;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
+        &::before, &::after {
+            border-color: #fff $ocean #fff $ocean;
+            transform: rotate(-45deg);
         }
 
-        &-label {
-            bottom: 0;
-            font-size: 4rem;
-            font-weight: 400;
-            left: 0;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            right: 0;
-            top: 55px;
-
-            &-a {
-                bottom: 0;
-                font-size: 2rem;
-                left: -1px;
-                position: absolute;
-                right: 0;
-                top: 55px;
-            }
+        &::after {
+            border-color: transparent transparent $ocean transparent;
         }
 
-        &-percent {
-            bottom: 0;
-            font-size: 2rem;
-            font-weight: 400;
-            left: 0;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            right: 0;
-            top: 30px;
-        }
-
-        &-percent-1 {
-                bottom: 0;
-                font-size: 6rem;
-                font-weight: 400;
-                left: 0;
-                margin: 0;
-                padding: 0;
-                position: absolute;
-                right: 0;
-                top: -30px;
+        &::before {
+            transform: rotate(-45deg);
         }
     }
-
 }
         
 .blue {
