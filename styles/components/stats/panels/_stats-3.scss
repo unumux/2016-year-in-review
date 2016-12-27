@@ -46,7 +46,7 @@
         &::before {
             content: '';
             display: block;
-            width: 150px;
+            width: 15rem;
             border: 1px solid rgba(255, 255, 255, 0.5);
             margin: 2rem auto;
         }
@@ -54,7 +54,7 @@
         &::after {
             content: '';
             display: block;
-            width: 150px;
+            width: 15rem;
             border: 1px solid rgba(255, 255, 255, 0.5);
             margin: 2rem auto;
         }
@@ -73,14 +73,14 @@
     border: 1rem solid $lime-green;
     border-radius: 50%;
     color: #fff;
-    font-size: 50px;
+    font-size: 5rem;
     font-weight: 600;
-    height: 300px;
-    line-height: 210px;
+    height: 30rem;
+    line-height: 21rem;
     margin: 4rem auto;
     position: relative;
     text-align: center;
-    width: 300px;
+    width: 30rem;
 
     @media screen and (min-width: 1000px) {
         display: inline-block;
@@ -127,12 +127,12 @@
     border-radius: 50%;
     color: #fff;
     font-weight: 600;
-    height: 250px;
-    line-height: 250px;
+    height: 25rem;
+    line-height: 25rem;
     margin: 4rem auto;
     position: relative;
     text-align: center;
-    width: 250px;
+    width: 25rem;
 
     @media screen and (min-width: 1000px) {
         display: inline-block;
