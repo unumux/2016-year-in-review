@@ -7,6 +7,10 @@
 .projects-10 {
     @include base;
 
+    h1 {
+        text-align: center;
+    }
+
     p {
         font-size: 3.2rem;
         max-width: 120rem;

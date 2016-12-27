@@ -1,4 +1,6 @@
-@mixin base {}
+@mixin base {
+    padding: 2rem;
+}
 
 .alert-1 {
     @include base;

@@ -26,3 +26,16 @@
   padding-left: calc((100vw - 100%) / 2);
   padding-right: calc((100vw - 100%) / 2);
 }
+
+
+@function get-nested-property($map, $keys...) {
+    @each $key in $keys {
+        $map: map-get($map, $key);
+    }
+
+    @return $map;
+}
+
+@function fs($size, $element) {
+    @return get-nested-property($font-sizes, $size, $element);
+}

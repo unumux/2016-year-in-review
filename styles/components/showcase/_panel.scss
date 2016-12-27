@@ -11,18 +11,7 @@
 &__panel {
     @include base;
 
-    h1 {
-        text-transform: uppercase;
-    }
-
-    //OVERVIEW SITE BG COLORS
-    &--title, 
-    &--intro {
-        @include base;
-        background-color: #005488;
-        background-image: radial-gradient(circle, hsla(255,255,255,0.25) 0%, hsla(0,0,0,0.25) 100%);
-    }
-
+    //sizing stuff
     &--intro,
     &--engage,
     &--quality,
@@ -45,6 +34,14 @@
         }
     }
     
+    
+    //OVERVIEW SITE BG COLORS
+    &--title {
+        @include base;
+        background-color: #005488;
+        background-image: radial-gradient(circle, hsla(255,255,255,0.25) 0%, hsla(0,0,0,0.25) 100%);
+    }
+
     &--intro {
         @include base;
         background-color: #005488;
@@ -89,10 +86,6 @@
     &--persona {
         @include base;        
         background-image: linear-gradient(0deg, #45536F 0%, #232B3B 100%);
-
-        h1 {
-            text-align: left;
-        }
     }
 
     &--efficiencies {
@@ -122,7 +115,6 @@
 
     &--alert {
         background-color: #E0832E;
-        padding: 2rem;
     }
 
     //COLONIAL SITE BGs
@@ -222,7 +214,6 @@
     }
 
     //UNUM BGs
-
     &--stats-2-unum {
         @include base;
         background-color: #007478;
@@ -266,10 +257,6 @@
     }
 
     &--featured-g {
-
-        h1 {
-            text-align: center;
-        }
     }
 
     &--featured-h {
@@ -277,11 +264,6 @@
         background-image: url('../images/content-pilot.jpg');
         background-repeat: no-repeat;
         background-size: cover;
-        
-        h1 {
-            text-align: center;
-        }
-
     }
 
     &--videos {
