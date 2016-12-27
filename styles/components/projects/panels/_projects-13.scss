@@ -9,6 +9,10 @@
 .projects-13 {
     @include base;
 
+    h1 {
+        text-align: center;
+    }
+
     &__content {
         margin-bottom: 5rem;
 

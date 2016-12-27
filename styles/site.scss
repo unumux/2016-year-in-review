@@ -1,5 +1,5 @@
-@import 'mixins';
 @import 'variables';
+@import 'mixins';
 
 @import 'components/header/header';
 @import 'components/alert/alert';
@@ -7,9 +7,7 @@
 @import 'components/benefits-of-one/benefits-of-one';
 @import 'components/comparison/comparison';
 @import 'components/efficiencies/efficiencies';
-// @import 'components/email/email';
 @import 'components/email-marketing/email-marketing';
-@import 'components/engage/engage';
 @import 'components/establish/establish';
 @import 'components/field-office-pages/field-office-pages';
 @import 'components/intro/intro';
@@ -29,13 +27,12 @@
 @import 'components/starmount/starmount';
 @import 'components/title/title';
 @import 'components/videos/videos';
-// @import 'components/coming-in-2017/coming-2017';
 @import 'components/footer/footer';
 
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 62.5%; //sets up 1rem to equal 10px. Allows easier conversion of rems.
 }
 
 *,
@@ -56,20 +53,37 @@ body {
     background-color: #1f3340;
     color: #fff;
     font-family: "source sans pro", "helvetica", "arial", "sans-serif";
-    font-size: 1.6rem;
+    font-size: $font-mobile;
+    font-weight: 300;
     margin: 0;
+
+    @media all and (min-width: 768px) {
+        font-size: $font-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $font-desktop;
+    }
 }
 
 h1 {
-    font-size: 3.2rem;
+    font-size: $h1-mobile;
+    font-weight: 600;
     line-height: 100%;
     margin-bottom: 2rem;
+    text-transform: uppercase;
     width: 100%;
+    
+    @media all and (min-width: 768px) {
+        font-size: $h1-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $h1-desktop;
+    }
 }
 
-h2 {
-    font-size: 2.4rem;
-}
+
 
 p {
     margin: 0 auto;
