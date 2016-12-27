@@ -4,23 +4,14 @@
 .intro { 
     @include base;
 
-    span {
-        display: block;
-        font-size: 4rem;
-        margin-bottom: 5rem;
-        text-transform: uppercase;
-
-        @media screen and (min-width: 1036px) {
-            font-size: 5rem;
-        }
-    }
-
     &__image {
-        padding-bottom: 1rem;
-        width: 35rem;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        width: 30rem;
 
         @media screen and (min-width: 768px) {
-            width: 45rem;
+            width: 35rem;
         }
     }
 
