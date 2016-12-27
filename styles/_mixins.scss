@@ -26,3 +26,15 @@
   padding-left: calc((100vw - 100%) / 2);
   padding-right: calc((100vw - 100%) / 2);
 }
+
+@mixin footnote-font {
+    font-size: $footnote-mobile;
+
+    @media all and (min-width: 768px) {
+        font-size: $footnote-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $footnote-desktop;
+    }
+}
