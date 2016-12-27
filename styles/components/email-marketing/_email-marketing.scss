@@ -5,26 +5,35 @@
     &__circle2 {
         border: 14px solid #fff;
         border-radius: 50%;
-        height: 350px;
+        height: 30rem;
         position: relative;
-        width: 350px;
+        width: 30rem;
+
+        @media screen and (min-width: 768px) {
+            border: 14px solid #fff;
+            border-radius: 50%;
+            height: 35rem;
+            position: relative;
+            width: 35rem;
+        }
+
         @media screen and (min-width: 1100px) {
             // messes up text if we change size of the circle
-            height: 400px;
-            width: 400px;
+            height: 40rem;
+            width: 40rem;
         }
     }
     &__circle3 {
         border: 14px solid #fff;
         border-radius: 50%;
-        height: 375px;
+        height: 37.5rem;
         margin: 40rem auto;
         position: relative;
-        width: 375px;
+        width: 37.5rem;
         @media screen and (min-width: 1100px) {
             // messes up text if we change size of the circle
-            height: 410px;
-            width: 410px;
+            height: 41rem;
+            width: 41rem;
         }
     }
     
