@@ -25,13 +25,14 @@ body {
     font-weight: 300;
     margin: 0;
 
-    @media all and (min-width: 768px) {
+   @media all and (min-width: 768px) {
         font-size: $font-tablet;
     }
 
     @media all and (min-width: 1024px) {
         font-size: $font-desktop;
     }
+
 }
 
 h1 {
