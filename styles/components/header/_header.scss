@@ -23,7 +23,11 @@
 
     &__logo2 {
         margin: 0 auto;
-        max-width: 201px;
+        max-width: 100px;
+
+        @media all and (min-width: 768px) {
+            max-width: 201px;
+        }
     }
 }
 
@@ -46,8 +50,11 @@
     background-color: #04436A;
 
     .page-header__logo {
-        width: auto;
-        margin-right: 10rem;
+        margin-right: 2rem;
+
+        @media all and (min-width: 768px) {
+            margin-right: 10rem;
+        }
     }
 
     &.scrolling {
