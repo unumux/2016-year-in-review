@@ -265,9 +265,6 @@
         background: radial-gradient(circle, #319FBD 0%, #027999 100%);
     }
 
-    &--featured-g {
-    }
-
     &--featured-h {
         @include base;
         background-image: url('../images/content-pilot.jpg');
