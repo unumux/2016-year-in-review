@@ -65,18 +65,4 @@
         margin-right: 0;
         height: 600px;
     }
-
-    &.scrolling {
-        background-color: HSLA(203, 100%, 27%, 1.00);
-        padding-bottom: 0.5rem;
-        padding-top: 0.5rem;
-        position: fixed;
-
-        .page-header__logo,
-        .page-header__logo2 {
-            max-width: 10rem;
-
-            transition: max-width 0.75s;
-        }
-    }
 }
