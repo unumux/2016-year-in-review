@@ -3,7 +3,7 @@
 
 .showcase__panel--comparison {
     h1 {
-        max-width: 130rem;
+        // max-width: 130rem;
         margin: 0 auto;
     }
 }
@@ -21,7 +21,7 @@
         flex-basis: 100%;
         flex-grow: 1;
         flex-shrink: 1;
-        max-width: 130rem;
+        // max-width: 130rem;
         margin: 0 auto;
         text-align: left;
 
@@ -155,7 +155,7 @@
         flex-basis: 50%;
         flex-grow: 1;
         flex-shrink: 1;
-        max-width: 130rem;
+        // max-width: 130rem;
         margin: 0 auto;
 
         @media screen and (min-width: 1100px) {
