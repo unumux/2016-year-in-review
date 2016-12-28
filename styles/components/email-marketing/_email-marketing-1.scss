@@ -41,10 +41,6 @@
         }
     }
 
-    &__para2 {
-        padding-top: 4rem;
-    }
-
     &--cl {
        @extend .email-marketing-1;
         display: flex;
@@ -89,7 +85,7 @@
     &__group {
 
         &-sub {
-            padding-top: 8rem;
+            margin-top: 5rem;
         }
 
 
