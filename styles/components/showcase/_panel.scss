@@ -153,6 +153,7 @@
 
     &--faqs,
     &--dental,
+    &--colonial-life-pilot,
     &--pilot-b {
         @include base;        
         background-color: #1F3340;
@@ -167,6 +168,7 @@
     }
 
     &--youville,
+    &--territory-dga,
     &--pilot-a {
         @include base;        
         background-color: #688465;
@@ -180,7 +182,7 @@
         background-image: radial-gradient(circle, rgba(255,255,255,0.5) 0%, #CFCAB9 100%);
     }
 
-    &--pilot-c {
+    &--paid-search {
         @include base;
         background-image: url("../images/paid-search-pilot@2x.jpg");
         background-repeat: no-repeat;
