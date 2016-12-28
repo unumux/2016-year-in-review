@@ -5,17 +5,9 @@
 .starmount-1 {
     @include base;
     
-    p {
-        font-size: 3rem;
-    }
-
-    &__image-container {
-        margin: 0 auto;
-    }
-    
     &__image {
         width: 37rem;
-        margin-bottom: 6.6rem;
+        margin-bottom: 4rem;
 
         @media screen and (min-width: 768px) {
             width: 50rem;
