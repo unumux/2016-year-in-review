@@ -9,38 +9,40 @@
     }
 }
 
-.page-header__logo2 {
-    margin: 0 auto;
-}
-
 .page-header--home {
-    align-items: center;
-    align-content: center;
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    //position: fixed;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    position: absolute;
     right: 0;
     left: 0;
     z-index: 999;
-    background-color: #04436A;
 
-    .page-header__logo {
-        margin-right: 2rem;
+    .page-header__logos,
+    .page-header__logos2 {
+        padding: 0 5rem;
+        text-align: center;
+    }
 
-        @media all and (min-width: 768px) {
-            margin-right: 10rem;
-        }
+    .page-header__logo,
+    .page-header__logo2 {
+        max-width: 20rem;
+        height: 50px;
+        transition: max-width 0.75s;
     }
 
     &.scrolling {
-        background-color: #005488;
+        background-color: HSLA(203, 100%, 27%, 1.00);
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        position: fixed;
 
         .page-header__logo,
         .page-header__logo2 {
-            width: 50%;
+            max-width: 10rem;
+
+            transition: max-width 0.75s;
         }
     }
 }
