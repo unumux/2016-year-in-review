@@ -65,3 +65,19 @@
         height: 600px;
     }
 }
+
+.back-link {
+    color: #ddd;
+    font-size: 2rem;
+    padding: 1rem;
+    position: fixed;
+    left: 0;
+    text-decoration: none;
+    top: 0;
+
+    &__image {
+        margin-right: 1rem;
+        vertical-align: bottom;
+        width: 3rem;
+    }
+}
