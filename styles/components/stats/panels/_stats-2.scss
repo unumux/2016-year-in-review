@@ -29,8 +29,6 @@
     border: 1rem solid $ocean;
     border-radius: 50%;
     color: #fff;
-    // font-size: 50px;
-    font-weight: 600;
     height: 25rem;
     line-height: 21rem;
     margin: 4rem auto;
@@ -40,15 +38,8 @@
 
      @media all and (min-width: 768px) {
         border: 1rem solid $ocean;
-        border-radius: 50%;
-        color: #fff;
-        // font-size: 50px;
-        font-weight: 600;
         height: 30rem;
-        line-height: 21rem;
-        margin: 4rem auto;
         position: relative;
-        text-align: center;
         width: 30rem;
     }
 

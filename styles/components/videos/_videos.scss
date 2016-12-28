@@ -1,80 +1,13 @@
 @mixin base {
 }
 
-// .showcase__panel--videos {
-
-//     .videos-1 {
-//     @include base;
-
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: space-around;
-
-//     &__heading {
-//         font-size: 3.5rem !important;
-//         text-transform: none !important;
-//         font-weight: 400 !important;
-//         padding-bottom: 5rem;
-//     }
-
-//     &__video {
-//         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-//         height: 176px;
-//         overflow: hidden;
-//         width: 321px;
-//     }
-
-//     &__video-container {
-//         flex-basis: 100%;
-//         flex-grow: 0;
-//         flex-shrink: 1;
-//         margin-bottom: 5rem;
-//         padding-right: 1rem;
-//         width: 32.1rem;
-
-//         @media screen and (min-width: 1024px) {
-//             flex-basis: 50%;
-//             flex-grow: 0;
-//             flex-shrink: 1;
-//         }
-
-//         @media screen and (min-width: 1200px) {
-//             flex-basis: auto;
-//             flex-grow: 0;
-//             flex-shrink: 1;
-//             margin: 2rem;
-//             justify-content: space-between;
-            
-//         }
-
-//         h1 {
-//             display: block;
-//             font-size: 2.75rem;
-//             margin: 0 auto;
-//             padding-top: 1rem;
-//             text-align: left;
-//         }
-
-//         p {
-//             font-size: 1.5rem;
-//             margin: 0 auto;
-
-//             @media all and (min-width: 1024px) {
-//                 font-size: 2rem;
-//             }
-//         }
-//     }
-//     }
-// }
 .videos-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 
     &__heading {
-        font-size: 3.5rem !important;
         text-transform: none !important;
-        font-weight: 400 !important;
         padding-bottom: 5rem;
     }
 
@@ -115,20 +48,13 @@
 
         h1 {
             display: block;
-            font-size: 2.75rem;
             margin: 0 auto;
             padding-top: 1rem;
             text-align: left;
         }
 
         p {
-            font-size: 1.5rem;
-            // margin: 0 auto;
             text-align: left;
-
-            @media all and (min-width: 1024px) {
-                font-size: 2rem;
-            }
         }
     }
 }
@@ -159,27 +85,19 @@
 
     h1 {
         display: block;
-        font-size: 2.75rem;
         margin: 0 auto;
         padding-top: 1rem;
         text-align: left;
     }
 
     p {
-        font-size: 1.5rem;
-        // margin: 0 auto;
         text-align: left;
 
-        @media all and (min-width: 1024px) {
-            font-size: 2rem;
-        }
     }
 }
 
 .videos-1__heading--unum,
 .videos-1__heading {
-    font-size: 3.5rem !important;
     text-transform: none !important;
-    font-weight: 400 !important;
     padding-bottom: 5rem;
 }
