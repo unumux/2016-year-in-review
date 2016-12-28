@@ -10,6 +10,13 @@
 .standard-project {
     @include base;
 
+    &--reverse {
+        @include base;
+
+        color: #444;
+    }
+
     @import "image";
     @import "heading";
+    @import "subheading";
 }

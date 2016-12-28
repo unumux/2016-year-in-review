@@ -6,6 +6,7 @@
     @include base;
 
     @media all and (min-width: 1024px) {
+        margin-left: 5rem;
         float: right;
     }
 }
