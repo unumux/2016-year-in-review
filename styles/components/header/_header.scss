@@ -23,38 +23,26 @@
     .page-header__logos2 {
         padding: 0 5rem;
         text-align: center;
-        transition: padding 0.5s;
     }
 
     .page-header__logo,
     .page-header__logo2 {
-        transition: width 1s;
-        width: auto;
-    }
-
-    .page-header__logo2 {
-        max-width: 100rem;
+        max-width: 20rem;
+        height: 50px;
+        transition: max-width 0.75s;
     }
 
     &.scrolling {
         background-color: HSLA(203, 100%, 27%, 1.00);
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
         position: fixed;
 
-        .page-header__logos,
-        .page-header__logos2 {
-            padding: 0 2rem;
-            transition: padding 0.5s;
-        }
-
-        .page-header__logo {
-            transition: width 1s;
-            width: 40%;
-        }
+        .page-header__logo,
         .page-header__logo2 {
-            transition: width 1s;
-            width: 20%;
+            max-width: 10rem;
+
+            transition: max-width 0.75s;
         }
     }
 }
@@ -76,5 +64,19 @@
     &__logo {
         margin-right: 0;
         height: 600px;
+    }
+
+    &.scrolling {
+        background-color: HSLA(203, 100%, 27%, 1.00);
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        position: fixed;
+
+        .page-header__logo,
+        .page-header__logo2 {
+            max-width: 10rem;
+
+            transition: max-width 0.75s;
+        }
     }
 }
