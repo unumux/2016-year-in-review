@@ -52,6 +52,25 @@ h1 {
     }
 }
 
+h2 {
+    font-size: $h2-mobile;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+
+    @media all and (min-width: 768px) {
+        font-size: $h2-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $h2-desktop;
+    }
+}
+
+p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
 
 img {
     max-width: 100%;
