@@ -10,13 +10,15 @@
 }
 
 .page-header--home {
+    background-color: transparent;
     display: flex;
     justify-content: center;
+    left: 0;
     padding-bottom: 2rem;
     padding-top: 2rem;
     position: absolute;
     right: 0;
-    left: 0;
+    transition: background-color 0.5s;
     z-index: 999;
 
     .page-header__logos,
@@ -27,8 +29,12 @@
 
     .page-header__logo,
     .page-header__logo2 {
-        max-width: 20rem;
+        max-width: 10rem;
         transition: max-width 0.75s;
+
+        @media all and (min-width: 768px) {
+            max-width: 20rem;
+        }
     }
 
     &.scrolling {
@@ -36,6 +42,7 @@
         padding-bottom: 1rem;
         padding-top: 1rem;
         position: fixed;
+        transition: background-color 0.5s;
 
         .page-header__logo,
         .page-header__logo2 {
