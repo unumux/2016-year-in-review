@@ -5,6 +5,8 @@
 .alert-1 {
     @include base;
 
-    font-size: 2.4rem;
-    text-transform: uppercase;
+    p {
+        font-weight: 400;
+        text-transform: uppercase;
+    } 
 }
