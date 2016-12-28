@@ -28,14 +28,14 @@
     &--sitecore,
     &--starmount {
         section {
-            max-width: 130rem;
+            // max-width: 130rem;
             margin: 0 auto;
         }
     }
 
     &--persona {
         h1 {
-            max-width: 130rem;
+            // max-width: 130rem;
             margin: 0 auto;
         }
     }
@@ -176,13 +176,13 @@
     }
 
     &--visual-refresh,
-    &--pilot-d {
+    &--small-market-solutions {
         @include base;        
         background-color: #E0DDCE;
         background-image: radial-gradient(circle, rgba(255,255,255,0.5) 0%, #CFCAB9 100%);
     }
 
-    &--pilot-c {
+    &--paid-search {
         @include base;
         background-image: url("../images/paid-search-pilot@2x.jpg");
         background-repeat: no-repeat;
