@@ -47,6 +47,7 @@ function updateScroll() {
     if (!ticking) {
         window.requestAnimationFrame(() => {
             updateHash(lastScrollPosition);
+            updateHeaderStickiness();
             ticking = false;
         });
     }
@@ -68,18 +69,17 @@ window.addEventListener("resize", updatePoints);
 window.addEventListener("scroll", updateScroll);
 window.addEventListener("hashchange", updateNav);
 
+function updateHeaderStickiness() {
+    const header = document.querySelector("header");
 
+    if(window.scrollY > 0 && !header.classList.contains("scrolling")) {
+        header.classList.add("scrolling");
+    }
 
-// window.addEventListener("scroll", stickyHeader);
-
-// function stickyHeader() {
-//     const header = document.querySelector("header");
-    
-//     if(window.scrollY > 0 && !header.classList.contains("scrolling")) {
-//         header.classList.add("scrolling");
-//     }
-// }
-
+    if(window.scrollY === 0 && header.classList.contains("scrolling")) {
+        header.classList.remove("scrolling");
+    }
+}
 
 //Sticky header
 
