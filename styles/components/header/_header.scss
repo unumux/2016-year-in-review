@@ -74,13 +74,15 @@
 }
 
 .back-link {
-    color: #ddd;
+    color: white;
     font-size: 2rem;
+    opacity: 0.85;
     padding: 1rem;
     position: fixed;
     left: 0;
     text-decoration: none;
     top: 0;
+    z-index: 999;
 
     &__image {
         margin-right: 1rem;
