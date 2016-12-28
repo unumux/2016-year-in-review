@@ -152,26 +152,30 @@
     }
 
     &--faqs,
+    &--dental,
+    &--colonial-life-pilot,
     &--pilot-b {
         @include base;        
         background-color: #1F3340;
         background-image: radial-gradient(circle, rgba(122,167,197,0.5) 0%, rgba(31,51,64,0.5) 100%);
     }
 
-    &--career-seekers {
+    &--career-seekers,
+    &--broker {
         @include base;        
         background-color: #67A14C;
         background-image: radial-gradient(circle, #90C869 0%, #60953B 100%);
     }
 
-    &--project-c,
+    &--youville,
+    &--territory-dga,
     &--pilot-a {
         @include base;        
         background-color: #688465;
         background-image: radial-gradient(circle, rgba(185,228,180,0.5) 0%, rgba(104,132,101,0.5) 100%);
     }
 
-    &--project-d,
+    &--visual-refresh,
     &--pilot-d {
         @include base;        
         background-color: #E0DDCE;
