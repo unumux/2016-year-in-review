@@ -2,6 +2,7 @@ function updatePoints() {
     const showcases = document.querySelectorAll(".showcase[id]");
 
     points = [];
+
     showcases.forEach((showcase) => {
         let point = {
             offset: showcase.offsetTop,
@@ -28,7 +29,7 @@ function updateHash(scrollPosition) {
 
 function updateNav() {
     const oldEl = document.querySelector(".main-nav__link--current");
-    const newEl = document.querySelector(`[href='${window.location.hash}']`);
+    const newEl = document.querySelector(`.main-nav__link[href='${window.location.hash}']`);
 
     if (oldEl !== null) {
         oldEl.classList.remove("main-nav__link--current");
