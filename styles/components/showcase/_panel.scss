@@ -153,6 +153,7 @@
 
     &--faqs,
     &--dental,
+    &--colonial-life-pilot,
     &--pilot-b {
         @include base;        
         background-color: #1F3340;
@@ -167,6 +168,7 @@
     }
 
     &--youville,
+    &--territory-dga,
     &--pilot-a {
         @include base;        
         background-color: #688465;
