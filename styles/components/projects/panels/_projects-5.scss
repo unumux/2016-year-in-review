@@ -6,9 +6,7 @@
 
     @media screen and (min-width: 1100px) {
         align-items: center;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
     }
 }
 
@@ -16,13 +14,11 @@
     @include base;
 
     h1 {
-        // line-height: 0.8;
         margin-bottom: 0;
         text-align: left;
     }
 
     p {
-        font-size: 2rem;
         padding-bottom: 2rem;
     }
 
@@ -57,9 +53,6 @@
         }
 
         h1 {
-            font-size: 4.8rem;
-            font-weight: 600;
-            // line-height: 1;
             margin: 3rem auto;
             text-align: left;
             text-transform: uppercase;
