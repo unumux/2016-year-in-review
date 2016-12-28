@@ -8,12 +8,10 @@
     @include base;
 
     h1 {
-        font-size: 4.8rem;
         margin: 0;
     }
 
     &__para {
-        font-size: 3rem;
         margin-top: 0;
     }
 
@@ -31,7 +29,7 @@
     border: 1rem solid $ocean;
     border-radius: 50%;
     color: #fff;
-    font-size: 50px;
+    // font-size: 50px;
     font-weight: 600;
     height: 25rem;
     line-height: 21rem;
@@ -44,7 +42,7 @@
         border: 1rem solid $ocean;
         border-radius: 50%;
         color: #fff;
-        font-size: 50px;
+        // font-size: 50px;
         font-weight: 600;
         height: 30rem;
         line-height: 21rem;
@@ -89,23 +87,22 @@
                 position: absolute;
                 right: 0;
                 text-transform: uppercase;
-                top: 40px;
+                top: 25px;
 
             @media all and (min-width: 768px) {
                 bottom: 0;
-                font-size: 2rem;
                 left: -1px;
                 position: absolute;
                 right: 0;
                 text-transform: uppercase;
-                top: 75px;
+                top: 55px;
             }
         }
     }
 
     &-percent {
         bottom: 0;
-        font-size: 4rem;
+        font-size: 3.5rem;
         font-weight: 400;
         left: 0;
         margin: 0;
@@ -117,7 +114,6 @@
         @media all and (min-width: 768px) {
             bottom: 0;
             font-size: 4rem;
-            font-weight: 400;
             left: 0;
             margin: 0;
             padding: 0;
@@ -129,8 +125,10 @@
 }
 
 .stats-2__circle--percent-1, .stats-2__circle--percent-2, .stats-2__circle--percent-3 {
-    color: #fff;
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
     border-radius: 50%;
+    color: #fff;
     font-weight: 600;
     line-height: 25rem;
     height: 20rem;
@@ -140,14 +138,8 @@
     width: 20rem;
 
     @media all and (min-width: 768px) {
-        color: #fff;
-        border-radius: 50%;
-        font-weight: 600;
-        line-height: 25rem;
         height: 25rem;
-        margin: 4rem auto;
         position: relative;
-        text-align: center;
         width: 25rem;
     }
 
@@ -187,8 +179,7 @@
 
 .stats-2__circle--percent-1 {
     background-image: url('../images/apple-monitor-1-icon.svg');
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
+    
 
     &::after {
         border-color: transparent transparent $ocean transparent;
@@ -201,8 +192,6 @@
 
 .stats-2__circle--percent-2 {
     background-image: url('../images/smartphone-icon.svg');
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
 
     &::after {
         border-color: white transparent transparent white;
@@ -216,8 +205,6 @@
 
 .stats-2__circle--percent-3 {
     background-image: url('../images/tablet-icon.svg');
-    background-position: 50% 30%;
-    background-repeat: no-repeat;
 
     &::after {
         border-color: white transparent transparent white;
