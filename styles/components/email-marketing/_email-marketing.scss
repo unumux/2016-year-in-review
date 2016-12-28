@@ -82,9 +82,6 @@
 
 .email-marketing--cl {
     //email-marketing-1
-    h1 {
-        margin-bottom: 5.5rem;
-    }
 
     & li {
         font-size: 2rem;
@@ -114,9 +111,6 @@
         }
     }
 
-    &__para2 {
-        padding-top: 4rem;
-    }
     &--cl {
         @extend .email-marketing-1;
         // background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
@@ -161,7 +155,7 @@
     }
     &__group {
         &-sub {
-            padding-top: 8rem;
+            margin-top: 5rem;
         }
         &-text {
             // font-weight: 600;
@@ -389,9 +383,7 @@
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .email-marketing--cl2 {
     //email marketing 1
-    h1 {
-        margin-bottom: 5.5rem;
-    }
+
     p {
         margin: 0 auto;
         max-width: 120rem;
@@ -428,9 +420,7 @@
         font-size: 24px;
         font-weight: 600;
     }
-    &__para2 {
-        padding-top: 4rem;
-    }
+
     &--cl {
         @extend .email-marketing-1;
         // background-image: linear-gradient(179.01deg, #688465 0%, #3C5C39 100%);
@@ -475,7 +465,7 @@
     }
     &__group {
         &-sub {
-            padding-top: 8rem;
+            margin-top: 5rem;
         }
         &-text {
             font-weight: 600;
