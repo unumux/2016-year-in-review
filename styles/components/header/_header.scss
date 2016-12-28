@@ -25,6 +25,7 @@
     &__logo2 {
         margin: 0 auto;
         max-width: 140px;
+        width: 100%;
 
         @media all and (min-width: 768px) {
             max-width: 201px;
