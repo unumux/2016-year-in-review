@@ -4,11 +4,13 @@
     width: 100%;
 
     @media all and (min-width: 768px) {
-        padding: 15rem 5rem;
+        // Use padding to constrain the width of content within panels
+        padding: 15rem calc((100% - 600px) / 2);
     }
 
     @media all and (min-width: 1024px) {
-        padding: 25rem 5rem;
+        // Use padding to constrain the width of content within panels
+        padding: 25rem calc((100% - 960px) / 2);
     }
 }
 
