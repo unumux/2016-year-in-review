@@ -1,0 +1,11 @@
+@mixin base() {
+    width: 50%;
+}
+
+&__image {
+    @include base;
+
+    @media all and (min-width: 1024px) {
+        float: right;
+    }
+}

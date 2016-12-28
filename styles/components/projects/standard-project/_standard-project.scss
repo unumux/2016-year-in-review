@@ -1,0 +1,15 @@
+@mixin base() {
+    font-size: 1.8rem;
+    overflow: auto;
+
+    @media all and (min-width: 1024px) {
+        text-align: left;
+    }
+}
+
+.standard-project {
+    @include base;
+
+    @import "image";
+    @import "heading";
+}
