@@ -8,13 +8,10 @@
     @include base;
 
     h1 {
-        font-weight: 600;
-        // line-height: 0.8;
         margin-bottom: 3rem;
     }
 
     p {
-        font-size: 2.8rem;
         text-align: center;
         
     }
@@ -24,7 +21,7 @@
         content: '';
         display: block;
         margin: 6rem auto;
-        width: 150px;
+        width: 15rem;
     }
 }
 
@@ -50,7 +47,6 @@
     }
 
     &__para {
-        font-size: 2.8rem;
         text-align: center;
         text-transform: uppercase;
     }
