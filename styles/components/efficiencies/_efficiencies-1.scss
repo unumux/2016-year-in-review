@@ -41,7 +41,8 @@
         }
         
         @media screen and (min-width: 768px) {
-            flex-basis: calc(30% - 1rem);
+            width: calc(30% - 2rem);
+            flex-basis: auto; // replaces flex-basis: calc because IE10
             flex-grow: 1;
             flex-shrink: 0;
             margin: 1rem;
