@@ -1,3 +1,4 @@
+
 function updatePoints() {
     const showcases = document.querySelectorAll(".showcase[id]");
 
@@ -43,7 +44,7 @@ function updateNav() {
 }
 
 function updateScroll() {
-    lastScrollPosition = window.scrollY;
+    lastScrollPosition = window.pageYOffset;
 
     if (!ticking) {
         window.requestAnimationFrame(() => {
@@ -64,6 +65,7 @@ let ticking = false;
 document.addEventListener("DOMContentLoaded", function(event) { 
     updatePoints();
     updateNav();
+    console.log(window.pageYOffset);
 });
 
 window.addEventListener("resize", updatePoints);
@@ -73,11 +75,11 @@ window.addEventListener("hashchange", updateNav);
 function updateHeaderStickiness() {
     const header = document.querySelector("header");
 
-    if(window.scrollY > 0 && !header.classList.contains("scrolling")) {
+    if(window.pageYOffset > 0 && !header.classList.contains("scrolling")) {
         header.classList.add("scrolling");
     }
 
-    if(window.scrollY === 0 && header.classList.contains("scrolling")) {
+    if(window.pageYOffset === 0 && header.classList.contains("scrolling")) {
         header.classList.remove("scrolling");
     }
 }
