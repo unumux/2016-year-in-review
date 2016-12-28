@@ -2,10 +2,13 @@
 .email-marketing--cl,
 .email-marketing--cl2,
 .email-marketing--unum {
+
+    &__circle,
     &__circle2 {
         border: 14px solid #fff;
         border-radius: 50%;
         height: 30rem;
+        margin: 2rem auto;
         position: relative;
         width: 30rem;
 
@@ -23,11 +26,36 @@
             width: 40rem;
         }
     }
+    
+    &__circle {
+
+        @media all and (min-width: 768px) {
+            margin: 2rem auto;
+        }
+
+        &-text1 {
+            font-size: 9rem;
+            font-weight: 700;
+            line-height: 11rem;
+            margin: 0 auto;
+            
+            @media screen and (min-width: 1100px) {
+                font-size: 11rem;
+            }
+        }
+        &-text2 {
+            font-size: 2.5rem;
+            @media screen and (min-width: 1100px) {
+                font-size: 4.5rem;
+            }
+        }
+    }
+
     &__circle3 {
         border: 14px solid #fff;
         border-radius: 50%;
         height: 30.5rem;
-        margin: 40rem auto;
+        margin: 2rem auto;
         position: relative;
         width: 30.5rem;
 
@@ -35,7 +63,6 @@
             border: 14px solid #fff;
             border-radius: 50%;
             height: 37.5rem;
-            margin: 40rem auto;
             position: relative;
             width: 37.5rem;
         }
@@ -47,68 +74,6 @@
         }
     }
     
-    &__circle {
-        border: 14px solid #fff;
-        border-radius: 50%;
-        height: 30rem;
-        margin: 2rem auto;
-        position: relative;
-        width: 30rem;
-
-        @media all and (min-width: 768px) {
-            border: 14px solid #fff;
-            border-radius: 50%;
-            height: 35rem;
-            margin: 2rem auto;
-            position: relative;
-            width: 35rem;
-        }
-
-        @media screen and (min-width: 1100px) {
-            // messes up text if we change size of the circle
-            height: 40rem;
-            width: 40rem;
-        }
-        &-text1 {
-            font-size: 9rem;
-            font-weight: 700;
-            line-height: 11rem;
-            
-            @media screen and (min-width: 1100px) {
-                font-size: 11rem;
-                // margin-top: 80px;
-            }
-        }
-        &-text2 {
-            font-size: 2.5rem;
-            @media screen and (min-width: 1100px) {
-                font-size: 4.5rem;
-            }
-        }
-        &__circle2 {
-            border: 14px solid #fff;
-            border-radius: 50%;
-            height: 30rem;
-            margin: 40rem auto;
-            position: relative;
-            width: 30rem;
-
-            @media all and (min-width: 768px) {
-                border: 14px solid #fff;
-                border-radius: 50%;
-                height: 35rem;
-                margin: 40rem auto;
-                position: relative;
-                width: 35rem;
-            }
-
-            @media screen and (min-width: 1100px) {
-                // messes up text if we change size of the circle
-                height: 400rem;
-                width: 400rem;
-            }
-        }
-    }
     @import 'email-marketing-1';
     @import 'email-marketing-2';
     @import 'email-marketing-3';
@@ -117,12 +82,7 @@
 .email-marketing--cl {
     //email-marketing-1
     h1 {
-        //font-size: 4rem;
-        font-weight: 600;
         margin-bottom: 5.5rem;
-        @media screen and (min-width: 1100px) {
-            font-size: 7rem;
-        }
     }
 
     & li {
@@ -152,10 +112,7 @@
             font-size: 3rem;
         }
     }
-    &__para {
-        font-size: 24px;
-        font-weight: 600;
-    }
+
     &__para2 {
         padding-top: 4rem;
     }
@@ -174,29 +131,27 @@
         padding-bottom: 2rem;
     }
     &__heading {
-        font-size: 4rem;
-        font-weight: 600;
+        // font-size: 4rem;
+        // font-weight: 600;
         margin-bottom: 1.5rem !important; //<--- SO SORRY!
     }
-    &__image {
-        height: auto;
-        margin: 0 auto;
-        max-width: 100%;
-        @media screen and (min-width: 1100px) {
-            //width: 65rem;
-            max-width: 50%;
-        }
-    }
+
+    &__image,
     &__image1 {
         height: auto;
         margin: 0 auto;
-        padding-top: 5rem;
         max-width: 100%;
+
         @media screen and (min-width: 1100px) {
             //width: 65rem;
             max-width: 50%;
         }
     }
+
+    &__image1 {
+        padding-top: 5rem;
+    }
+
     &__grouping {
         display: flex;
         flex-wrap: wrap;
@@ -208,7 +163,7 @@
             padding-top: 8rem;
         }
         &-text {
-            font-weight: 600;
+            // font-weight: 600;
             margin-bottom: 6rem !important;
         }
         &:last-child {
@@ -225,9 +180,7 @@
             flex-grow: 1;
             flex-shrink: 1;
         }
-        p {
-            font-size: 2.4rem;
-        }
+
         h1 {
             margin-bottom: 3rem;
         }
@@ -242,9 +195,6 @@
             flex-grow: 1;
             flex-shrink: 1;
         }
-        p {
-            font-size: 2.4rem;
-        }
     }
     .email-marketing-3 {
         &__circle {
@@ -255,7 +205,6 @@
                 
                 @media screen and (min-width: 1100px) {
                     font-size: 11rem;
-                    // margin-top: 80px !important;
                 }
             }
             &-text2 {
@@ -440,21 +389,12 @@
 .email-marketing--cl2 {
     //email marketing 1
     h1 {
-        //font-size: 4rem;
-        font-weight: 600;
         margin-bottom: 5.5rem;
-        @media screen and (min-width: 1100px) {
-            font-size: 7rem;
-        }
     }
     p {
-        font-size: 2rem;
         margin: 0 auto;
         max-width: 120rem;
         text-align: center;
-        @media screen and (min-width: 1100px) {
-            font-size: 3rem;
-        }
     }
     & li {
         font-size: 2rem;
@@ -505,8 +445,6 @@
         padding-bottom: 2rem;
     }
     &__heading {
-        font-size: 4rem;
-        font-weight: 600;
         margin-bottom: 1.5rem !important; //<--- SO SORRY!
     }
     &__image {
@@ -556,9 +494,6 @@
             flex-grow: 1;
             flex-shrink: 1;
         }
-        p {
-            font-size: 2.4rem;
-        }
         h1 {
             margin-bottom: 3rem;
         }
@@ -572,9 +507,6 @@
             flex-basis: 33.333%;
             flex-grow: 1;
             flex-shrink: 1;
-        }
-        p {
-            font-size: 2.4rem;
         }
     }
     .email-marketing-3 {
