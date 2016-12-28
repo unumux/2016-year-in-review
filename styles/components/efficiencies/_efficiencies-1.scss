@@ -4,7 +4,10 @@
 }
 
 .efficiencies-1 {
-    @include base;
+
+    @media screen and (min-width: 768px) {
+        @include base;
+    }
 
     p {
         flex-basis: 100%;
@@ -25,12 +28,6 @@
             padding: 4rem 2rem;
         }
 
-        h1 {
-            color: $yellow;
-            font-size: 4rem;
-            margin-bottom: 2rem;
-        }
-
         ul {
             margin: 0;
             padding: 0;
@@ -41,17 +38,29 @@
         }
         
         @media screen and (min-width: 768px) {
-            flex-basis: calc(30% - 1rem);
+            width: calc(30% - 2rem);
+            flex-basis: auto; // replaces flex-basis: calc because IE10
             flex-grow: 1;
             flex-shrink: 0;
             margin: 1rem;
         }
         
         @media screen and (min-width: 960px) {
-            flex-basis: calc(30% - 2rem);
+            width: calc(30% - 2rem);
+            flex-basis: auto;
             flex-grow: 1;
             flex-shrink: 0;
             margin: 1rem;
+        }
+    }
+
+    &__heading {
+        color: $yellow;
+        margin-bottom: 2rem;
+        font-size: 2.4rem;
+
+        @media screen and (min-width: 960px) {
+            font-size: 3.5rem;
         }
     }
 }
