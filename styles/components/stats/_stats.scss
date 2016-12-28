@@ -1,17 +1,3 @@
-@mixin base {
-}
-
-@mixin base-2 {
-}
-
-.stats-a {
-    @include base;
-}
-
-.stats-b {
-    @include base-2;
-}
-
 @import 'panels/stats-1';
 @import 'panels/stats-2';
 @import 'panels/stats-3';

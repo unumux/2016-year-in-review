@@ -38,3 +38,27 @@
         font-size: $footnote-desktop;
     }
 }
+
+@mixin emphasized-content {
+    font-size: $emphasized-content-mobile;
+
+    @media all and (min-width: 768px) {
+        font-size: $emphasized-content-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $emphasized-content-desktop;
+    }
+}
+
+@mixin emphasized-number {
+    font-size: $emphasized-number-mobile;
+
+    @media all and (min-width: 768px) {
+        font-size: $emphasized-number-tablet;
+    }
+
+    @media all and (min-width: 1024px) {
+        font-size: $emphasized-number-desktop;
+    }
+}
