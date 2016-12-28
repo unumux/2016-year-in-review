@@ -1,4 +1,6 @@
 @mixin base() {
+    display: none;
+    font-size: 1.6rem;
     margin: 1rem;
     position: fixed;
     right: 0;
@@ -10,22 +12,20 @@
 .main-nav {
     @include base;
 
-    display: none;
-
     @media all and (min-width: 768px) {
         display: block;
     }
 
     h1 {
         color: #ddd;  
-        font-size: 2.75rem;
+        font-size: 2.4rem;
         font-weight: 300;
         margin-bottom: 0;
         padding-right: 1rem;
         text-transform: uppercase;
     }   
  
-     ul {
+    ul {
         margin-top: 0;
     }
 
