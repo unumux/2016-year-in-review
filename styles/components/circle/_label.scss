@@ -5,7 +5,9 @@
 &__label {
     @include base;
 
-    &--large {
+    &--upper {
         @include base;
+
+        text-transform: uppercase;
     }
 }
