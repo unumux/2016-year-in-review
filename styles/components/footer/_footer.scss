@@ -66,10 +66,11 @@
     &__image,
     &__image-1 {
         display: block;
-        height: 100vh;
+        height: calc(50vh - 26px);
         padding: 10rem 0;
 
         @media all and (min-width: 768px) {
+            height: calc(100vh - 52px);
             padding: 40rem 0;
         }
     }
