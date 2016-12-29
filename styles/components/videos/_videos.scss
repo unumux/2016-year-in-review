@@ -11,6 +11,7 @@
         position: relative;
         height: 0;
         overflow: hidden;
+        margin-bottom: 2rem;
     }
 
     &__heading {
@@ -33,6 +34,7 @@
 
     &__title {
         text-align: left;
+        font-size: 2.5rem;
     }
 
     &__video-container {
@@ -55,7 +57,6 @@
             flex-shrink: 1;
             margin: 2rem;
             justify-content: space-between;
-            
         }
 
         p {
@@ -70,7 +71,8 @@
     flex-grow: 0;
     flex-shrink: 1;
     margin-bottom: 5rem;
-    padding-right: 1rem;
+    // padding-right: 1rem;
+    margin-right: 1rem;
     width: 32.1rem;
 
     @media screen and (min-width: 1024px) {
@@ -83,7 +85,7 @@
         flex-basis: auto;
         flex-grow: 0;
         flex-shrink: 1;
-        margin: 2rem;
+        // margin: 2rem;
         justify-content: space-between;
         
     }
@@ -97,7 +99,7 @@
 
     p {
         text-align: left;
-
+        font-size: 2rem;
     }
 }
 
