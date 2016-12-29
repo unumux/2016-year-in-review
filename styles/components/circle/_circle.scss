@@ -59,10 +59,12 @@
 
     &--pct-2015 {
         @include base;
+        @include circle(#efc261);
     }
 
     &--pct-2016 {
         @include base;
+        @include circle(#48aec8);
     }
 
     &--unum {
@@ -72,14 +74,17 @@
 
     &--unum-group {
         @include base;
+        @include circle(#9cca62);
     }
 
     &--colonial-life {
         @include base;
+        @include circle(#3baecc);
     }
 
     &--paul-revere {
         @include base;
+        @include circle(#a4cc44);
     }
 
     @import "icon";
