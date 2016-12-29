@@ -54,20 +54,8 @@
 
 .circle {
     @include base;
-    @include circle(white);
+    @include circle();
 
-
-    &--special {
-        @include base;
-
-        @include circle(#42AECA);
-    }
-
-    &--test {
-        @include base;
-
-        @include circle(white, #42AECA, 69.57);
-    }
 
     &--pct-2015 {
         @include base;
@@ -79,6 +67,7 @@
 
     &--unum {
         @include base;
+        @include circle(#00a7d4);
     }
 
     &--unum-group {
