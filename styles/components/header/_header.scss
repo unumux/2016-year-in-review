@@ -69,7 +69,11 @@
 
     &__logo {
         margin-right: 0;
-        height: 600px;
+        height: auto;
+
+        @media all and (min-width: 768px) {
+            height: 8rem;
+        }
     }
 }
 
