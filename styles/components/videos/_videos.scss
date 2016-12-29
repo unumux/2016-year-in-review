@@ -22,6 +22,10 @@
         width: 321px;
     }
 
+    &__title {
+        text-align: left;
+    }
+
     &__video-container {
         flex-basis: 100%;
         flex-grow: 0;
@@ -43,13 +47,6 @@
             margin: 2rem;
             justify-content: space-between;
             
-        }
-
-        h1 {
-            display: block;
-            margin: 0 auto;
-            padding-top: 1rem;
-            text-align: left;
         }
 
         p {
