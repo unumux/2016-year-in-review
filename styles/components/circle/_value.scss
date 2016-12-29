@@ -1,0 +1,16 @@
+@mixin base() {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+&__value {
+    @include base;
+
+    &--large {
+        @include base;
+
+        font-size: 8rem;
+    }
+}

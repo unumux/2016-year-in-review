@@ -1,0 +1,100 @@
+@mixin circle($bg: #ffffff, $color: #42aeca, $percentage: 0) {
+
+    @if $percentage == 0 {
+        &::before,
+        &::after {
+            border-width: 0.4rem;
+        }
+    }
+
+    &::before {
+        border-color: $color $color $bg $bg;
+    }
+
+
+    &::after {
+        @if $percentage < 50 {
+            $degrees: $percentage * 3.6 + 45; // 45 extra degrees to rotate borders into place
+            border-color: $bg $bg transparent transparent;
+            transform: rotate(#{$degrees}deg);
+        } @else {
+            $degrees: $percentage * 3.6 - 135; // 180 - 45
+            border-color: $color $color transparent transparent;
+            transform: rotate(#{$degrees}deg);
+        }
+    }
+}
+
+@mixin base() {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    position: relative;
+    width: 30rem;
+
+    &::before,
+    &::after {
+        content: '';
+        border-width: 1.5rem;
+        border-style: solid;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+}
+
+.circle {
+    @include base;
+    @include circle(white);
+
+
+    &--special {
+        @include base;
+
+        @include circle(#42AECA);
+    }
+
+    &--test {
+        @include base;
+
+        @include circle(white, #42AECA, 69.57);
+    }
+
+    &--pct-2015 {
+        @include base;
+    }
+
+    &--pct-2016 {
+        @include base;
+    }
+
+    &--unum {
+        @include base;
+    }
+
+    &--unum-group {
+        @include base;
+    }
+
+    &--colonial-life {
+        @include base;
+    }
+
+    &--paul-revere {
+        @include base;
+    }
+
+    @import "icon";
+    @import "action";
+    @import "label";
+    @import "value";
+}
