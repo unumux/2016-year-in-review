@@ -250,22 +250,22 @@
     }
 
     &--featured-a,
-    &--featured-d,
+    &--leadership,
     &--featured-g {
         @include base;
         background-color: #B7E1FF;
         background: radial-gradient(circle, #627F95 0%, #2C4F69 100%);
     }
 
-    &--featured-b,
-    &--featured-f {
+    &--benefits-of-one,
+    &--sales-connections {
         @include base;
         background-color: #00BAC0;
         background: radial-gradient(circle, #139DA6 0%, #10767F 100%);
     }
 
-    &--featured-c,
-    &--featured-e {
+    &--unum-faqs,
+    &--field-office {
         @include base;
         background-color: #0085A9;
         background: radial-gradient(circle, #319FBD 0%, #027999 100%);
