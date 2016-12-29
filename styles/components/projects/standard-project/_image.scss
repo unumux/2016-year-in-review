@@ -7,9 +7,12 @@
 &__image {
     @include base;
 
+    width: 75%;
+
     @media all and (min-width: 1024px) {
         margin-left: 5rem;
         float: right;
+        width: 50%;
     }
 
     &--fullwidth {
