@@ -1,9 +1,9 @@
 @mixin circle($bg: #ffffff, $color: #42aeca, $percentage: 0) {
 
-    @if $percentage == 0 {
+    @if $percentage > 0 {
         &::before,
         &::after {
-            border-width: 0.4rem;
+            border-width: 1.5rem;
         }
     }
 
@@ -39,7 +39,7 @@
     &::before,
     &::after {
         content: '';
-        border-width: 1.5rem;
+        border-width: 0.4rem;
         border-style: solid;
         border-radius: 50%;
         position: absolute;
@@ -54,20 +54,8 @@
 
 .circle {
     @include base;
-    @include circle(white);
+    @include circle();
 
-
-    &--special {
-        @include base;
-
-        @include circle(#42AECA);
-    }
-
-    &--test {
-        @include base;
-
-        @include circle(white, #42AECA, 69.57);
-    }
 
     &--pct-2015 {
         @include base;
@@ -79,6 +67,7 @@
 
     &--unum {
         @include base;
+        @include circle(#00a7d4);
     }
 
     &--unum-group {
