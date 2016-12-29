@@ -54,7 +54,7 @@
 }
 .page-header--colonial-life {
     @include base;
-    background-image: url('../images/colonial-header_sm.jpg');
+    background-image: url('../images/Masthead 2.jpg');
     background-position: 50% 40%;
 }
 
@@ -69,7 +69,11 @@
 
     &__logo {
         margin-right: 0;
-        height: 600px;
+        height: auto;
+
+        @media all and (min-width: 768px) {
+            height: 8rem;
+        }
     }
 }
 

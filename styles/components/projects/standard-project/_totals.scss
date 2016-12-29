@@ -1,0 +1,11 @@
+@mixin base {
+
+}
+
+&__total {
+    @include base;
+
+    margin: 0 auto;    
+    
+
+}

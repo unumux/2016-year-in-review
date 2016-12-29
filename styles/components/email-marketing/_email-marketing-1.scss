@@ -2,7 +2,6 @@
     
     p {
         margin: 0 auto;
-        // max-width: 120rem;
         text-align: center;
     }
 
@@ -56,10 +55,15 @@
     &__image1 {
         height: auto;
         margin: 0 auto;
+        max-height: 100%;
         max-width: 100%;
+        width: auto;
 
-        @media screen and (min-width: 1100px) {
+        @media screen and (min-width: 768px) {
+            height: auto;
+            max-height: 50%;
             max-width: 50%;
+            width: auto;
         }
     }
 
@@ -74,7 +78,6 @@
         margin-top: 5rem;
         padding-bottom: 5rem;
         justify-content: space-around;
-        // max-width: 140rem;
         width: 100%;
     }
 

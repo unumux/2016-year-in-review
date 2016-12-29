@@ -1,12 +1,7 @@
 @mixin base() {
     margin: 0 auto;
-    padding: 10rem 2rem;
+    padding: 10rem 4rem;
     width: 100%;
-
-    @media all and (min-width: 768px) {
-        // Use padding to constrain the width of content within panels
-        padding: 15rem calc((100% - 600px) / 2);
-    }
 
     @media all and (min-width: 1024px) {
         // Use padding to constrain the width of content within panels
@@ -99,7 +94,6 @@
         background-image: url("../images/conference-1.png");
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 1.5rem 1.5rem;
 
         @media all and (min-width: 768px) {
             padding: 15rem 5rem;
@@ -184,7 +178,7 @@
 
     &--paid-search {
         @include base;
-        background-image: url("../images/paid-search-pilot@2x.jpg");
+        background-image: url("../images/paid-search-pilot@2x_sm.jpg");
         background-repeat: no-repeat;
         background-size: cover;    
     }

@@ -6,21 +6,33 @@
     flex-wrap: wrap;
     justify-content: space-around;
 
+    &__wrapper {
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+        overflow: hidden;
+    }
+
     &__heading {
         text-transform: none !important;
         padding-bottom: 5rem;
     }
 
     &__para {
-        margin: 6rem 0;
-        padding: 0 8rem;
+        text-align: left;
     }
 
     &__video {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-        height: 176px;
-        overflow: hidden;
-        width: 321px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__title {
+        text-align: left;
     }
 
     &__video-container {
@@ -44,13 +56,6 @@
             margin: 2rem;
             justify-content: space-between;
             
-        }
-
-        h1 {
-            display: block;
-            margin: 0 auto;
-            padding-top: 1rem;
-            text-align: left;
         }
 
         p {
