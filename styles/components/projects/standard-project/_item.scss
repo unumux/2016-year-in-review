@@ -1,20 +1,17 @@
 @mixin base {
-    padding-bottom: 2rem;
     flex-grow: 1;
     flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2rem;
 }
 
 &__item {
     @include base;
 
-    // & + & {
-    //     padding-left: 6rem;
-    // }
-
     &-footnote {
         font-size: 1.2rem;
         max-width: 15rem;
-        margin: 1rem auto;
 
         @media screen and (min-width: 1024px) {
             margin: 1.5rem 0;
