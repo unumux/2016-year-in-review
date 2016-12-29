@@ -17,10 +17,7 @@
     &-footnote {
         font-size: 1.2rem;
         max-width: 15rem;
-
-        @media screen and (min-width: 1024px) {
-            margin: 1.5rem 0;
-        }
+        margin-top: 1.5rem;
     }
 
     &-emphasize {
