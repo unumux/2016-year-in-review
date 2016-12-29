@@ -1,9 +1,9 @@
 @mixin circle($bg: #ffffff, $color: #42aeca, $percentage: 0) {
 
-    @if $percentage == 0 {
+    @if $percentage > 0 {
         &::before,
         &::after {
-            border-width: 0.4rem;
+            border-width: 1.5rem;
         }
     }
 
@@ -39,7 +39,7 @@
     &::before,
     &::after {
         content: '';
-        border-width: 1.5rem;
+        border-width: 0.4rem;
         border-style: solid;
         border-radius: 50%;
         position: absolute;
