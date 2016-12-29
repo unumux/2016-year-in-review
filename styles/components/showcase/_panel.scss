@@ -1,12 +1,7 @@
 @mixin base() {
     margin: 0 auto;
-    padding: 10rem 2rem;
+    padding: 10rem 4rem;
     width: 100%;
-
-    @media all and (min-width: 768px) {
-        // Use padding to constrain the width of content within panels
-        padding: 15rem calc((100% - 600px) / 2);
-    }
 
     @media all and (min-width: 1024px) {
         // Use padding to constrain the width of content within panels
