@@ -18,8 +18,22 @@
     &__circles {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        padding-top: 4rem;
+        justify-content: center;
+        margin-top: 5rem;
+    }
+
+    &__circle-container {
+        flex-basis: 100%;
+        flex-grow: 0;
+        flex-shrink: 1;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 50%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 33.3333%;
+        }
     }
 
     &__circle {
