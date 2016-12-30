@@ -1,0 +1,10 @@
+@mixin base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+&__circles {
+    @include base;
+}
