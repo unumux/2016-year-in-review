@@ -1,10 +1,9 @@
 @mixin base {
+    text-align: left;
 }
 
 .videos-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include base;
 
     &__wrapper {
         padding-bottom: 56.25%;
@@ -15,12 +14,7 @@
     }
 
     &__heading {
-        text-transform: none !important;
-        padding-bottom: 5rem;
-    }
-
-    &__para {
-        text-align: left;
+        text-align: center;
     }
 
     &__video {
@@ -33,72 +27,20 @@
     }
 
     &__title {
-        text-align: left;
         font-size: 2.5rem;
     }
 
     &__video-container {
-        flex-basis: 100%;
-        flex-grow: 0;
-        flex-shrink: 1;
         margin-bottom: 5rem;
-        padding-right: 1rem;
-        width: 32.1rem;
-
-        @media screen and (min-width: 1024px) {
-            flex-basis: 50%;
-        }
-
-        @media screen and (min-width: 1200px) {
-            flex-basis: auto;
-            flex-grow: 0;
-            flex-shrink: 1;
-            margin: 2rem;
-            justify-content: space-between;
-        }
-
-        p {
-            text-align: left;
-        }
     }
 }
 
 .videos-1__video-container--unum,
 .videos-1__video-container {
-    flex-basis: 100%;
-    flex-grow: 0;
-    flex-shrink: 1;
     margin-bottom: 5rem;
-    // padding-right: 1rem;
-    margin-right: 1rem;
-    width: 32.1rem;
-
-    @media screen and (min-width: 1024px) {
-        flex-basis: 50%;
-    }
-
-    @media screen and (min-width: 1200px) {
-        flex-basis: auto;
-        flex-grow: 0;
-        flex-shrink: 1;
-        justify-content: space-between;
-    }
-
-    h1 {
-        display: block;
-        margin: 0 auto;
-        padding-top: 1rem;
-        text-align: left;
-    }
-
-    p {
-        text-align: left;
-        font-size: 2rem;
-    }
 }
 
 .videos-1__heading--unum,
 .videos-1__heading {
-    text-transform: none !important;
     padding-bottom: 5rem;
 }
