@@ -2,10 +2,7 @@
 }
 
 .showcase__panel--comparison {
-    h1 {
-        // max-width: 130rem;
-        margin: 0 auto;
-    }
+
 }
 
 .comparison-1 {
@@ -158,7 +155,7 @@
         // max-width: 130rem;
         margin: 0 auto;
 
-        @media screen and (min-width: 1100px) {
+        @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -174,6 +171,8 @@
 
             .comparison-3 {
                 margin: 15rem 0;
+                flex-shrink: 1;
+                flex-basis: auto;
             }
         }
     }
