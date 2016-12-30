@@ -16,7 +16,25 @@
     }
 
     &__circles {
-        padding-top: 4rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__circle-container {
+        flex-basis: 100%;
+        flex-grow: 1;
+        flex-shrink: 1;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) {
+            flex-basis: 50%;
+        }
     }
 }
 

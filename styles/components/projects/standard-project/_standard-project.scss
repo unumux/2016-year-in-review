@@ -13,6 +13,12 @@
         color: #444;
     }
 
+    &--center {
+        @include base;
+
+        text-align: center;
+    }
+
     @import "image";
     @import "heading";
     @import "subheading";
