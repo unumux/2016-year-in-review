@@ -273,25 +273,16 @@
     }
 
     &--videos {
+        @include base;
         background-image: url('../images/motion-background.png');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3rem 3rem;
-
-        @media all and (min-width: 768px) {
-            padding: 10rem 20rem;
-        }
     }
 
     &--videos-1 {
+        @include base;
         background-image: url('../images/motion-background.png');
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3rem 3rem;
-
-        @media all and (min-width: 768px) {
-            padding: 10rem 20rem;
-        }
-
     }
 }
