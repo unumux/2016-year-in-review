@@ -1,28 +1,39 @@
-@mixin circle($bg: #ffffff, $color: #42aeca, $percentage: 0) {
+@mixin circle($color: #ffffff, $bg: #ffffff) {
 
-    @if $percentage > 0 {
-        &::before,
+    @for $i from 1 through 50 {
+        &[data-percentage="#{$i}"]::after {
+            $degrees: $i * 3.6 + 45; // 45 extra degrees to rotate borders into place
+            border-color: $bg $bg transparent transparent;
+            transform: rotate(#{$degrees}deg);
+        }
+    }
+
+    @for $i from 51 through 100 {
+        &[data-percentage="#{$i}"]::after {
+            $degrees: $i * 3.6 - 135; // 180 - 45
+            border-color: $color $color transparent transparent;
+            transform: rotate(#{$degrees}deg);
+        }
+    }
+    &::before,
+    &::after {
+        border-color: $color;
+    }
+
+    &[data-percentage] {
+        height: 25rem;
+        width: 25rem;
+
+        &::before {
+            border-color: $color $color $bg $bg;
+            border-width: 1.5rem;
+        }
+
         &::after {
             border-width: 1.5rem;
         }
     }
 
-    &::before {
-        border-color: $color $color $bg $bg;
-    }
-
-
-    &::after {
-        @if $percentage < 50 {
-            $degrees: $percentage * 3.6 + 45; // 45 extra degrees to rotate borders into place
-            border-color: $bg $bg transparent transparent;
-            transform: rotate(#{$degrees}deg);
-        } @else {
-            $degrees: $percentage * 3.6 - 135; // 180 - 45
-            border-color: $color $color transparent transparent;
-            transform: rotate(#{$degrees}deg);
-        }
-    }
 }
 
 @mixin base() {
@@ -55,6 +66,10 @@
 .circle {
     @include base;
     @include circle();
+
+    &[data-percentage] {
+        @include circle(#00a7d4);
+    }
 
 
     &--pct-2015 {
