@@ -47,6 +47,8 @@
     position: relative;
     width: 30rem;
     margin: 1rem;
+    max-height: calc(100vw - 6rem);
+    max-width: calc(100vw - 6rem);
 
     &::before,
     &::after {
