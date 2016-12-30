@@ -47,8 +47,6 @@
 
         @media screen and (min-width: 1024px) {
             flex-basis: 50%;
-            flex-grow: 0;
-            flex-shrink: 1;
         }
 
         @media screen and (min-width: 1200px) {
@@ -77,17 +75,13 @@
 
     @media screen and (min-width: 1024px) {
         flex-basis: 50%;
-        flex-grow: 0;
-        flex-shrink: 1;
     }
 
     @media screen and (min-width: 1200px) {
         flex-basis: auto;
         flex-grow: 0;
         flex-shrink: 1;
-        // margin: 2rem;
         justify-content: space-between;
-        
     }
 
     h1 {
