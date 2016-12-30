@@ -2,11 +2,6 @@
     width: 50%;
     margin: 0 auto;
     display: block;
-}
-
-&__image {
-    @include base;
-
     width: 75%;
 
     @media all and (min-width: 1024px) {
@@ -14,6 +9,10 @@
         float: right;
         width: 50%;
     }
+}
+
+&__image {
+    @include base;
 
     &--fullwidth {
         @include base;
