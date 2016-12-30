@@ -1,0 +1,15 @@
+@mixin base {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: 50%;
+        flex-grow: 1;
+        flex-shrink: 1;
+    }
+}
+
+&__circle-container {
+    @include base;
+}

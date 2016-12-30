@@ -2,12 +2,11 @@
     list-style-type: none;
     padding: 0;
     clear: both;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 &__list {
     @include base;
-
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
