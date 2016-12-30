@@ -14,18 +14,18 @@
     &--mobile {
         @include base;
 
-        background-image: url("../../images/smartphone-icon.svg");
+        background-image: url("../images/smartphone-icon.svg");
     }
 
     &--tablet {
         @include base;
 
-        background-image: url("../../images/tablet-icon.svg");
+        background-image: url("../images/tablet-icon.svg");
     }
 
     &--desktop {
         @include base;
 
-        background-image: url("../../images/apple-monitor-1-icon.svg");
+        background-image: url("../images/apple-monitor-1-icon.svg");
     }
 }
