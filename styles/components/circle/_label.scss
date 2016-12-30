@@ -5,6 +5,17 @@
 &__label {
     @include base;
 
+    .circle--large & {
+        
+        @media all and (min-width: 768px) {
+            font-size: 3rem;
+        }
+        
+        @media all and (min-width: 1024px) {
+            font-size: 4rem;
+        }
+    }
+
     &--upper {
         @include base;
 
