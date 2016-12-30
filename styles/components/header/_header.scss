@@ -13,24 +13,21 @@
     background-color: transparent;
     display: flex;
     justify-content: center;
-    left: 0;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    position: absolute;
-    right: 0;
-    transition: background-color 0.5s;
+    position: fixed;
+    transition: background-color 0.2s linear, padding-bottom 0.2s linear, padding-top 0.2s linear;
+    width: 100%;
     z-index: 999;
 
-    .page-header__logos,
-    .page-header__logos2 {
-        padding: 0 5rem;
-        text-align: center;
-    }
 
     .page-header__logo,
     .page-header__logo2 {
+        margin: 0 5rem;
+        text-align: center;
+        transition: transform 0.2s linear;
         max-width: 10rem;
-        transition: max-width 0.75s;
+        // transition: max-width 0.75s;
 
         @media all and (min-width: 768px) {
             max-width: 20rem;
@@ -39,19 +36,23 @@
 
     &.scrolling {
         background-color: HSLA(203, 100%, 27%, 1.00);
-        padding-bottom: 1rem;
-        padding-top: 1rem;
-        position: fixed;
-        transition: background-color 0.5s;
+        padding-bottom: 0.5rem;
+        padding-top: 0.5rem;
+        // padding-bottom: 1rem;
+        // padding-top: 1rem;
+        // position: fixed;
+        // transition: background-color 0.5s;
 
         .page-header__logo,
         .page-header__logo2 {
-            max-width: 10rem;
-            transition: max-width 0.75s;
-            vertical-align: bottom;
+            transform: scale(0.6);
+            // max-width: 10rem;
+            // transition: max-width 0.75s;
+            // vertical-align: bottom;
         }
     }
 }
+
 .page-header--colonial-life {
     @include base;
     background-image: url('../images/Masthead 2.jpg');
