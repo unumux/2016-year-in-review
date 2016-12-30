@@ -58,6 +58,7 @@
         max-height: 100%;
         max-width: 100%;
         width: auto;
+        margin-top: 5rem;
 
         @media screen and (min-width: 768px) {
             height: auto;
@@ -65,10 +66,6 @@
             max-width: 50%;
             width: auto;
         }
-    }
-
-    &__image1 {
-        padding-top: 5rem;
     }
 
     &__grouping {
@@ -127,11 +124,6 @@
                 flex-grow: 1;
                 flex-shrink: 1;
             }
-
-                p {
-                    font-size: 2.4rem;
-                }
-
         }
 
     .email-marketing-3 {

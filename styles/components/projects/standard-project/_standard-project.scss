@@ -1,6 +1,7 @@
 @mixin base() {
+    @include clearfix;
+    
     font-size: 1.8rem;
-    overflow: auto;
     text-align: left;
 }
 

@@ -62,3 +62,11 @@
         font-size: $emphasized-number-desktop;
     }
 }
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
