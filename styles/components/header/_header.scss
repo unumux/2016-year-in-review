@@ -58,6 +58,10 @@
     background-position: 50% 40%;
 }
 
+.page-header__logo {
+    max-width: 70%;
+}
+
 .page-header--unum {
     @include base;
     background-image: url('../images/unum-header_sm.jpg');
