@@ -1,4 +1,4 @@
-@mixin circle($color: #42aeca, $bg: #ffffff) {
+@mixin circle($color: #ffffff, $bg: #ffffff) {
 
     @for $i from 1 through 50 {
         &[data-percentage="#{$i}"]::after {
@@ -15,14 +15,23 @@
             transform: rotate(#{$degrees}deg);
         }
     }
-
-    &[data-percentage]::before,
-    &[data-percentage]::after {
-        border-width: 1.5rem;
+    &::before,
+    &::after {
+        border-color: $color;
     }
 
-    &::before {
-        border-color: $color $color $bg $bg;
+    &[data-percentage] {
+        height: 25rem;
+        width: 25rem;
+
+        &::before {
+            border-color: $color $color $bg $bg;
+            border-width: 1.5rem;
+        }
+
+        &::after {
+            border-width: 1.5rem;
+        }
     }
 
 }
@@ -57,6 +66,10 @@
 .circle {
     @include base;
     @include circle();
+
+    &[data-percentage] {
+        @include circle(#00a7d4);
+    }
 
 
     &--pct-2015 {
