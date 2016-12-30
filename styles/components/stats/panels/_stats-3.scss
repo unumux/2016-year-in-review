@@ -15,6 +15,10 @@
         margin-top: 0;
     }
 
+    &__footnote {
+        @include footnote;
+    }
+
     &__circles {
         display: flex;
         flex-wrap: wrap;
