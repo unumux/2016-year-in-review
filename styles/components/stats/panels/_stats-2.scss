@@ -22,18 +22,22 @@
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
     }
 
     &__circle-container {
         flex-basis: 100%;
-        flex-grow: 1;
+        flex-grow: 0;
         flex-shrink: 1;
         margin: 0 auto;
 
         @media screen and (min-width: 768px) {
             flex-basis: 50%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            flex-basis: 33.3333%;
         }
     }
 }
