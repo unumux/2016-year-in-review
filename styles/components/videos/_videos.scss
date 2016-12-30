@@ -1,10 +1,9 @@
 @mixin base {
+    text-align: left;
 }
 
 .videos-1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    @include base;
 
     &__wrapper {
         padding-bottom: 56.25%;
@@ -15,12 +14,11 @@
     }
 
     &__heading {
-        text-transform: none !important;
-        padding-bottom: 5rem;
+        text-align: center;
     }
 
     &__para {
-        text-align: left;
+        
     }
 
     &__video {
