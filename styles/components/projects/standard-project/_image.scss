@@ -16,5 +16,9 @@
 
     &--fullwidth {
         @include base;
+        @media all and (min-width: 1024px) {
+            float: none;
+            margin: 0 auto;
+        }
     }
 }
