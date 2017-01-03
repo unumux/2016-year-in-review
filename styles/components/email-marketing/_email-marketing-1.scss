@@ -50,9 +50,24 @@
     &__heading {
         margin-bottom: 1.5rem !important; //<--- SO SORRY! - It's okay.
     }
-
-    &__image,
+    
     &__image1 {
+        height: 100%;
+        margin: 0 auto;
+        max-height: 100%;
+        max-width: 100%;
+        width: 100%;
+        margin-top: 5rem;
+
+        @media screen and (min-width: 768px) {
+            // height: auto;
+            max-height: 50%;
+            max-width: 50%;
+            // width: auto;
+        }
+    }
+
+    &__image {
         height: auto;
         margin: 0 auto;
         max-height: 100%;
@@ -61,10 +76,10 @@
         margin-top: 5rem;
 
         @media screen and (min-width: 768px) {
-            height: auto;
+            // height: auto;
             max-height: 50%;
             max-width: 50%;
-            width: auto;
+            // width: auto;
         }
     }
 
