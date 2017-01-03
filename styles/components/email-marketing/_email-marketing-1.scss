@@ -53,18 +53,18 @@
 
     &__image,
     &__image1 {
-        height: auto;
+        height: 100%;
         margin: 0 auto;
         max-height: 100%;
         max-width: 100%;
-        width: auto;
+        width: 100%;
         margin-top: 5rem;
 
         @media screen and (min-width: 768px) {
-            height: auto;
+            // height: auto;
             max-height: 50%;
             max-width: 50%;
-            width: auto;
+            // width: auto;
         }
     }
 
